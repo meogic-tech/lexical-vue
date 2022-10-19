@@ -40,6 +40,7 @@ const config = {
     LinkNode,
     HashtagNode,
   ],
+  editable: true,
 }
 
 const onError = (error: Error) => {
