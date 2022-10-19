@@ -98,6 +98,7 @@ let unregisterListener: () => void
 
 onMounted(() => {
   unregisterListener = mergeRegister(
+    // @ts-expect-error: Binding element 'editorState' implicitly has an 'any' type.
     editor.registerUpdateListener(({ editorState }) => {
       editorState.read(() => {
         updateLinkEditor()

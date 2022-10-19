@@ -121,6 +121,7 @@ let unregisterMergeListener: () => void
 
 onMounted(() => {
   unregisterMergeListener = mergeRegister(
+    // @ts-expect-error: Binding element 'editorState' implicitly has an 'any' type.
     editor.registerUpdateListener(({ editorState }) => {
       editorState.read(() => {
         updateToolbar()

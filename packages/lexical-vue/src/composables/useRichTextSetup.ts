@@ -6,7 +6,7 @@ import { onUnmounted } from 'vue'
 
 export function useRichTextSetup(editor: LexicalEditor, initialEditorState?: null | string | EditorState | (() => void)) {
   const unsub = mergeRegister(
-    registerRichText(editor, initialEditorState),
+    registerRichText(editor),
     registerDragonSupport(editor),
   )
 

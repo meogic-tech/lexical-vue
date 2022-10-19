@@ -9,7 +9,7 @@ const props = defineProps<{
   initialConfig: {
     namespace?: string
     nodes?: Class<LexicalNode>[]
-    readOnly?: boolean
+    editable?: boolean
     theme?: EditorThemeClasses
   }
 }>()
@@ -28,9 +28,9 @@ const editor = createEditor({
 provide(editorKey, editor)
 
 onMounted(() => {
-  const isReadOnly = props.initialConfig.readOnly
+  const isEditable = props.initialConfig.editable
 
-  editor.setReadOnly(isReadOnly || false)
+  editor.setEditable(isEditable || false)
 })
 </script>
 
