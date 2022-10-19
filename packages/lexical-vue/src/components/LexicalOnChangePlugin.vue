@@ -24,7 +24,7 @@ let unregisterListener: () => void
 const getRoot = $getRoot
 
 onMounted(() => {
-  unregisterListener = editor.registerUpdateListener(({ editorState, dirtyElements, dirtyLeaves, prevEditorState }) => {
+  unregisterListener = editor.registerUpdateListener(({ editorState, dirtyElements, dirtyLeaves, prevEditorState, tags }) => {
     if (
       props.ignoreSelectionChange
         && dirtyElements.size === 0

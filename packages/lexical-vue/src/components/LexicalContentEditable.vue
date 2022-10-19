@@ -37,6 +37,7 @@ onMounted(() => {
   if (root.value)
     editor.setRootElement(root.value)
 
+  isReadOnly.value = editor.isReadOnly()
   unregisterListener = editor.registerReadOnlyListener((currentIsReadOnly) => {
     isReadOnly.value = currentIsReadOnly
   })

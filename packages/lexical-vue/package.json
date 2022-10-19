@@ -38,7 +38,7 @@
     "dev": "vite build --watch",
     "build": "rimraf dist && vue-tsc && vite build",
     "release": "bumpp --commit --push --tag && pnpm publish",
-    "prepublishOnly": "rimraf ./package && pnpm run build && clean-publish",
+    "prepublishOnly": "rimraf ./package && pnpm run build",
     "postpublish": "rimraf ./package",
     "typecheck": "tsc"
   },
