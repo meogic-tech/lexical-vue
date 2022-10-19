@@ -39,7 +39,7 @@ onMounted(() => {
 })
 
 const unregisterListener = editor.registerEditableListener((currentIsEditable) => {
-  editable.value = !currentIsEditable
+  editable.value = currentIsEditable
 })
 
 onUnmounted(() => {
