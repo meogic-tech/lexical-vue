@@ -13,7 +13,7 @@ import {
   $getRoot,
   $getSelection,
   $isElementNode,
-  $isGridSelection,
+  DEPRECATED_$isGridSelection,
   $isRangeSelection,
   $isTextNode,
 } from 'lexical'
@@ -103,7 +103,7 @@ function generateContent(editorState: EditorState): string {
       ? ': null'
       : $isRangeSelection(selection)
         ? printRangeSelection(selection)
-        : $isGridSelection(selection)
+        : DEPRECATED_$isGridSelection(selection)
           ? printGridSelection(selection)
           : printObjectSelection(selection)
   })
@@ -153,7 +153,7 @@ function normalize(text: string) {
 // TODO Pass via props to allow customizability
 function printNode(node: LexicalNode) {
   if ($isTextNode(node)) {
-    const text = node.getTextContent(true)
+    const text = node.getTextContent()
     const title = text.length === 0 ? '(empty)' : `"${normalize(text)}"`
     const properties = printAllTextNodeProperties(node)
     return [title, properties.length !== 0 ? `{ ${properties} }` : null]
@@ -341,7 +341,7 @@ function $getSelectionStartEnd(
 ): [number, number] {
   const anchor = selection.anchor
   const focus = selection.focus
-  const textContent = node.getTextContent(true)
+  const textContent = node.getTextContent()
   const textLength = textContent.length
 
   let start = -1
