@@ -20,7 +20,7 @@ withDefaults(defineProps<{
   autoComplete?: boolean
   autoCorrect?: boolean
   id?: string
-  readOnly?: boolean
+  editable?: boolean
   role?: string
   spellcheck?: boolean
   tabindex?: number
@@ -28,19 +28,18 @@ withDefaults(defineProps<{
 }>(), {
   role: 'textbox',
   spellcheck: true,
-  enableGrammarly: true,
 })
-const isReadOnly = ref(true)
-let unregisterListener: () => void
+const editable = ref(true)
 
 onMounted(() => {
-  if (root.value)
+  if (root.value) {
     editor.setRootElement(root.value)
+    editable.value = editor.isEditable()
+  }
+})
 
-  isReadOnly.value = editor.isReadOnly()
-  unregisterListener = editor.registerReadOnlyListener((currentIsReadOnly) => {
-    isReadOnly.value = currentIsReadOnly
-  })
+const unregisterListener = editor.registerEditableListener((currentIsEditable) => {
+  editable.value = !currentIsEditable
 })
 
 onUnmounted(() => {
@@ -52,23 +51,22 @@ onUnmounted(() => {
   <div
     :id="id"
     ref="root"
-    :aria-activedescendant="isReadOnly ? undefined : ariaActivedescendant"
-    :aria-autocomplete="isReadOnly ? undefined : ariaAutocomplete"
-    :aria-controls="isReadOnly ? undefined : ariaControls"
+    :aria-activedescendant="!editable ? undefined : ariaActivedescendant"
+    :aria-autocomplete="!editable ? undefined : ariaAutocomplete"
+    :aria-controls="!editable ? undefined : ariaControls"
     :aria-describedby="ariaDescribedby"
-    :aria-expanded="isReadOnly ? undefined : role === 'combobox' ? !!ariaExpanded ? ariaExpanded : undefined : undefined"
+    :aria-expanded="!editable ? undefined : role === 'combobox' ? !!ariaExpanded ? ariaExpanded : undefined : undefined"
     :aria-label="ariaLabel"
     :aria-labelledby="ariaLabelledby"
     :aria-multiline="ariaMultiline"
-    :aria-owns="isReadOnly ? undefined : ariaOwns"
+    :aria-owns="!editable ? undefined : ariaOwns"
     :aria-required="ariaRequired"
     :autocapitalize="`${autoCapitalize}`"
     :autocomplete="autoComplete"
     :autocorrect="`${autoCorrect}`"
-    :contenteditable="!isReadOnly"
-    :role="isReadOnly ? undefined : role"
+    :contenteditable="editable"
+    :role="!editable ? undefined : role"
     :spellcheck="spellcheck"
     :tabindex="tabindex"
-    :data-enable-grammarly="enableGrammarly"
   />
 </template>
