@@ -197,7 +197,6 @@ const DETAIL_PREDICATES = [
 const MODE_PREDICATES = [
   (node: LexicalNode) => node.isToken() && 'Token',
   (node: LexicalNode) => node.isSegmented() && 'Segmented',
-  (node: LexicalNode) => node.isInert() && 'Inert',
 ]
 
 function printAllTextNodeProperties(node: LexicalNode) {
@@ -470,10 +469,9 @@ watchEffect((onInvalidate) => {
     clearTimeout(timeoutId)
   })
 })
-
+let element: HTMLPreElement | null = null
 watchEffect(() => {
-  const element = treeElementRef.value
-
+  element = treeElementRef.value
   if (element) {
     // @ts-expect-error: Internal field
     element.__lexicalEditor = editor
@@ -483,8 +481,10 @@ watchEffect(() => {
 onUnmounted(() => {
   unregisterListener?.()
   clearTimeout(timeoutId)
-  // @ts-expect-error: Internal field
-  element.__lexicalEditor = null
+  if (element) {
+    // @ts-expect-error: Internal field
+    element.__lexicalEditor = null
+  }
 })
 
 const enableTimeTravel = () => {
