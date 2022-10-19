@@ -3,7 +3,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import pkg from './package.json'
 
-const pkgName = pkg.name
+const pkgName = pkg.name.substring(pkg.name.lastIndexOf('/') + 1)
 const lexicalPlugins = [
   'clipboard',
   'list',
