@@ -3,11 +3,18 @@ import { computed, ref } from 'vue'
 import { useEditor } from '../composables/useEditor'
 import { useCharacterLimit } from '../composables/useCharacterLimit'
 
+const props = withDefaults(defineProps<{
+  charset?: 'UTF-8' | 'UTF-16'
+}>(), {
+  charset: 'UTF-16',
+})
+
 const editor = useEditor()
 
 const CHARACTER_LIMIT = 5
 
 let textEncoderInstance: TextEncoder | null = null
+
 function textEncoder(): null | TextEncoder {
   if (window.TextEncoder === undefined)
     return null
@@ -20,19 +27,15 @@ function textEncoder(): null | TextEncoder {
 
 function utf8Length(text: string) {
   const currentTextEncoder = textEncoder()
+
   if (currentTextEncoder === null) {
     // http://stackoverflow.com/a/5515960/210370
     const m = encodeURIComponent(text).match(/%[89ABab]/g)
     return text.length + (m ? m.length : 0)
   }
+
   return currentTextEncoder.encode(text).length
 }
-
-const props = withDefaults(defineProps<{
-  charset?: 'UTF-8' | 'UTF-16'
-}>(), {
-  charset: 'UTF-16',
-})
 
 const remainingCharacters = ref(0)
 const setRemainingCharacters = (payload: number) => {

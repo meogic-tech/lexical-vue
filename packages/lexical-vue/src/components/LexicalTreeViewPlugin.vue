@@ -13,15 +13,22 @@ import {
   $getRoot,
   $getSelection,
   $isElementNode,
-  DEPRECATED_$isGridSelection,
   $isRangeSelection,
   $isTextNode,
+  DEPRECATED_$isGridSelection,
 } from 'lexical'
 import { computed, onUnmounted, ref, watchEffect } from 'vue'
 import type { LinkNode } from '@lexical/link'
 import { $isLinkNode } from '@lexical/link'
 import { useEditor } from '../composables/useEditor'
 
+defineProps<{
+  timeTravelButtonClassName: string
+  timeTravelPanelSliderClassName: string
+  timeTravelPanelButtonClassName: string
+  timeTravelPanelClassName: string
+  viewClassName: string
+}>()
 const NON_SINGLE_WIDTH_CHARS_REPLACEMENT: Readonly<Record<string, string>>
   = Object.freeze({
     '\t': '\\t',
@@ -394,13 +401,6 @@ function $getSelectionStartEnd(
   ]
 }
 
-defineProps<{
-  timeTravelButtonClassName: string
-  timeTravelPanelSliderClassName: string
-  timeTravelPanelButtonClassName: string
-  timeTravelPanelClassName: string
-  viewClassName: string
-}>()
 const editor = useEditor()
 
 const timeStampedEditorStates = ref<[number, EditorState][]>([])

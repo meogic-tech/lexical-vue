@@ -1,18 +1,41 @@
-import { onUnmounted, readonly, ref } from 'vue'
+import { onMounted, onUnmounted, readonly, ref } from 'vue'
 import { $canShowPlaceholderCurry } from '@lexical/text'
 import type { LexicalEditor } from 'lexical'
+import { mergeRegister } from '@lexical/utils'
+
+function canShowPlaceholderFromCurrentEditorState(
+  editor: LexicalEditor,
+): boolean {
+  const currentCanShowPlaceholder = editor
+    .getEditorState()
+    .read($canShowPlaceholderCurry(editor.isComposing()))
+
+  return currentCanShowPlaceholder
+}
 
 export function useCanShowPlaceholder(editor: LexicalEditor) {
   const initialState = editor
     .getEditorState()
-    .read($canShowPlaceholderCurry(editor.isComposing(), editor.isEditable()))
+    .read($canShowPlaceholderCurry(editor.isComposing()))
 
   const canShowPlaceholder = ref(initialState)
 
-  const unregisterListener = editor.registerUpdateListener(({ editorState }) => {
-    const isComposing = editor.isComposing()
-    canShowPlaceholder.value = editorState.read(
-      $canShowPlaceholderCurry(isComposing, editor.isEditable()),
+  function resetCanShowPlaceholder() {
+    const currentCanShowPlaceholder
+    = canShowPlaceholderFromCurrentEditorState(editor)
+    canShowPlaceholder.value = currentCanShowPlaceholder
+  }
+
+  let unregisterListener: () => void
+
+  onMounted(() => {
+    unregisterListener = mergeRegister(
+      editor.registerUpdateListener(() => {
+        resetCanShowPlaceholder()
+      }),
+      editor.registerEditableListener(() => {
+        resetCanShowPlaceholder()
+      }),
     )
   })
 

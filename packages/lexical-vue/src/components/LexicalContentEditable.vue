@@ -1,9 +1,6 @@
 <script setup lang="ts">
-import { onMounted, onUnmounted, ref } from 'vue'
+import { onMounted, onUnmounted, ref, watch } from 'vue'
 import { useEditor } from '../composables/useEditor'
-
-const root = ref<HTMLElement | null>(null)
-const editor = useEditor()
 
 withDefaults(defineProps<{
   ariaActivedescendant?: string
@@ -29,7 +26,10 @@ withDefaults(defineProps<{
   role: 'textbox',
   spellcheck: true,
 })
-const editable = ref(true)
+const root = ref<HTMLElement | null>(null)
+const editor = useEditor()
+
+const editable = ref(false)
 
 onMounted(() => {
   if (root.value) {

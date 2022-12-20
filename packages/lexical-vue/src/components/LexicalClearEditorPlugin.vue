@@ -9,17 +9,16 @@ import {
 import { getCurrentInstance, onMounted, onUnmounted } from 'vue'
 import { useEditor } from '../composables/useEditor'
 
-const editor = useEditor()
 const emit = defineEmits<{
   (e: 'clear'): void
 }>()
-let unregisterListener: () => void
+const editor = useEditor()
 
 onMounted(() => {
   const instance = getCurrentInstance()
   const emitExists = Boolean(instance?.attrs?.onClear)
 
-  unregisterListener = editor.registerCommand(
+  const unregisterListener = editor.registerCommand(
     CLEAR_EDITOR_COMMAND,
     (_payload) => {
       editor.update(() => {
@@ -40,10 +39,8 @@ onMounted(() => {
     },
     COMMAND_PRIORITY_EDITOR,
   )
-})
 
-onUnmounted(() => {
-  unregisterListener?.()
+  onUnmounted(unregisterListener)
 })
 </script>
 
