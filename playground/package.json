@@ -9,8 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "lexical": "0.11.1",
-    "lexical-vue": "workspace:*",
+    "@meogic/lexical": "0.11.1-mod5",
+    "@meogic/lexical-vue": "workspace:*",
     "vue": "^3.3.4"
   },
   "devDependencies": {

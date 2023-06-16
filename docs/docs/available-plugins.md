@@ -19,7 +19,7 @@ Vue-based plugins are using Lexical editor instance from `<LexicalComposer>` com
 
 ## `LexicalPlainTextPlugin`
 
-Vue wrapper for `@lexical/plain-text` that adds major features for plain text editing, including typing, deletion and copy/pasting.
+Vue wrapper for `@meogic/lexical-plain-text` that adds major features for plain text editing, including typing, deletion and copy/pasting.
 
 ```html
 <LexicalPlainTextPlugin>
@@ -34,7 +34,7 @@ Vue wrapper for `@lexical/plain-text` that adds major features for plain text ed
 
 ## `LexicalRichTextPlugin`
 
-Vue wrapper for `@lexical/rich-text` that adds major features for rich text editing, including typing, deletion, copy/pasting, indent/outdent and bold/italic/underline/strikethrough text formatting.
+Vue wrapper for `@meogic/lexical-rich-text` that adds major features for rich text editing, including typing, deletion, copy/pasting, indent/outdent and bold/italic/underline/strikethrough text formatting.
 
 ```html
 <LexicalRichTextPlugin>
@@ -57,7 +57,7 @@ Plugin that emits `change` whenever Lexical state is updated. Using `ignoreIniti
 
 ## `LexicalHistoryPlugin`
 
-Vue wrapper for `@lexical/history` that adds support for history stack management and `undo` / `redo` commands.
+Vue wrapper for `@meogic/lexical-history` that adds support for history stack management and `undo` / `redo` commands.
 
 ```html
 <LexicalHistoryPlugin />
@@ -65,7 +65,7 @@ Vue wrapper for `@lexical/history` that adds support for history stack managemen
 
 ## `LexicalLinkPlugin`
 
-Vue wrapper for `@lexical/link` that adds support for links, including `toggleLink` command support that toggles link for selected text.
+Vue wrapper for `@meogic/lexical-link` that adds support for links, including `toggleLink` command support that toggles link for selected text.
 
 ```html
 <LexicalLinkPlugin />
@@ -73,7 +73,7 @@ Vue wrapper for `@lexical/link` that adds support for links, including `toggleLi
 
 ## `LexicalListPlugin`
 
-Vue wrapper for `@lexical/list` that adds support for lists (ordered and unordered).
+Vue wrapper for `@meogic/lexical-list` that adds support for lists (ordered and unordered).
 
 ```html
 <LexicalLinkPlugin />
@@ -81,7 +81,7 @@ Vue wrapper for `@lexical/list` that adds support for lists (ordered and unorder
 
 ## `LexicalTablePlugin`
 
-Vue wrapper for `@lexical/table` that adds support for tables.
+Vue wrapper for `@meogic/lexical-table` that adds support for tables.
 
 ```html
 <LexicalTablePlugin />

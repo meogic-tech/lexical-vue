@@ -2,11 +2,11 @@
 import type {
   ElementFormatType,
   NodeKey,
-} from 'lexical'
+} from '@meogic/lexical'
 import {
   $getNearestBlockElementAncestorOrThrow,
   mergeRegister,
-} from '@lexical/utils'
+} from '@meogic/lexical-utils'
 import {
   $getNodeByKey,
   $getSelection,
@@ -18,7 +18,7 @@ import {
   FORMAT_ELEMENT_COMMAND,
   KEY_BACKSPACE_COMMAND,
   KEY_DELETE_COMMAND,
-} from 'lexical'
+} from '@meogic/lexical'
 import { ref } from 'vue'
 import { useEditor, useLexicalNodeSelection } from '../composables'
 import { useMounted } from '../composables/useMounted'

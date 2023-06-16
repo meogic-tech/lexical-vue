@@ -1,14 +1,14 @@
 <script lang="ts" setup>
-import { LexicalMarkdownShortcutPlugin } from 'lexical-vue'
+import { LexicalMarkdownShortcutPlugin } from '@meogic/lexical-vue'
 import type {
   Transformer,
-} from '@lexical/markdown'
+} from '@meogic/lexical-markdown'
 import {
   CHECK_LIST,
   ELEMENT_TRANSFORMERS,
   TEXT_FORMAT_TRANSFORMERS,
   TEXT_MATCH_TRANSFORMERS,
-} from '@lexical/markdown'
+} from '@meogic/lexical-markdown'
 
 const PLAYGROUND_TRANSFORMERS: Transformer[] = [
   CHECK_LIST,

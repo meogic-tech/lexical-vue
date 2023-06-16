@@ -1,7 +1,7 @@
 {
-  "name": "lexical-vue",
+  "name": "@meogic/lexical-vue",
   "type": "module",
-  "version": "0.6.0",
+  "version": "0.11.1-mod5",
   "description": "An extensible Vue 3 web text-editor based on Lexical.",
   "author": "Robert Soriano <sorianorobertc@gmail.com>",
   "license": "MIT",
@@ -45,26 +45,26 @@
     "docs:serve": "vitepress serve docs"
   },
   "peerDependencies": {
-    "lexical": "^0.11.0",
+    "@meogic/lexical": "^0.11.1-mod5",
     "vue": "^3.2.0"
   },
   "dependencies": {
-    "@lexical/clipboard": "^0.11.1",
-    "@lexical/code": "^0.11.1",
-    "@lexical/dragon": "^0.11.1",
-    "@lexical/hashtag": "^0.11.1",
-    "@lexical/history": "^0.11.1",
-    "@lexical/link": "^0.11.1",
-    "@lexical/list": "^0.11.1",
-    "@lexical/mark": "^0.11.1",
-    "@lexical/markdown": "^0.11.1",
-    "@lexical/overflow": "^0.11.1",
-    "@lexical/plain-text": "^0.11.1",
-    "@lexical/rich-text": "^0.11.1",
-    "@lexical/selection": "^0.11.1",
-    "@lexical/table": "^0.11.1",
-    "@lexical/text": "^0.11.1",
-    "@lexical/utils": "^0.11.1"
+    "@meogic/lexical-clipboard": "^0.11.1-mod5",
+    "@meogic/lexical-code": "^0.11.1-mod5",
+    "@meogic/lexical-dragon": "^0.11.1-mod5",
+    "@meogic/lexical-hashtag": "^0.11.1-mod5",
+    "@meogic/lexical-history": "^0.11.1-mod5",
+    "@meogic/lexical-link": "^0.11.1-mod5",
+    "@meogic/lexical-list": "^0.11.1-mod5",
+    "@meogic/lexical-mark": "^0.11.1-mod5",
+    "@meogic/lexical-markdown": "^0.11.1-mod5",
+    "@meogic/lexical-overflow": "^0.11.1-mod5",
+    "@meogic/lexical-plain-text": "^0.11.1-mod5",
+    "@meogic/lexical-rich-text": "^0.11.1-mod5",
+    "@meogic/lexical-selection": "^0.11.1-mod5",
+    "@meogic/lexical-table": "^0.11.1-mod5",
+    "@meogic/lexical-text": "^0.11.1-mod5",
+    "@meogic/lexical-utils": "^0.11.1-mod5"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.39.5",

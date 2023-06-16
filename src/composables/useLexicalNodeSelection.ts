@@ -1,4 +1,4 @@
-import type { LexicalEditor, NodeKey } from 'lexical'
+import type { LexicalEditor, NodeKey } from '@meogic/lexical'
 
 import {
   $createNodeSelection,
@@ -6,7 +6,7 @@ import {
   $getSelection,
   $isNodeSelection,
   $setSelection,
-} from 'lexical'
+} from '@meogic/lexical'
 import { readonly, ref, unref, watchPostEffect } from 'vue'
 import type { MaybeRef } from '../types'
 import { useEditor } from './useEditor'

@@ -1,7 +1,7 @@
 import {
   $isAtNodeEnd,
-} from '@lexical/selection'
-import type { RangeSelection } from 'lexical'
+} from '@meogic/lexical-selection'
+import type { RangeSelection } from '@meogic/lexical'
 
 export function getSelectedNode(selection: RangeSelection) {
   const anchor = selection.anchor

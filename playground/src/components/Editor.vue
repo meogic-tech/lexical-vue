@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { $createParagraphNode, $createTextNode, $getRoot } from 'lexical'
+import { $createParagraphNode, $createTextNode, $getRoot } from '@meogic/lexical'
 import {
   LexicalAutoFocusPlugin,
   LexicalComposer,
@@ -9,13 +9,13 @@ import {
   LexicalLinkPlugin,
   LexicalListPlugin,
   LexicalRichTextPlugin,
-} from 'lexical-vue'
-import { $createHeadingNode, $createQuoteNode, HeadingNode, QuoteNode } from '@lexical/rich-text'
-import { TableCellNode, TableNode, TableRowNode } from '@lexical/table'
-import { $createListItemNode, $createListNode, ListItemNode, ListNode } from '@lexical/list'
-import { CodeHighlightNode, CodeNode } from '@lexical/code'
-import { $createLinkNode, AutoLinkNode, LinkNode } from '@lexical/link'
-import { HashtagNode } from '@lexical/hashtag'
+} from '@meogic/lexical-vue'
+import { $createHeadingNode, $createQuoteNode, HeadingNode, QuoteNode } from '@meogic/lexical-rich-text'
+import { TableCellNode, TableNode, TableRowNode } from '@meogic/lexical-table'
+import { $createListItemNode, $createListNode, ListItemNode, ListNode } from '@meogic/lexical-list'
+import { CodeHighlightNode, CodeNode } from '@meogic/lexical-code'
+import { $createLinkNode, AutoLinkNode, LinkNode } from '@meogic/lexical-link'
+import { HashtagNode } from '@meogic/lexical-hashtag'
 
 import exampleTheme from '../themes/example'
 import ToolbarPlugin from './ToolbarPlugin.vue'
@@ -44,9 +44,9 @@ function prePopulatedRichText() {
     const paragraph = $createParagraphNode()
     paragraph.append(
       $createTextNode('The playground is a demo environment built with '),
-      $createTextNode('lexical').toggleFormat('code'),
+      $createTextNode('@meogic/lexical').toggleFormat('code'),
       $createTextNode(' and '),
-      $createTextNode('lexical-vue').toggleFormat('code'),
+      $createTextNode('@meogic/lexical-vue').toggleFormat('code'),
       $createTextNode('.'),
       $createTextNode(' Try typing in '),
       $createTextNode('some text').toggleFormat('bold'),

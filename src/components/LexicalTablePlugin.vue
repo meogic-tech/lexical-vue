@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { HTMLTableElementWithWithTableSelectionState, InsertTableCommandPayload, TableSelection } from '@lexical/table'
+import type { HTMLTableElementWithWithTableSelectionState, InsertTableCommandPayload, TableSelection } from '@meogic/lexical-table'
 import {
   $createTableNodeWithDimensions,
   INSERT_TABLE_COMMAND,
@@ -7,8 +7,8 @@ import {
   TableNode,
   TableRowNode,
   applyTableHandlers,
-} from '@lexical/table'
-import type { ElementNode, NodeKey } from 'lexical'
+} from '@meogic/lexical-table'
+import type { ElementNode, NodeKey } from '@meogic/lexical'
 import {
   $createParagraphNode,
   $getNodeByKey,
@@ -16,7 +16,7 @@ import {
   $isRangeSelection,
   $isRootNode,
   COMMAND_PRIORITY_EDITOR,
-} from 'lexical'
+} from '@meogic/lexical'
 import { useEditor, useMounted } from '../composables'
 
 const editor = useEditor()

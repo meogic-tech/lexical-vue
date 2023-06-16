@@ -1,14 +1,14 @@
 <script setup lang="ts">
-import type { ListNode } from '@lexical/list'
-import { $getListDepth, $isListItemNode, $isListNode } from '@lexical/list'
-import type { RangeSelection } from 'lexical'
+import type { ListNode } from '@meogic/lexical-list'
+import { $getListDepth, $isListItemNode, $isListNode } from '@meogic/lexical-list'
+import type { RangeSelection } from '@meogic/lexical'
 import {
   $getSelection,
   $isElementNode,
   $isRangeSelection,
   INDENT_CONTENT_COMMAND,
-} from 'lexical'
-import { useEditor } from 'lexical-vue'
+} from '@meogic/lexical'
+import { useEditor } from '@meogic/lexical-vue'
 import { onMounted, onUnmounted } from 'vue'
 
 const props = withDefaults(defineProps<{

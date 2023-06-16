@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { HistoryState } from '@lexical/history'
+import type { HistoryState } from '@meogic/lexical-history'
 import { useEditor, useHistory } from '../composables'
 
 const props = defineProps<{

@@ -6,9 +6,9 @@ import type {
   LexicalNode,
   NodeSelection,
   RangeSelection,
-} from 'lexical'
+} from '@meogic/lexical'
 
-import { $isMarkNode } from '@lexical/mark'
+import { $isMarkNode } from '@meogic/lexical-mark'
 import {
   $getRoot,
   $getSelection,
@@ -16,10 +16,10 @@ import {
   $isRangeSelection,
   $isTextNode,
   DEPRECATED_$isGridSelection,
-} from 'lexical'
+} from '@meogic/lexical'
 import { computed, onUnmounted, ref, watchEffect } from 'vue'
-import type { LinkNode } from '@lexical/link'
-import { $isLinkNode } from '@lexical/link'
+import type { LinkNode } from '@meogic/lexical-link'
+import { $isLinkNode } from '@meogic/lexical-link'
 import { useEditor } from '../composables'
 
 defineProps<{

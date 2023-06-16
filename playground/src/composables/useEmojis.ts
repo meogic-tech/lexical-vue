@@ -4,11 +4,11 @@
  *
  */
 
-import type { LexicalEditor } from 'lexical'
+import type { LexicalEditor } from '@meogic/lexical'
 
-import { TextNode } from 'lexical'
+import { TextNode } from '@meogic/lexical'
 
-import { useEffect } from 'lexical-vue'
+import { useEffect } from '@meogic/lexical-vue'
 import { $createEmojiNode, EmojiNode } from '../components/EmojiNode'
 
 const emojis: Map<string, [string, string]> = new Map([

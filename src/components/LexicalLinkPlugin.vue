@@ -3,10 +3,10 @@ import {
   LinkNode,
   TOGGLE_LINK_COMMAND,
   toggleLink,
-} from '@lexical/link'
+} from '@meogic/lexical-link'
 import {
   COMMAND_PRIORITY_EDITOR,
-} from 'lexical'
+} from '@meogic/lexical'
 import { useEditor } from '../composables'
 import { useMounted } from '../composables/useMounted'
 

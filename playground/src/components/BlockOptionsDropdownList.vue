@@ -1,29 +1,29 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from 'vue'
-import { useEditor } from 'lexical-vue'
+import { useEditor } from '@meogic/lexical-vue'
 import type {
   RangeSelection,
-} from 'lexical'
+} from '@meogic/lexical'
 import {
   $createParagraphNode,
   $getSelection,
   $isRangeSelection,
-} from 'lexical'
+} from '@meogic/lexical'
 import {
   INSERT_ORDERED_LIST_COMMAND,
   INSERT_UNORDERED_LIST_COMMAND,
   REMOVE_LIST_COMMAND,
-} from '@lexical/list'
+} from '@meogic/lexical-list'
 import {
   $wrapNodes,
-} from '@lexical/selection'
+} from '@meogic/lexical-selection'
 import {
   $createHeadingNode,
   $createQuoteNode,
-} from '@lexical/rich-text'
+} from '@meogic/lexical-rich-text'
 import {
   $createCodeNode,
-} from '@lexical/code'
+} from '@meogic/lexical-code'
 
 const props = withDefaults(defineProps<{
   toolbarRef: HTMLDivElement | null

@@ -1,4 +1,4 @@
-import type { EditorThemeClasses } from 'lexical'
+import type { EditorThemeClasses } from '@meogic/lexical'
 
 const exampleTheme: EditorThemeClasses = {
   ltr: 'ltr',

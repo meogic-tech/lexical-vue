@@ -1,4 +1,4 @@
-import type { LexicalEditor } from 'lexical'
+import type { LexicalEditor } from '@meogic/lexical'
 import type { Ref } from 'vue'
 import { ref, unref } from 'vue'
 import type { MaybeRef } from '../types'

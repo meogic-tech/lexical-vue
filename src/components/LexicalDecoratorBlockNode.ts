@@ -1,6 +1,6 @@
-import type { ElementFormatType, LexicalNode, NodeKey, SerializedLexicalNode, Spread } from 'lexical'
+import type { ElementFormatType, LexicalNode, NodeKey, SerializedLexicalNode, Spread } from '@meogic/lexical'
 
-import { DecoratorNode } from 'lexical'
+import { DecoratorNode } from '@meogic/lexical'
 import type { Component } from 'vue'
 
 export type SerializedDecoratorBlockNode = Spread<

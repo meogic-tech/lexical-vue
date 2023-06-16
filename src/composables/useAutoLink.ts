@@ -3,8 +3,8 @@
  * MIT Licensed, Copyright (c) Meta Platforms, Inc. and affiliates, see https://github.com/facebook/lexical/blob/main/LICENSE for details
  *
  */
-import type { LinkAttributes } from '@lexical/link'
-import type { ElementNode, LexicalEditor, LexicalNode } from 'lexical'
+import type { LinkAttributes } from '@meogic/lexical-link'
+import type { ElementNode, LexicalEditor, LexicalNode } from '@meogic/lexical'
 import { unref } from 'vue'
 
 import {
@@ -12,15 +12,15 @@ import {
   $isAutoLinkNode,
   $isLinkNode,
   AutoLinkNode,
-} from '@lexical/link'
-import { mergeRegister } from '@lexical/utils'
+} from '@meogic/lexical-link'
+import { mergeRegister } from '@meogic/lexical-utils'
 import {
   $createTextNode,
   $isElementNode,
   $isLineBreakNode,
   $isTextNode,
   TextNode,
-} from 'lexical'
+} from '@meogic/lexical'
 import type { MaybeRef } from '../types'
 import { useEffect } from './useEffect'
 

@@ -5,7 +5,7 @@ import {
   $getSelection,
   CLEAR_EDITOR_COMMAND,
   COMMAND_PRIORITY_EDITOR,
-} from 'lexical'
+} from '@meogic/lexical'
 import { useAttrs } from 'vue'
 import { useEditor } from '../composables'
 import { useMounted } from '../composables/useMounted'
