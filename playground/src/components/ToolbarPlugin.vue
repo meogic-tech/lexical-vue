@@ -74,7 +74,7 @@ const isStrikethrough = ref(false)
 const isCode = ref(false)
 const showBlockOptionsDropDown = ref(false)
 
-const updateToolbar = () => {
+function updateToolbar() {
   const selection = $getSelection() as RangeSelection
   if ($isRangeSelection(selection)) {
     const anchorNode = selection.anchor.getNode()
@@ -154,7 +154,7 @@ onMounted(() => {
 
 const codeLanguages = getCodeLanguages() as string[]
 
-const insertLink = () => {
+function insertLink() {
   if (!isLink.value)
     editor.dispatchCommand(TOGGLE_LINK_COMMAND, 'https://')
 
