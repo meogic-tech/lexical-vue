@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@meogic/lexical": "0.11.1-mod5",
+    "@meogic/lexical": "0.11.1-mod7",
     "@meogic/lexical-vue": "workspace:*",
     "vue": "^3.3.4"
   },

@@ -5,26 +5,26 @@ importers:
   .:
     specifiers:
       '@antfu/eslint-config': ^0.39.5
-      '@meogic/lexical-clipboard': ^0.11.1-mod5
-      '@meogic/lexical-code': ^0.11.1-mod5
-      '@meogic/lexical-dragon': ^0.11.1-mod5
-      '@meogic/lexical-hashtag': ^0.11.1-mod5
-      '@meogic/lexical-history': ^0.11.1-mod5
-      '@meogic/lexical-link': ^0.11.1-mod5
-      '@meogic/lexical-list': ^0.11.1-mod5
-      '@meogic/lexical-mark': ^0.11.1-mod5
-      '@meogic/lexical-markdown': ^0.11.1-mod5
-      '@meogic/lexical-overflow': ^0.11.1-mod5
-      '@meogic/lexical-plain-text': ^0.11.1-mod5
-      '@meogic/lexical-rich-text': ^0.11.1-mod5
-      '@meogic/lexical-selection': ^0.11.1-mod5
-      '@meogic/lexical-table': ^0.11.1-mod5
-      '@meogic/lexical-text': ^0.11.1-mod5
-      '@meogic/lexical-utils': ^0.11.1-mod5
+      '@meogic/lexical': ^0.11.1-mod7
+      '@meogic/lexical-clipboard': ^0.11.1-mod7
+      '@meogic/lexical-code': ^0.11.1-mod7
+      '@meogic/lexical-dragon': ^0.11.1-mod7
+      '@meogic/lexical-hashtag': ^0.11.1-mod7
+      '@meogic/lexical-history': ^0.11.1-mod7
+      '@meogic/lexical-link': ^0.11.1-mod7
+      '@meogic/lexical-list': ^0.11.1-mod7
+      '@meogic/lexical-mark': ^0.11.1-mod7
+      '@meogic/lexical-markdown': ^0.11.1-mod7
+      '@meogic/lexical-overflow': ^0.11.1-mod7
+      '@meogic/lexical-plain-text': ^0.11.1-mod7
+      '@meogic/lexical-rich-text': ^0.11.1-mod7
+      '@meogic/lexical-selection': ^0.11.1-mod7
+      '@meogic/lexical-table': ^0.11.1-mod7
+      '@meogic/lexical-text': ^0.11.1-mod7
+      '@meogic/lexical-utils': ^0.11.1-mod7
       '@types/node': ^20.3.0
       bumpp: ^9.1.1
       eslint: ^8.42.0
-      lexical: 0.11.1
       tsup: ^6.7.0
       typescript: ^5.1.3
       unplugin-vue: ^4.2.1
@@ -32,28 +32,28 @@ importers:
       vue: ^3.3.4
       vue-tsc: ^1.6.5
     dependencies:
-      '@meogic/lexical-clipboard': 0.11.1-mod5
-      '@meogic/lexical-code': 0.11.1-mod5
-      '@meogic/lexical-dragon': 0.11.1-mod5
-      '@meogic/lexical-hashtag': 0.11.1-mod5
-      '@meogic/lexical-history': 0.11.1-mod5
-      '@meogic/lexical-link': 0.11.1-mod5
-      '@meogic/lexical-list': 0.11.1-mod5
-      '@meogic/lexical-mark': 0.11.1-mod5
-      '@meogic/lexical-markdown': 0.11.1-mod5_14a6fe7860c308a8111c2d393a0ead86
-      '@meogic/lexical-overflow': 0.11.1-mod5
-      '@meogic/lexical-plain-text': 0.11.1-mod5_6a5ac9028b73501d4d4023711bec59a3
-      '@meogic/lexical-rich-text': 0.11.1-mod5_6a5ac9028b73501d4d4023711bec59a3
-      '@meogic/lexical-selection': 0.11.1-mod5
-      '@meogic/lexical-table': 0.11.1-mod5
-      '@meogic/lexical-text': 0.11.1-mod5
-      '@meogic/lexical-utils': 0.11.1-mod5
+      '@meogic/lexical-clipboard': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@meogic/lexical-code': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@meogic/lexical-dragon': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@meogic/lexical-hashtag': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@meogic/lexical-history': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@meogic/lexical-link': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@meogic/lexical-list': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@meogic/lexical-mark': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@meogic/lexical-markdown': 0.11.1-mod7_d732e9cf09387f21ca1fb66502716bf1
+      '@meogic/lexical-overflow': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@meogic/lexical-plain-text': 0.11.1-mod7_57b1cb1e780596cd328c3c976cf956c0
+      '@meogic/lexical-rich-text': 0.11.1-mod7_57b1cb1e780596cd328c3c976cf956c0
+      '@meogic/lexical-selection': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@meogic/lexical-table': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@meogic/lexical-text': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@meogic/lexical-utils': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
     devDependencies:
       '@antfu/eslint-config': 0.39.5_eslint@8.42.0+typescript@5.1.3
+      '@meogic/lexical': 0.11.1-mod7
       '@types/node': 20.3.1
       bumpp: 9.1.1
       eslint: 8.42.0
-      lexical: 0.11.1
       tsup: 6.7.0_typescript@5.1.3
       typescript: 5.1.3
       unplugin-vue: 4.2.1_@types+node@20.3.1+vue@3.3.4
@@ -63,7 +63,7 @@ importers:
 
   playground:
     specifiers:
-      '@meogic/lexical': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
       '@meogic/lexical-vue': workspace:*
       '@vitejs/plugin-vue': ^4.2.3
       typescript: ^5.1.3
@@ -71,7 +71,7 @@ importers:
       vue: ^3.3.4
       vue-tsc: ^1.6.5
     dependencies:
-      '@meogic/lexical': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
       '@meogic/lexical-vue': link:..
       vue: 3.3.4
     devDependencies:
@@ -662,161 +662,181 @@ packages:
       type-detect: 4.0.8
     dev: true
 
-  /@meogic/lexical-clipboard/0.11.1-mod5:
-    resolution: {integrity: sha512-aB7qFqMJQAumLRvu3syIYkFg0KYlSxYhI1lT0JexTqlspTDMxv2udDcA1hmwZbJ26cOyYKkiXm5/VWhj7YTXRQ==}
+  /@meogic/lexical-clipboard/0.11.1-mod7_@meogic+lexical@0.11.1-mod7:
+    resolution: {integrity: sha512-rZ38jVdj2UHfjVH3vQJXZN4MAAXXNH0hcCpqnQlqvnDv2Mba34GnQvr3zzCkB1YwwcB2+9hylq8PkQDiW2h6Zg==}
     peerDependencies:
-      '@meogic/lexical': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
     dependencies:
-      '@meogic/lexical-html': 0.11.1-mod5
-      '@meogic/lexical-list': 0.11.1-mod5
-      '@meogic/lexical-selection': 0.11.1-mod5
-      '@meogic/lexical-utils': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
+      '@meogic/lexical-html': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@meogic/lexical-list': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@meogic/lexical-selection': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@meogic/lexical-utils': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
     dev: false
 
-  /@meogic/lexical-code/0.11.1-mod5:
-    resolution: {integrity: sha512-2fbS67nNIm7hRYmokxZN9CetBmBG7OSde99L7Va6++7kmy9HkwK9wuJWeuV29UBtHU8Blxx5TavhBTo+8VJcSg==}
+  /@meogic/lexical-code/0.11.1-mod7_@meogic+lexical@0.11.1-mod7:
+    resolution: {integrity: sha512-0f6n7Wczdak1FO1DOoSbo8xYj4aVA7SZoptYGz93R6cY7IlzGznq3lR4+XFdZ/NHKxlfXDwSMISJ5/3c9f0b+A==}
     peerDependencies:
-      '@meogic/lexical': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
     dependencies:
-      '@meogic/lexical-utils': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
+      '@meogic/lexical-utils': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
       prismjs: 1.29.0
     dev: false
 
-  /@meogic/lexical-dragon/0.11.1-mod5:
-    resolution: {integrity: sha512-WNgPWHH1lWHp5gONFm3YUQvjRS6dwm0HwGBTfstJCyO0Z8Nzffwfb0KAH19tyQ+YCR9HbBRjXv4txRpujiMmnA==}
+  /@meogic/lexical-dragon/0.11.1-mod7_@meogic+lexical@0.11.1-mod7:
+    resolution: {integrity: sha512-kd6CZfGZfwFnaXfzKKRB/thWxTBIOgSnxLGrpKgQCxORwtdtICMZZ4Bmug/7qJOGbqBRk/2bKYG4YSb5I+Cpxw==}
     peerDependencies:
-      '@meogic/lexical': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
+    dependencies:
+      '@meogic/lexical': 0.11.1-mod7
     dev: false
 
-  /@meogic/lexical-hashtag/0.11.1-mod5:
-    resolution: {integrity: sha512-DQPGTvvOCcaST116fkBxdcqQ8F1qAi3e1k81uF2KGOuHWgZcL2e6ILxlWQrfeX8DVpvWK7ur/sJP7/WuPF8ZSw==}
+  /@meogic/lexical-hashtag/0.11.1-mod7_@meogic+lexical@0.11.1-mod7:
+    resolution: {integrity: sha512-fPusik4jkjOzSwH9SdxZU63iCrqf6PMmqsws3bsRCcghKAZWY9J36SculalsanteCSUANKJDl7wMHFP8lYuFNQ==}
     peerDependencies:
-      '@meogic/lexical': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
     dependencies:
-      '@meogic/lexical-utils': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
+      '@meogic/lexical-utils': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
     dev: false
 
-  /@meogic/lexical-history/0.11.1-mod5:
-    resolution: {integrity: sha512-UMZTW50NZ+NDPo2pLwtajvcKwRbt+8+vnU82m84ZImtHdLdIONsL+Qqqa4iXkuczHDa5ZOVruh2MAQ4fr8LFiw==}
+  /@meogic/lexical-history/0.11.1-mod7_@meogic+lexical@0.11.1-mod7:
+    resolution: {integrity: sha512-DXuyiluO6Ik/6LQTSHGBxoZnkjcwNRDZO1gMZStazeXyoATIiaEYrVMET79riMOdRhqf86R+EiXbZXBxzcyzfA==}
     peerDependencies:
-      '@meogic/lexical': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
     dependencies:
-      '@meogic/lexical-utils': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
+      '@meogic/lexical-utils': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
     dev: false
 
-  /@meogic/lexical-html/0.11.1-mod5:
-    resolution: {integrity: sha512-Gb1B28aI6HmV/KcgUTOyvHIU0EbXxEzEFl9+SdhGPwXE24u/BBslo8CXvCFwYEjh6kW9jRHj40oYtbfRHKDqpA==}
+  /@meogic/lexical-html/0.11.1-mod7_@meogic+lexical@0.11.1-mod7:
+    resolution: {integrity: sha512-qnRra0wN3AGgSjAP6Dr4Y+EiT/ZqgkE3pIXSmuv0uUk7zwAw02WIQ3yGxq25lGGbd7ibGtj1qVa7tW4GDtKcDg==}
     peerDependencies:
-      '@meogic/lexical': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
     dependencies:
-      '@meogic/lexical-selection': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
+      '@meogic/lexical-selection': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
     dev: false
 
-  /@meogic/lexical-link/0.11.1-mod5:
-    resolution: {integrity: sha512-sJObRu66UnW+xKprI9zEGYcwq01jJGM781iAKsZbNFUSNvm6UdlCWaK+ltO+XTx3stzNLHdM3sOysypbWw3Viw==}
+  /@meogic/lexical-link/0.11.1-mod7_@meogic+lexical@0.11.1-mod7:
+    resolution: {integrity: sha512-6xYdC9Bf0EZczYuqks45yLvyBvoU8bO44fEnYhkS8TN8abdzHkzmzWeXHoRLhNpOgyCMT6MOzcr69ESXTZZHfQ==}
     peerDependencies:
-      '@meogic/lexical': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
     dependencies:
-      '@meogic/lexical-utils': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
+      '@meogic/lexical-utils': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
     dev: false
 
-  /@meogic/lexical-list/0.11.1-mod5:
-    resolution: {integrity: sha512-qh9sSeC8w1awgVgOPogxx4K7oOSXvAvmVS2mpfbF+I1fos5B1GLtNcOsTAXTgHFAPiYIdoiS4df7EAxWkzYHFg==}
+  /@meogic/lexical-list/0.11.1-mod7_@meogic+lexical@0.11.1-mod7:
+    resolution: {integrity: sha512-I7cqpn+JLJO4BhBFjURhn583gcapwAyd8isMkQBgKZAT+MiVTWUhuIRSW6/u2keQAX8gDMWgBZgFsnrcJNmTxw==}
     peerDependencies:
-      '@meogic/lexical': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
     dependencies:
-      '@meogic/lexical-utils': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
+      '@meogic/lexical-utils': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
     dev: false
 
-  /@meogic/lexical-mark/0.11.1-mod5:
-    resolution: {integrity: sha512-IeD0q793jyLCsB3jLgeoeFtA8atwnNi/1KshIveok+QNykT27bpZy0l2ZL7kvRfWhB9fBviiOrrI3g06oB8uww==}
+  /@meogic/lexical-mark/0.11.1-mod7_@meogic+lexical@0.11.1-mod7:
+    resolution: {integrity: sha512-cfmu6iqH0TGbtll709/r73nEWnlb+vztZ49uO9lrnnVcjna8QWAiC3n+wmUrXu9vQ7xYLZW91IGq+A0Yuxc1GA==}
     peerDependencies:
-      '@meogic/lexical': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
     dependencies:
-      '@meogic/lexical-utils': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
+      '@meogic/lexical-utils': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
     dev: false
 
-  /@meogic/lexical-markdown/0.11.1-mod5_14a6fe7860c308a8111c2d393a0ead86:
-    resolution: {integrity: sha512-XA+zsinbO7o5cz0OfN0b4k2RdC3k4z7iv1esHNPMvOzI9USZU23hzNk19PIc6muV1TP/7eiZaCXRQsJyQTRQNA==}
+  /@meogic/lexical-markdown/0.11.1-mod7_d732e9cf09387f21ca1fb66502716bf1:
+    resolution: {integrity: sha512-EY/V8fztIlNVygquc3St23bIX/czJkRwLK4AMwn+O69vgL6eoKk3oiDwBP/zqXsxpAR92XQFzl6xVO0l/GASvg==}
     peerDependencies:
-      '@meogic/lexical': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
     dependencies:
-      '@meogic/lexical-code': 0.11.1-mod5
-      '@meogic/lexical-link': 0.11.1-mod5
-      '@meogic/lexical-list': 0.11.1-mod5
-      '@meogic/lexical-rich-text': 0.11.1-mod5_6a5ac9028b73501d4d4023711bec59a3
-      '@meogic/lexical-text': 0.11.1-mod5
-      '@meogic/lexical-utils': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
+      '@meogic/lexical-code': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@meogic/lexical-link': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@meogic/lexical-list': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@meogic/lexical-rich-text': 0.11.1-mod7_57b1cb1e780596cd328c3c976cf956c0
+      '@meogic/lexical-text': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@meogic/lexical-utils': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
     transitivePeerDependencies:
       - '@meogic/lexical-clipboard'
       - '@meogic/lexical-selection'
     dev: false
 
-  /@meogic/lexical-overflow/0.11.1-mod5:
-    resolution: {integrity: sha512-8hFb07jKKvygPx5wSYTg85jFhKEDhAZy/+gcl/9eaJl1T4YxoVFkeJRakL1HuLVgMUBIdX65beOm2InaoloMjg==}
+  /@meogic/lexical-overflow/0.11.1-mod7_@meogic+lexical@0.11.1-mod7:
+    resolution: {integrity: sha512-VkpJoMWDow55sTo3A3LGMY0bmfTUyGVI+QU4/KbcIbtvgtIwBf3yPXp3IHjLZzBIopPXoroaMdq7jgbTrk2C7w==}
     peerDependencies:
-      '@meogic/lexical': 0.11.1-mod5
-    dev: false
-
-  /@meogic/lexical-plain-text/0.11.1-mod5_6a5ac9028b73501d4d4023711bec59a3:
-    resolution: {integrity: sha512-hJubDCUhMEPgjjX6kaG1/tPW2NBGgiX4xzYBUelPImQSaPN+GHIY9IeeDBgvD706/mCBKcxAoRGlrUKkqZ/3GA==}
-    peerDependencies:
-      '@meogic/lexical': 0.11.1-mod5
-      '@meogic/lexical-clipboard': 0.11.1-mod5
-      '@meogic/lexical-selection': 0.11.1-mod5
-      '@meogic/lexical-utils': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
     dependencies:
-      '@meogic/lexical-clipboard': 0.11.1-mod5
-      '@meogic/lexical-selection': 0.11.1-mod5
-      '@meogic/lexical-utils': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
     dev: false
 
-  /@meogic/lexical-rich-text/0.11.1-mod5_6a5ac9028b73501d4d4023711bec59a3:
-    resolution: {integrity: sha512-Fe+BT6dgSjIVYapbVdthxyJ/LfhmpVychdq6Ri4x2+nTIJbHAg8+RpfVjDjhiQh+eAFf01kVnIMWZjPZAheKww==}
+  /@meogic/lexical-plain-text/0.11.1-mod7_57b1cb1e780596cd328c3c976cf956c0:
+    resolution: {integrity: sha512-l1HFNEaZBPHU6tT3WsMHryzZw4yME8JhCM3orUCC4otYdvACuIw9Y08Q/m2ywP445frBfdZhwB1EfqNDGt1+5w==}
     peerDependencies:
-      '@meogic/lexical': 0.11.1-mod5
-      '@meogic/lexical-clipboard': 0.11.1-mod5
-      '@meogic/lexical-selection': 0.11.1-mod5
-      '@meogic/lexical-utils': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
+      '@meogic/lexical-clipboard': 0.11.1-mod7
+      '@meogic/lexical-selection': 0.11.1-mod7
+      '@meogic/lexical-utils': 0.11.1-mod7
     dependencies:
-      '@meogic/lexical-clipboard': 0.11.1-mod5
-      '@meogic/lexical-selection': 0.11.1-mod5
-      '@meogic/lexical-utils': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
+      '@meogic/lexical-clipboard': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@meogic/lexical-selection': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@meogic/lexical-utils': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
     dev: false
 
-  /@meogic/lexical-selection/0.11.1-mod5:
-    resolution: {integrity: sha512-RyxLP6zNQxzvkVyrD2WjxuBkAV40794mExOMQCCEjJ+d2mM3/gNaRdKU5fDv466eDQ/yQaqLT8emNr4L79uZpg==}
+  /@meogic/lexical-rich-text/0.11.1-mod7_57b1cb1e780596cd328c3c976cf956c0:
+    resolution: {integrity: sha512-xZvraENJfWExTz39pZtkC/Xy3U5Cwqpw8htedYZ1CKNyYUiQhf0Iiirycs1kPLXRDK/ARyZALN2AjJjEm2ZAQA==}
     peerDependencies:
-      '@meogic/lexical': 0.11.1-mod5
-    dev: false
-
-  /@meogic/lexical-table/0.11.1-mod5:
-    resolution: {integrity: sha512-H9yg/92ADXNInGlLjp2deTUVySosTUPUd9s/D1px5k5cuJRa6yndNUVJveVjGYiddxmqCwGwZaG3exrbPMIQMw==}
-    peerDependencies:
-      '@meogic/lexical': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
+      '@meogic/lexical-clipboard': 0.11.1-mod7
+      '@meogic/lexical-selection': 0.11.1-mod7
+      '@meogic/lexical-utils': 0.11.1-mod7
     dependencies:
-      '@meogic/lexical-utils': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
+      '@meogic/lexical-clipboard': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@meogic/lexical-selection': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@meogic/lexical-utils': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
     dev: false
 
-  /@meogic/lexical-text/0.11.1-mod5:
-    resolution: {integrity: sha512-yMFg8xIpZBeK4wp2Q6KxRGfOkS3L79xMIs+3AfUh0G9onnDXISuvwPUtXggfcMLNPp5TcEiaW4E+0BNq5Tkgfg==}
+  /@meogic/lexical-selection/0.11.1-mod7_@meogic+lexical@0.11.1-mod7:
+    resolution: {integrity: sha512-akYiGdOy9xRcsSOGAAhIYgpJtV3fUabZ7ckLpDOtjfKuf/YVbo2EKB2xUc6oEztI06q345uChdhG/E5ZoJnfHA==}
     peerDependencies:
-      '@meogic/lexical': 0.11.1-mod5
-    dev: false
-
-  /@meogic/lexical-utils/0.11.1-mod5:
-    resolution: {integrity: sha512-bTBV3BI7g2jx0VxOQvf0GGqvzsoq1XKzAmU0aNrKG0RQpR8tS/a2NMYJjOoUeOsfaZkF3kATHe52yrIABpRR1A==}
-    peerDependencies:
-      '@meogic/lexical': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
     dependencies:
-      '@meogic/lexical-list': 0.11.1-mod5
-      '@meogic/lexical-selection': 0.11.1-mod5
-      '@meogic/lexical-table': 0.11.1-mod5
+      '@meogic/lexical': 0.11.1-mod7
     dev: false
 
-  /@meogic/lexical/0.11.1-mod5:
-    resolution: {integrity: sha512-6SF79Ivl61ASrz3YkMyXPrPaB/Z3aiXs5yHQh8xF/AMrda74EL8K9okAWXT+tT6GStPvpk7LzsJjcHIejil8Pg==}
+  /@meogic/lexical-table/0.11.1-mod7_@meogic+lexical@0.11.1-mod7:
+    resolution: {integrity: sha512-CG40Tes8m87754tRgYsXDl1+ulTmJePUBF1Xbtq55GFFiquVQBXMcB6EM7o7nH/xRlFPt7AQ3yT0dXO5AqT7YQ==}
+    peerDependencies:
+      '@meogic/lexical': 0.11.1-mod7
+    dependencies:
+      '@meogic/lexical': 0.11.1-mod7
+      '@meogic/lexical-utils': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
     dev: false
+
+  /@meogic/lexical-text/0.11.1-mod7_@meogic+lexical@0.11.1-mod7:
+    resolution: {integrity: sha512-d4fgmV76rA3O0fiPe3zk82wB3ytkNyhmyf/IrcLitOhMLtr3Nw7dhgUJn3mCm1AhR8r4KwsD1ImCQroCN49bvg==}
+    peerDependencies:
+      '@meogic/lexical': 0.11.1-mod7
+    dependencies:
+      '@meogic/lexical': 0.11.1-mod7
+    dev: false
+
+  /@meogic/lexical-utils/0.11.1-mod7_@meogic+lexical@0.11.1-mod7:
+    resolution: {integrity: sha512-iCcbYUd8jJ8TwMPUFsufvsQWiszwwq0LC0PyGolzfm0bc7uTgJ9MJGPrZ5sfGWNoPe42zRDgTIeJ1xQ2DMbsGQ==}
+    peerDependencies:
+      '@meogic/lexical': 0.11.1-mod7
+    dependencies:
+      '@meogic/lexical': 0.11.1-mod7
+      '@meogic/lexical-list': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@meogic/lexical-selection': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@meogic/lexical-table': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+    dev: false
+
+  /@meogic/lexical/0.11.1-mod7:
+    resolution: {integrity: sha512-JyH+VJXOZ09ymtIB8gyNhNfNVWA46J0lnYN28BHOgE7jlBSdamYaBUaqEVW2S7n2gUTjOG7x2wd9TqNgs1DD2A==}
 
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -2754,10 +2774,6 @@ packages:
     dependencies:
       prelude-ls: 1.2.1
       type-check: 0.4.0
-    dev: true
-
-  /lexical/0.11.1:
-    resolution: {integrity: sha512-PhAGADxqzwJldmkVK5tvkaARTULCdeJjfhxWTnJQXTAlApE9heJir7SWxbxeUx1G5gdKZQFicGhOQlDXJmma2Q==}
     dev: true
 
   /lilconfig/2.1.0:
