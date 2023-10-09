@@ -4,9 +4,9 @@
  *
  */
 
-import type { LexicalEditor } from '@meogic/lexical'
+import type { LexicalEditor } from 'lexical'
 
-import { TextNode } from '@meogic/lexical'
+import { TextNode } from 'lexical'
 
 import { useEffect } from '@meogic/lexical-vue'
 import { $createEmojiNode, EmojiNode } from '../components/EmojiNode'

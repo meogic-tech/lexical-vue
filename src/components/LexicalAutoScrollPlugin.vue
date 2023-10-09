@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { $getSelection, $isRangeSelection } from '@meogic/lexical'
+import { $getSelection, $isRangeSelection } from 'lexical'
 import { useEditor } from '../composables'
 import { useMounted } from '../composables/useMounted'
 

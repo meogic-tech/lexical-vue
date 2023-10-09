@@ -1,4 +1,4 @@
-import type { LexicalEditor } from '@meogic/lexical'
+import type { LexicalEditor } from 'lexical'
 import type { DefineComponent } from 'vue'
 import { Teleport, computed, h, ref, unref } from 'vue'
 import { useMounted } from './useMounted'

@@ -1,4 +1,4 @@
-import type { TextNode } from '@meogic/lexical'
+import type { TextNode } from 'lexical'
 import type { VNode } from 'vue'
 import { defineComponent, h } from 'vue'
 import LexicalTypeaheadMenuPlugin from '../components/LexicalTypeaheadMenuPlugin.vue'

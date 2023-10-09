@@ -1,5 +1,5 @@
 import type { Ref } from 'vue'
-import type { EditorState, LexicalEditor } from '@meogic/lexical'
+import type { EditorState, LexicalEditor } from 'lexical'
 
 export type Class<T> = new (...args: any[]) => T
 

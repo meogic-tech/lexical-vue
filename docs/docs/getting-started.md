@@ -12,7 +12,7 @@ Below is an example of a basic plain text editor using `lexical` and `lexical-vu
 
 ```vue
 <script setup lang="ts">
-import { $getRoot, $getSelection } from '@meogic/lexical'
+import { $getRoot, $getSelection } from 'lexical'
 import { ref } from 'vue'
 
 import {
@@ -22,7 +22,7 @@ import {
   LexicalHistoryPlugin,
   LexicalOnChangePlugin,
   LexicalPlainTextPlugin,
-} from 'lexical-vue'
+} from '@meogic/lexical-vue'
 
 const config = {
   editable: true,

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted } from 'vue'
-import type { EditorState, LexicalEditor } from '@meogic/lexical'
-import { $getRoot } from '@meogic/lexical'
+import type { EditorState, LexicalEditor } from 'lexical'
+import { $getRoot } from 'lexical'
 import { useEditor } from '../composables/useEditor'
 
 const props = withDefaults(defineProps<{

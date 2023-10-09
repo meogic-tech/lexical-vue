@@ -1,8 +1,8 @@
-import type { EntityMatch } from '@meogic/lexical-text'
-import type { TextNode } from '@meogic/lexical'
+import type { EntityMatch } from '@lexical/text'
+import type { TextNode } from 'lexical'
 
-import { registerLexicalTextEntity } from '@meogic/lexical-text'
-import { mergeRegister } from '@meogic/lexical-utils'
+import { registerLexicalTextEntity } from '@lexical/text'
+import { mergeRegister } from '@lexical/utils'
 import type { Class } from '../types'
 import { useEditor } from './useEditor'
 import { useMounted } from './useMounted'

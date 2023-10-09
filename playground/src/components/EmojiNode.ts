@@ -10,9 +10,9 @@ import type {
   NodeKey,
   SerializedTextNode,
   Spread,
-} from '@meogic/lexical'
+} from 'lexical'
 
-import { $applyNodeReplacement, TextNode } from '@meogic/lexical'
+import { $applyNodeReplacement, TextNode } from 'lexical'
 
 export type SerializedEmojiNode = Spread<
   {

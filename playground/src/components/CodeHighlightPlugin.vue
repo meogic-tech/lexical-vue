@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted } from 'vue'
-import { registerCodeHighlighting } from '@meogic/lexical-code'
+import { registerCodeHighlighting } from '@lexical/code'
 import { useEditor } from '@meogic/lexical-vue'
 
 const editor = useEditor()

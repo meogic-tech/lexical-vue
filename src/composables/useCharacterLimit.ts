@@ -1,19 +1,19 @@
-import type { ElementNode, GridSelection, LexicalEditor, LexicalNode, RangeSelection } from '@meogic/lexical'
+import type { ElementNode, GridSelection, LexicalEditor, LexicalNode, RangeSelection } from 'lexical'
 
 import {
   $createOverflowNode,
   $isOverflowNode,
   OverflowNode,
-} from '@meogic/lexical-overflow'
-import { $rootTextContent } from '@meogic/lexical-text'
-import { $dfs, mergeRegister } from '@meogic/lexical-utils'
+} from '@lexical/overflow'
+import { $rootTextContent } from '@lexical/text'
+import { $dfs, mergeRegister } from '@lexical/utils'
 import {
   $getSelection,
   $isLeafNode,
   $isRangeSelection,
   $isTextNode,
   $setSelection,
-} from '@meogic/lexical'
+} from 'lexical'
 import { useMounted } from './useMounted'
 
 interface OptionalProps {

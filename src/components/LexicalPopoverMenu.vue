@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { mergeRegister } from '@meogic/lexical-utils'
-import type { LexicalCommand, LexicalEditor, TextNode } from '@meogic/lexical'
+import { mergeRegister } from '@lexical/utils'
+import type { LexicalCommand, LexicalEditor, TextNode } from 'lexical'
 import {
   $getSelection,
   $isRangeSelection,
@@ -11,7 +11,7 @@ import {
   KEY_ESCAPE_COMMAND,
   KEY_TAB_COMMAND,
   createCommand,
-} from '@meogic/lexical'
+} from 'lexical'
 import { computed, ref, watch, watchPostEffect } from 'vue'
 import type { QueryMatch, Resolution, TypeaheadOption } from '../composables'
 import { useEditor, useEffect, useMounted } from '../composables'

@@ -1,4 +1,4 @@
-import type { LexicalEditor } from '@meogic/lexical'
+import type { LexicalEditor } from 'lexical'
 
 import {
   $handleListInsertParagraph,
@@ -7,12 +7,12 @@ import {
   REMOVE_LIST_COMMAND,
   insertList,
   removeList,
-} from '@meogic/lexical-list'
-import { mergeRegister } from '@meogic/lexical-utils'
+} from '@lexical/list'
+import { mergeRegister } from '@lexical/utils'
 import {
   COMMAND_PRIORITY_LOW,
   INSERT_PARAGRAPH_COMMAND,
-} from '@meogic/lexical'
+} from 'lexical'
 import { useMounted } from './useMounted'
 
 export function useList(editor: LexicalEditor) {

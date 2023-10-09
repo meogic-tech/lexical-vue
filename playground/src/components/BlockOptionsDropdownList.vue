@@ -3,27 +3,27 @@ import { onMounted, onUnmounted, ref } from 'vue'
 import { useEditor } from '@meogic/lexical-vue'
 import type {
   RangeSelection,
-} from '@meogic/lexical'
+} from 'lexical'
 import {
   $createParagraphNode,
   $getSelection,
   $isRangeSelection,
-} from '@meogic/lexical'
+} from 'lexical'
 import {
   INSERT_ORDERED_LIST_COMMAND,
   INSERT_UNORDERED_LIST_COMMAND,
   REMOVE_LIST_COMMAND,
-} from '@meogic/lexical-list'
+} from '@lexical/list'
 import {
   $wrapNodes,
-} from '@meogic/lexical-selection'
+} from '@lexical/selection'
 import {
   $createHeadingNode,
   $createQuoteNode,
-} from '@meogic/lexical-rich-text'
+} from '@lexical/rich-text'
 import {
   $createCodeNode,
-} from '@meogic/lexical-code'
+} from '@lexical/code'
 
 const props = withDefaults(defineProps<{
   toolbarRef: HTMLDivElement | null

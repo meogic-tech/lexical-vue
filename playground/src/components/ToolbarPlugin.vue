@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { CommandListenerPriority, RangeSelection } from '@meogic/lexical'
+import type { CommandListenerPriority, RangeSelection } from 'lexical'
 import {
   $getNodeByKey,
   $getSelection,
@@ -11,21 +11,21 @@ import {
   REDO_COMMAND,
   SELECTION_CHANGE_COMMAND,
   UNDO_COMMAND,
-} from '@meogic/lexical'
+} from 'lexical'
 import {
   $isParentElementRTL,
-} from '@meogic/lexical-selection'
-import { $getNearestNodeOfType, mergeRegister } from '@meogic/lexical-utils'
+} from '@lexical/selection'
+import { $getNearestNodeOfType, mergeRegister } from '@lexical/utils'
 import { useEditor } from '@meogic/lexical-vue'
 import { onMounted, onUnmounted, ref, watch } from 'vue'
-import { $isListNode, ListNode } from '@meogic/lexical-list'
-import { $isHeadingNode } from '@meogic/lexical-rich-text'
+import { $isListNode, ListNode } from '@lexical/list'
+import { $isHeadingNode } from '@lexical/rich-text'
 import {
   $isCodeNode,
   getCodeLanguages,
   getDefaultCodeLanguage,
-} from '@meogic/lexical-code'
-import { $isLinkNode, TOGGLE_LINK_COMMAND } from '@meogic/lexical-link'
+} from '@lexical/code'
+import { $isLinkNode, TOGGLE_LINK_COMMAND } from '@lexical/link'
 import { getSelectedNode } from '../utils'
 import BlockOptionsDropdownList from './BlockOptionsDropdownList.vue'
 import CodeLanguageSelect from './CodeLanguageSelect.vue'

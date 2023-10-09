@@ -8,7 +8,7 @@
  * @flow strict
  */
 
-import type { ListItemNode } from '@meogic/lexical-list'
+import type { ListItemNode } from '@lexical/list'
 import {
   $getNearestNodeFromDOMNode,
   $getSelection,
@@ -20,16 +20,16 @@ import {
   KEY_ARROW_UP_COMMAND,
   KEY_ESCAPE_COMMAND,
   KEY_SPACE_COMMAND,
-} from '@meogic/lexical'
-import type { LexicalEditor } from '@meogic/lexical'
+} from 'lexical'
+import type { LexicalEditor } from 'lexical'
 
 import {
   $isListItemNode,
   $isListNode,
   INSERT_CHECK_LIST_COMMAND,
   insertList,
-} from '@meogic/lexical-list'
-import { $findMatchingParent, mergeRegister } from '@meogic/lexical-utils'
+} from '@lexical/list'
+import { $findMatchingParent, mergeRegister } from '@lexical/utils'
 import { useEditor } from '../composables'
 import { useMounted } from '../composables/useMounted'
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { $createParagraphNode, $createTextNode, $getRoot } from '@meogic/lexical'
+import { $createParagraphNode, $createTextNode, $getRoot } from 'lexical'
 import {
   LexicalAutoFocusPlugin,
   LexicalComposer,
@@ -10,12 +10,12 @@ import {
   LexicalListPlugin,
   LexicalRichTextPlugin,
 } from '@meogic/lexical-vue'
-import { $createHeadingNode, $createQuoteNode, HeadingNode, QuoteNode } from '@meogic/lexical-rich-text'
-import { TableCellNode, TableNode, TableRowNode } from '@meogic/lexical-table'
-import { $createListItemNode, $createListNode, ListItemNode, ListNode } from '@meogic/lexical-list'
-import { CodeHighlightNode, CodeNode } from '@meogic/lexical-code'
-import { $createLinkNode, AutoLinkNode, LinkNode } from '@meogic/lexical-link'
-import { HashtagNode } from '@meogic/lexical-hashtag'
+import { $createHeadingNode, $createQuoteNode, HeadingNode, QuoteNode } from '@lexical/rich-text'
+import { TableCellNode, TableNode, TableRowNode } from '@lexical/table'
+import { $createListItemNode, $createListNode, ListItemNode, ListNode } from '@lexical/list'
+import { CodeHighlightNode, CodeNode } from '@lexical/code'
+import { $createLinkNode, AutoLinkNode, LinkNode } from '@lexical/link'
+import { HashtagNode } from '@lexical/hashtag'
 
 import exampleTheme from '../themes/example'
 import ToolbarPlugin from './ToolbarPlugin.vue'
@@ -44,7 +44,7 @@ function prePopulatedRichText() {
     const paragraph = $createParagraphNode()
     paragraph.append(
       $createTextNode('The playground is a demo environment built with '),
-      $createTextNode('@meogic/lexical').toggleFormat('code'),
+      $createTextNode('lexical').toggleFormat('code'),
       $createTextNode(' and '),
       $createTextNode('@meogic/lexical-vue').toggleFormat('code'),
       $createTextNode('.'),

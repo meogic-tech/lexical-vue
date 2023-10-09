@@ -1,7 +1,7 @@
-import { registerDragonSupport } from '@meogic/lexical-dragon'
-import { registerPlainText } from '@meogic/lexical-plain-text'
-import { mergeRegister } from '@meogic/lexical-utils'
-import type { LexicalEditor } from '@meogic/lexical'
+import { registerDragonSupport } from '@lexical/dragon'
+import { registerPlainText } from '@lexical/plain-text'
+import { mergeRegister } from '@lexical/utils'
+import type { LexicalEditor } from 'lexical'
 import { useMounted } from './useMounted'
 
 export function usePlainTextSetup(editor: LexicalEditor) {

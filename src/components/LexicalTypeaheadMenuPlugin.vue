@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import type { LexicalEditor, RangeSelection, TextNode } from '@meogic/lexical'
-import { $getSelection, $isRangeSelection, $isTextNode } from '@meogic/lexical'
+import type { LexicalEditor, RangeSelection, TextNode } from 'lexical'
+import { $getSelection, $isRangeSelection, $isTextNode } from 'lexical'
 import { ref } from 'vue'
 import type { Resolution, TriggerFn, TypeaheadOption } from '../composables'
 import { useEditor, useEffect, useMenuAnchorRef } from '../composables'

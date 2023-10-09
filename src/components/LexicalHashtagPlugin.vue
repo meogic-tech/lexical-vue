@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import type { TextNode } from '@meogic/lexical'
+import type { TextNode } from 'lexical'
 
-import { $createHashtagNode, HashtagNode } from '@meogic/lexical-hashtag'
+import { $createHashtagNode, HashtagNode } from '@lexical/hashtag'
 import { onMounted } from 'vue'
 import { useEditor, useLexicalTextEntity } from '../composables'
 

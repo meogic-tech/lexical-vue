@@ -6,7 +6,7 @@ export default defineConfig({
   format: ['cjs', 'esm'],
   splitting: false,
   clean: true,
-  external: [/@meogic\/lexical/],
+  external: [/@lexical/],
   dts: false,
   outExtension({ format }) {
     return {

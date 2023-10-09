@@ -6,7 +6,7 @@ import {
   INDENT_CONTENT_COMMAND,
   KEY_TAB_COMMAND,
   OUTDENT_CONTENT_COMMAND,
-} from '@meogic/lexical'
+} from 'lexical'
 import { useEditor } from '../composables'
 import { useMounted } from '../composables/useMounted'
 

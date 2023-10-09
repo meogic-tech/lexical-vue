@@ -1,7 +1,7 @@
 import { readonly, ref } from 'vue'
-import { $canShowPlaceholderCurry } from '@meogic/lexical-text'
-import type { LexicalEditor } from '@meogic/lexical'
-import { mergeRegister } from '@meogic/lexical-utils'
+import { $canShowPlaceholderCurry } from '@lexical/text'
+import type { LexicalEditor } from 'lexical'
+import { mergeRegister } from '@lexical/utils'
 import { useMounted } from './useMounted'
 
 function canShowPlaceholderFromCurrentEditorState(

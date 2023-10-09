@@ -1,6 +1,6 @@
 import { readonly, ref } from 'vue'
-import { $isRootTextContentEmptyCurry } from '@meogic/lexical-text'
-import type { LexicalEditor } from '@meogic/lexical'
+import { $isRootTextContentEmptyCurry } from '@lexical/text'
+import type { LexicalEditor } from 'lexical'
 import { useMounted } from './useMounted'
 
 export function useLexicalIsTextContentEmpty(editor: LexicalEditor, trim?: boolean) {

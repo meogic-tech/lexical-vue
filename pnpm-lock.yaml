@@ -1,30 +1,30 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 importers:
 
   .:
     specifiers:
       '@antfu/eslint-config': ^0.39.5
-      '@meogic/lexical': ^0.11.1-mod7
-      '@meogic/lexical-clipboard': ^0.11.1-mod7
-      '@meogic/lexical-code': ^0.11.1-mod7
-      '@meogic/lexical-dragon': ^0.11.1-mod7
-      '@meogic/lexical-hashtag': ^0.11.1-mod7
-      '@meogic/lexical-history': ^0.11.1-mod7
-      '@meogic/lexical-link': ^0.11.1-mod7
-      '@meogic/lexical-list': ^0.11.1-mod7
-      '@meogic/lexical-mark': ^0.11.1-mod7
-      '@meogic/lexical-markdown': ^0.11.1-mod7
-      '@meogic/lexical-overflow': ^0.11.1-mod7
-      '@meogic/lexical-plain-text': ^0.11.1-mod7
-      '@meogic/lexical-rich-text': ^0.11.1-mod7
-      '@meogic/lexical-selection': ^0.11.1-mod7
-      '@meogic/lexical-table': ^0.11.1-mod7
-      '@meogic/lexical-text': ^0.11.1-mod7
-      '@meogic/lexical-utils': ^0.11.1-mod7
+      '@lexical/clipboard': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-clipboard/npm?branch=meogic-main
+      '@lexical/code': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-code/npm?branch=meogic-main
+      '@lexical/dragon': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-dragon/npm?branch=meogic-main
+      '@lexical/hashtag': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-hashtag/npm?branch=meogic-main
+      '@lexical/history': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-history/npm?branch=meogic-main
+      '@lexical/link': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-link/npm?branch=meogic-main
+      '@lexical/list': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-list/npm?branch=meogic-main
+      '@lexical/mark': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-mark/npm?branch=meogic-main
+      '@lexical/markdown': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-markdown/npm?branch=meogic-main
+      '@lexical/overflow': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-overflow/npm?branch=meogic-main
+      '@lexical/plain-text': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-plain-text/npm?branch=meogic-main
+      '@lexical/rich-text': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-rich-text/npm?branch=meogic-main
+      '@lexical/selection': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-selection/npm?branch=meogic-main
+      '@lexical/table': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-table/npm?branch=meogic-main
+      '@lexical/text': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-text/npm?branch=meogic-main
+      '@lexical/utils': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-utils/npm?branch=meogic-main
       '@types/node': ^20.3.0
       bumpp: ^9.1.1
       eslint: ^8.42.0
+      lexical: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main
       tsup: ^6.7.0
       typescript: ^5.1.3
       unplugin-vue: ^4.2.1
@@ -32,47 +32,47 @@ importers:
       vue: ^3.3.4
       vue-tsc: ^1.6.5
     dependencies:
-      '@meogic/lexical-clipboard': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-      '@meogic/lexical-code': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-      '@meogic/lexical-dragon': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-      '@meogic/lexical-hashtag': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-      '@meogic/lexical-history': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-      '@meogic/lexical-link': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-      '@meogic/lexical-list': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-      '@meogic/lexical-mark': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-      '@meogic/lexical-markdown': 0.11.1-mod7_d732e9cf09387f21ca1fb66502716bf1
-      '@meogic/lexical-overflow': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-      '@meogic/lexical-plain-text': 0.11.1-mod7_57b1cb1e780596cd328c3c976cf956c0
-      '@meogic/lexical-rich-text': 0.11.1-mod7_57b1cb1e780596cd328c3c976cf956c0
-      '@meogic/lexical-selection': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-      '@meogic/lexical-table': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-      '@meogic/lexical-text': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-      '@meogic/lexical-utils': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@lexical/clipboard': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-clipboard/npm?branch=meogic-main_lexical@0.12.2'
+      '@lexical/code': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-code/npm?branch=meogic-main_lexical@0.12.2'
+      '@lexical/dragon': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-dragon/npm?branch=meogic-main_lexical@0.12.2'
+      '@lexical/hashtag': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-hashtag/npm?branch=meogic-main_lexical@0.12.2'
+      '@lexical/history': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-history/npm?branch=meogic-main_lexical@0.12.2'
+      '@lexical/link': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-link/npm?branch=meogic-main_lexical@0.12.2'
+      '@lexical/list': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-list/npm?branch=meogic-main_lexical@0.12.2'
+      '@lexical/mark': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-mark/npm?branch=meogic-main_lexical@0.12.2'
+      '@lexical/markdown': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-markdown/npm?branch=meogic-main_p5gts7wdhrxcazn4ulaipdotii'
+      '@lexical/overflow': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-overflow/npm?branch=meogic-main_lexical@0.12.2'
+      '@lexical/plain-text': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-plain-text/npm?branch=meogic-main_sfhholgpstmiz5nsmmzjlg3bt4'
+      '@lexical/rich-text': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-rich-text/npm?branch=meogic-main_sfhholgpstmiz5nsmmzjlg3bt4'
+      '@lexical/selection': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-selection/npm?branch=meogic-main_lexical@0.12.2'
+      '@lexical/table': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-table/npm?branch=meogic-main_lexical@0.12.2'
+      '@lexical/text': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-text/npm?branch=meogic-main_lexical@0.12.2'
+      '@lexical/utils': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-utils/npm?branch=meogic-main_lexical@0.12.2'
     devDependencies:
-      '@antfu/eslint-config': 0.39.5_eslint@8.42.0+typescript@5.1.3
-      '@meogic/lexical': 0.11.1-mod7
+      '@antfu/eslint-config': 0.39.5_tizxnkcvjrb4cldxgwq5h3lj5u
       '@types/node': 20.3.1
       bumpp: 9.1.1
       eslint: 8.42.0
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
       tsup: 6.7.0_typescript@5.1.3
       typescript: 5.1.3
-      unplugin-vue: 4.2.1_@types+node@20.3.1+vue@3.3.4
+      unplugin-vue: 4.2.1_n3vsdlp37wprc3crs54mnrmhzq
       vitepress: 1.0.0-beta.1_@types+node@20.3.1
       vue: 3.3.4
       vue-tsc: 1.6.5_typescript@5.1.3
 
   playground:
     specifiers:
-      '@meogic/lexical': 0.11.1-mod7
       '@meogic/lexical-vue': workspace:*
       '@vitejs/plugin-vue': ^4.2.3
+      lexical: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main
       typescript: ^5.1.3
       vite: ^4.3.9
       vue: ^3.3.4
       vue-tsc: ^1.6.5
     dependencies:
-      '@meogic/lexical': 0.11.1-mod7
       '@meogic/lexical-vue': link:..
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
       vue: 3.3.4
     devDependencies:
       '@vitejs/plugin-vue': 4.2.3_vite@4.3.9+vue@3.3.4
@@ -213,78 +213,86 @@ packages:
       '@algolia/requester-common': 4.17.2
     dev: true
 
-  /@antfu/eslint-config-basic/0.39.5_aea2be115263ac2e4654ef12719a9a2a:
+  /@antfu/eslint-config-basic/0.39.5_feeyuiqv37mb23a46wklqatwti:
     resolution: {integrity: sha512-YQ8mWNfCV6r8xubr6kAp7RoWMJ5UqblauoDBXOdMFDcTuKnmxdhUmX1mSsLBKFD9GBAZtcjS2LHSzZFH4rLmmA==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
       eslint: 8.42.0
-      eslint-plugin-antfu: 0.39.5_eslint@8.42.0+typescript@5.1.3
+      eslint-plugin-antfu: 0.39.5_tizxnkcvjrb4cldxgwq5h3lj5u
       eslint-plugin-eslint-comments: 3.2.0_eslint@8.42.0
       eslint-plugin-html: 7.1.0
-      eslint-plugin-import: 2.27.5_eslint@8.42.0
+      eslint-plugin-import: 2.27.5_b34cytzsv57k5d564pxz54jodu
       eslint-plugin-jsonc: 2.9.0_eslint@8.42.0
       eslint-plugin-markdown: 3.0.0_eslint@8.42.0
       eslint-plugin-n: 16.0.0_eslint@8.42.0
       eslint-plugin-no-only-tests: 3.1.0
       eslint-plugin-promise: 6.1.1_eslint@8.42.0
       eslint-plugin-unicorn: 47.0.0_eslint@8.42.0
-      eslint-plugin-unused-imports: 2.0.0_fdae26399694add1f3a0ce75b32b08ff
+      eslint-plugin-unused-imports: 2.0.0_7wxcmomwssw5d45azz23gkyi74
       eslint-plugin-yml: 1.8.0_eslint@8.42.0
       jsonc-eslint-parser: 2.3.0
       yaml-eslint-parser: 1.2.2
     transitivePeerDependencies:
       - '@typescript-eslint/eslint-plugin'
+      - '@typescript-eslint/parser'
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
       - supports-color
       - typescript
     dev: true
 
-  /@antfu/eslint-config-ts/0.39.5_eslint@8.42.0+typescript@5.1.3:
+  /@antfu/eslint-config-ts/0.39.5_tizxnkcvjrb4cldxgwq5h3lj5u:
     resolution: {integrity: sha512-oDhWVgnqqnx5gBpVDI0dghXreGXdhaRm8D/2t4ng/hnsrtk5gxaIc6wE51ff5j2QGPDD1/p7CcekfWbJbSTL/A==}
     peerDependencies:
       eslint: '>=7.4.0'
       typescript: '>=3.9'
     dependencies:
-      '@antfu/eslint-config-basic': 0.39.5_aea2be115263ac2e4654ef12719a9a2a
-      '@typescript-eslint/eslint-plugin': 5.59.11_940a8ffbc1fbfe92f76085ea9bd42b6c
-      '@typescript-eslint/parser': 5.59.11_eslint@8.42.0+typescript@5.1.3
+      '@antfu/eslint-config-basic': 0.39.5_feeyuiqv37mb23a46wklqatwti
+      '@typescript-eslint/eslint-plugin': 5.59.11_sqfi766b7p7jf53aqxvjxvblnq
+      '@typescript-eslint/parser': 5.59.11_tizxnkcvjrb4cldxgwq5h3lj5u
       eslint: 8.42.0
-      eslint-plugin-jest: 27.2.1_aea2be115263ac2e4654ef12719a9a2a
+      eslint-plugin-jest: 27.2.1_v2rl4eksmowc4rsu54jhdgu2fi
       typescript: 5.1.3
     transitivePeerDependencies:
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
       - jest
       - supports-color
     dev: true
 
-  /@antfu/eslint-config-vue/0.39.5_aea2be115263ac2e4654ef12719a9a2a:
+  /@antfu/eslint-config-vue/0.39.5_feeyuiqv37mb23a46wklqatwti:
     resolution: {integrity: sha512-UT82oES4ixazKxYga4UZ053NWhFHQy3rfE9a57fUpy8+57AzXwEbGnLhX344HdOw2lXJHUeVl1jEksO+4T0rTA==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
-      '@antfu/eslint-config-basic': 0.39.5_aea2be115263ac2e4654ef12719a9a2a
-      '@antfu/eslint-config-ts': 0.39.5_eslint@8.42.0+typescript@5.1.3
+      '@antfu/eslint-config-basic': 0.39.5_feeyuiqv37mb23a46wklqatwti
+      '@antfu/eslint-config-ts': 0.39.5_tizxnkcvjrb4cldxgwq5h3lj5u
       eslint: 8.42.0
       eslint-plugin-vue: 9.14.1_eslint@8.42.0
       local-pkg: 0.4.3
     transitivePeerDependencies:
       - '@typescript-eslint/eslint-plugin'
+      - '@typescript-eslint/parser'
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
       - jest
       - supports-color
       - typescript
     dev: true
 
-  /@antfu/eslint-config/0.39.5_eslint@8.42.0+typescript@5.1.3:
+  /@antfu/eslint-config/0.39.5_tizxnkcvjrb4cldxgwq5h3lj5u:
     resolution: {integrity: sha512-8y11aLb6pQfvx+WjOkohoE1OkzrIXDot/xtWjGbI9u2mrObNQl4+yEimNsr3Rl2sgbB7zuLZmw8DM/u8V9jLbQ==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
-      '@antfu/eslint-config-vue': 0.39.5_aea2be115263ac2e4654ef12719a9a2a
-      '@typescript-eslint/eslint-plugin': 5.59.11_940a8ffbc1fbfe92f76085ea9bd42b6c
-      '@typescript-eslint/parser': 5.59.11_eslint@8.42.0+typescript@5.1.3
+      '@antfu/eslint-config-vue': 0.39.5_feeyuiqv37mb23a46wklqatwti
+      '@typescript-eslint/eslint-plugin': 5.59.11_sqfi766b7p7jf53aqxvjxvblnq
+      '@typescript-eslint/parser': 5.59.11_tizxnkcvjrb4cldxgwq5h3lj5u
       eslint: 8.42.0
       eslint-plugin-eslint-comments: 3.2.0_eslint@8.42.0
       eslint-plugin-html: 7.1.0
-      eslint-plugin-import: 2.27.5_eslint@8.42.0
+      eslint-plugin-import: 2.27.5_b34cytzsv57k5d564pxz54jodu
       eslint-plugin-jsonc: 2.9.0_eslint@8.42.0
       eslint-plugin-n: 16.0.0_eslint@8.42.0
       eslint-plugin-promise: 6.1.1_eslint@8.42.0
@@ -294,6 +302,8 @@ packages:
       jsonc-eslint-parser: 2.3.0
       yaml-eslint-parser: 1.2.2
     transitivePeerDependencies:
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
       - jest
       - supports-color
       - typescript
@@ -305,6 +315,14 @@ packages:
     dependencies:
       '@babel/highlight': 7.22.5
     dev: true
+
+  /@babel/helper-string-parser/7.22.5:
+    resolution: {integrity: sha512-mM4COjgZox8U+JcXQwPijIZLElkgEpO5rsERVDJTc2qfCDfERyob6k5WegS14SX18IIjv+XD+GrqNumY5JRCDw==}
+    engines: {node: '>=6.9.0'}
+
+  /@babel/helper-validator-identifier/7.22.20:
+    resolution: {integrity: sha512-Y4OZ+ytlatR8AI+8KZfKuL5urKp7qey08ha31L8b3BwewJAoJamTzyvxPR/5D+KkdJCGPq/+8TukHBlY10FX9A==}
+    engines: {node: '>=6.9.0'}
 
   /@babel/helper-validator-identifier/7.22.5:
     resolution: {integrity: sha512-aJXu+6lErq8ltp+JhkJUfk1MTGyuA4v7f3pA+BJ5HLfNC6nAQ0Cpi9uOquUj8Hehg0aUiHzWQbOVJGao6ztBAQ==}
@@ -324,6 +342,16 @@ packages:
     resolution: {integrity: sha512-DFZMC9LJUG9PLOclRC32G63UXwzqS2koQC8dkx+PLdmt1xSePYpbT/NbsrJy8Q/muXz7o/h/d4A7Fuyixm559Q==}
     engines: {node: '>=6.0.0'}
     hasBin: true
+    dependencies:
+      '@babel/types': 7.23.0
+
+  /@babel/types/7.23.0:
+    resolution: {integrity: sha512-0oIyUfKoI3mSqMvsxBdclDwxXKXAUA8v/apZbc+iSyARYou1o8ZGDxbUYyLFoW2arqS2jDGqJuZvv1d/io1axg==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      '@babel/helper-string-parser': 7.22.5
+      '@babel/helper-validator-identifier': 7.22.20
+      to-fast-properties: 2.0.0
 
   /@docsearch/css/3.5.0:
     resolution: {integrity: sha512-Ob5FQLubplcBNihAVtriR59FRBeP8u69F6mu4L4yIr60KfsPc10bOV0DoPErJw0zF9IBN2cNLW9qdmt8zWPxyg==}
@@ -391,6 +419,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [arm]
     os: [android]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -399,6 +428,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [arm64]
     os: [android]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -407,6 +437,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [android]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -415,6 +446,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [arm64]
     os: [darwin]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -423,6 +455,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [darwin]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -431,6 +464,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [arm64]
     os: [freebsd]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -439,6 +473,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [freebsd]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -447,6 +482,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [arm]
     os: [linux]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -455,6 +491,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [arm64]
     os: [linux]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -463,6 +500,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [ia32]
     os: [linux]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -471,6 +509,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [loong64]
     os: [linux]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -479,6 +518,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [mips64el]
     os: [linux]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -487,6 +527,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [ppc64]
     os: [linux]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -495,6 +536,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [riscv64]
     os: [linux]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -503,6 +545,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [s390x]
     os: [linux]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -511,6 +554,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [linux]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -519,6 +563,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [netbsd]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -527,6 +572,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [openbsd]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -535,6 +581,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [sunos]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -543,6 +590,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [arm64]
     os: [win32]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -551,6 +599,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [ia32]
     os: [win32]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -559,6 +608,7 @@ packages:
     engines: {node: '>=12'}
     cpu: [x64]
     os: [win32]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -662,181 +712,92 @@ packages:
       type-detect: 4.0.8
     dev: true
 
-  /@meogic/lexical-clipboard/0.11.1-mod7_@meogic+lexical@0.11.1-mod7:
-    resolution: {integrity: sha512-rZ38jVdj2UHfjVH3vQJXZN4MAAXXNH0hcCpqnQlqvnDv2Mba34GnQvr3zzCkB1YwwcB2+9hylq8PkQDiW2h6Zg==}
+  /@lexical/code/0.12.2_lexical@0.12.2:
+    resolution: {integrity: sha512-w2JeJdnMUtYnC/Fx78sL3iJBt9Ug8pFSDOcI9ay/BkMQFQV8oqq1iyuLLBBJSG4FAM8b2DXrVdGklRQ+jTfTVw==}
     peerDependencies:
-      '@meogic/lexical': 0.11.1-mod7
+      lexical: 0.12.2
     dependencies:
-      '@meogic/lexical': 0.11.1-mod7
-      '@meogic/lexical-html': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-      '@meogic/lexical-list': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-      '@meogic/lexical-selection': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-      '@meogic/lexical-utils': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-    dev: false
-
-  /@meogic/lexical-code/0.11.1-mod7_@meogic+lexical@0.11.1-mod7:
-    resolution: {integrity: sha512-0f6n7Wczdak1FO1DOoSbo8xYj4aVA7SZoptYGz93R6cY7IlzGznq3lR4+XFdZ/NHKxlfXDwSMISJ5/3c9f0b+A==}
-    peerDependencies:
-      '@meogic/lexical': 0.11.1-mod7
-    dependencies:
-      '@meogic/lexical': 0.11.1-mod7
-      '@meogic/lexical-utils': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@lexical/utils': 0.12.2_lexical@0.12.2
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
       prismjs: 1.29.0
     dev: false
 
-  /@meogic/lexical-dragon/0.11.1-mod7_@meogic+lexical@0.11.1-mod7:
-    resolution: {integrity: sha512-kd6CZfGZfwFnaXfzKKRB/thWxTBIOgSnxLGrpKgQCxORwtdtICMZZ4Bmug/7qJOGbqBRk/2bKYG4YSb5I+Cpxw==}
+  /@lexical/html/0.12.2_lexical@0.12.2:
+    resolution: {integrity: sha512-LWUO6OKhDtDZa9X1spHAqzsp+4EF01exis4cz5H9y2sHi7EofogXnRCadZ+fa07NVwPVTZWsStkk5qdSe/NEzg==}
     peerDependencies:
-      '@meogic/lexical': 0.11.1-mod7
+      lexical: 0.12.2
     dependencies:
-      '@meogic/lexical': 0.11.1-mod7
+      '@lexical/selection': 0.12.2_lexical@0.12.2
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
     dev: false
 
-  /@meogic/lexical-hashtag/0.11.1-mod7_@meogic+lexical@0.11.1-mod7:
-    resolution: {integrity: sha512-fPusik4jkjOzSwH9SdxZU63iCrqf6PMmqsws3bsRCcghKAZWY9J36SculalsanteCSUANKJDl7wMHFP8lYuFNQ==}
+  /@lexical/link/0.12.2_lexical@0.12.2:
+    resolution: {integrity: sha512-etOIONa7uyRDmwg8GN52kDlf8thD2Zk1LOFLeocHWz1V8fe3i2unGUek5s/rNPkc6ynpPpNsHdN1VEghOLCCmw==}
     peerDependencies:
-      '@meogic/lexical': 0.11.1-mod7
+      lexical: 0.12.2
     dependencies:
-      '@meogic/lexical': 0.11.1-mod7
-      '@meogic/lexical-utils': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@lexical/utils': 0.12.2_lexical@0.12.2
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
     dev: false
 
-  /@meogic/lexical-history/0.11.1-mod7_@meogic+lexical@0.11.1-mod7:
-    resolution: {integrity: sha512-DXuyiluO6Ik/6LQTSHGBxoZnkjcwNRDZO1gMZStazeXyoATIiaEYrVMET79riMOdRhqf86R+EiXbZXBxzcyzfA==}
+  /@lexical/list/0.12.2_lexical@0.12.2:
+    resolution: {integrity: sha512-3CyWtYQC+IlK4cK/oiD8Uz1gSXD8UcKGOF2vVsDXkMU06O6zvHNmHZOnVJqA0JVNgZAoR9dMR1fi2xd4iuCAiw==}
     peerDependencies:
-      '@meogic/lexical': 0.11.1-mod7
+      lexical: 0.12.2
     dependencies:
-      '@meogic/lexical': 0.11.1-mod7
-      '@meogic/lexical-utils': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@lexical/utils': 0.12.2_lexical@0.12.2
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
     dev: false
 
-  /@meogic/lexical-html/0.11.1-mod7_@meogic+lexical@0.11.1-mod7:
-    resolution: {integrity: sha512-qnRra0wN3AGgSjAP6Dr4Y+EiT/ZqgkE3pIXSmuv0uUk7zwAw02WIQ3yGxq25lGGbd7ibGtj1qVa7tW4GDtKcDg==}
+  /@lexical/rich-text/0.12.2_sfhholgpstmiz5nsmmzjlg3bt4:
+    resolution: {integrity: sha512-igsEuv7CwBOAj5c8jeE41cnx6zkhI/Bkbu4W7shT6S6lNA/3cnyZpAMlgixwyK5RoqjGRCT+IJK5l6yBxQfNkw==}
     peerDependencies:
-      '@meogic/lexical': 0.11.1-mod7
+      '@lexical/clipboard': 0.12.2
+      '@lexical/selection': 0.12.2
+      '@lexical/utils': 0.12.2
+      lexical: 0.12.2
     dependencies:
-      '@meogic/lexical': 0.11.1-mod7
-      '@meogic/lexical-selection': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@lexical/clipboard': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-clipboard/npm?branch=meogic-main_lexical@0.12.2'
+      '@lexical/selection': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-selection/npm?branch=meogic-main_lexical@0.12.2'
+      '@lexical/utils': 0.12.2_lexical@0.12.2
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
     dev: false
 
-  /@meogic/lexical-link/0.11.1-mod7_@meogic+lexical@0.11.1-mod7:
-    resolution: {integrity: sha512-6xYdC9Bf0EZczYuqks45yLvyBvoU8bO44fEnYhkS8TN8abdzHkzmzWeXHoRLhNpOgyCMT6MOzcr69ESXTZZHfQ==}
+  /@lexical/selection/0.12.2_lexical@0.12.2:
+    resolution: {integrity: sha512-h+g3oOnihHKIyLTyG6uLCEVR/DmUEVdCcZO1iAoGsuW7nwWiWNPWj6oZ3Cw5J1Mk5u62DHnkkVDQsVSZbAwmtg==}
     peerDependencies:
-      '@meogic/lexical': 0.11.1-mod7
+      lexical: 0.12.2
     dependencies:
-      '@meogic/lexical': 0.11.1-mod7
-      '@meogic/lexical-utils': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
     dev: false
 
-  /@meogic/lexical-list/0.11.1-mod7_@meogic+lexical@0.11.1-mod7:
-    resolution: {integrity: sha512-I7cqpn+JLJO4BhBFjURhn583gcapwAyd8isMkQBgKZAT+MiVTWUhuIRSW6/u2keQAX8gDMWgBZgFsnrcJNmTxw==}
+  /@lexical/table/0.12.2_lexical@0.12.2:
+    resolution: {integrity: sha512-tiAmTq6RKHDVER9v589Ajm9/RL+WTF1WschrH6HHVCtil6cfJfTJeJ+MF45+XEzB9fkqy2LfrScAfWxqLjVePA==}
     peerDependencies:
-      '@meogic/lexical': 0.11.1-mod7
+      lexical: 0.12.2
     dependencies:
-      '@meogic/lexical': 0.11.1-mod7
-      '@meogic/lexical-utils': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      '@lexical/utils': 0.12.2_lexical@0.12.2
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
     dev: false
 
-  /@meogic/lexical-mark/0.11.1-mod7_@meogic+lexical@0.11.1-mod7:
-    resolution: {integrity: sha512-cfmu6iqH0TGbtll709/r73nEWnlb+vztZ49uO9lrnnVcjna8QWAiC3n+wmUrXu9vQ7xYLZW91IGq+A0Yuxc1GA==}
+  /@lexical/text/0.12.2_lexical@0.12.2:
+    resolution: {integrity: sha512-HyuIGuQvVi5djJKKBf+jYEBjK+0Eo9cKHf6WS7dlFozuCZvcCQEJkFy2yceWOwIVk+f2kptVQ5uO7aiZHExH2A==}
     peerDependencies:
-      '@meogic/lexical': 0.11.1-mod7
+      lexical: 0.12.2
     dependencies:
-      '@meogic/lexical': 0.11.1-mod7
-      '@meogic/lexical-utils': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
     dev: false
 
-  /@meogic/lexical-markdown/0.11.1-mod7_d732e9cf09387f21ca1fb66502716bf1:
-    resolution: {integrity: sha512-EY/V8fztIlNVygquc3St23bIX/czJkRwLK4AMwn+O69vgL6eoKk3oiDwBP/zqXsxpAR92XQFzl6xVO0l/GASvg==}
+  /@lexical/utils/0.12.2_lexical@0.12.2:
+    resolution: {integrity: sha512-xW4y4l2Yd37+qLwkBvBGyzsKCA9wnh1ljphBJeR2vreT193i2gaIwuku2ZKlER14VHw4192qNJF7vUoAEmwurQ==}
     peerDependencies:
-      '@meogic/lexical': 0.11.1-mod7
+      lexical: 0.12.2
     dependencies:
-      '@meogic/lexical': 0.11.1-mod7
-      '@meogic/lexical-code': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-      '@meogic/lexical-link': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-      '@meogic/lexical-list': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-      '@meogic/lexical-rich-text': 0.11.1-mod7_57b1cb1e780596cd328c3c976cf956c0
-      '@meogic/lexical-text': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-      '@meogic/lexical-utils': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-    transitivePeerDependencies:
-      - '@meogic/lexical-clipboard'
-      - '@meogic/lexical-selection'
+      '@lexical/list': 0.12.2_lexical@0.12.2
+      '@lexical/selection': 0.12.2_lexical@0.12.2
+      '@lexical/table': 0.12.2_lexical@0.12.2
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
     dev: false
-
-  /@meogic/lexical-overflow/0.11.1-mod7_@meogic+lexical@0.11.1-mod7:
-    resolution: {integrity: sha512-VkpJoMWDow55sTo3A3LGMY0bmfTUyGVI+QU4/KbcIbtvgtIwBf3yPXp3IHjLZzBIopPXoroaMdq7jgbTrk2C7w==}
-    peerDependencies:
-      '@meogic/lexical': 0.11.1-mod7
-    dependencies:
-      '@meogic/lexical': 0.11.1-mod7
-    dev: false
-
-  /@meogic/lexical-plain-text/0.11.1-mod7_57b1cb1e780596cd328c3c976cf956c0:
-    resolution: {integrity: sha512-l1HFNEaZBPHU6tT3WsMHryzZw4yME8JhCM3orUCC4otYdvACuIw9Y08Q/m2ywP445frBfdZhwB1EfqNDGt1+5w==}
-    peerDependencies:
-      '@meogic/lexical': 0.11.1-mod7
-      '@meogic/lexical-clipboard': 0.11.1-mod7
-      '@meogic/lexical-selection': 0.11.1-mod7
-      '@meogic/lexical-utils': 0.11.1-mod7
-    dependencies:
-      '@meogic/lexical': 0.11.1-mod7
-      '@meogic/lexical-clipboard': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-      '@meogic/lexical-selection': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-      '@meogic/lexical-utils': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-    dev: false
-
-  /@meogic/lexical-rich-text/0.11.1-mod7_57b1cb1e780596cd328c3c976cf956c0:
-    resolution: {integrity: sha512-xZvraENJfWExTz39pZtkC/Xy3U5Cwqpw8htedYZ1CKNyYUiQhf0Iiirycs1kPLXRDK/ARyZALN2AjJjEm2ZAQA==}
-    peerDependencies:
-      '@meogic/lexical': 0.11.1-mod7
-      '@meogic/lexical-clipboard': 0.11.1-mod7
-      '@meogic/lexical-selection': 0.11.1-mod7
-      '@meogic/lexical-utils': 0.11.1-mod7
-    dependencies:
-      '@meogic/lexical': 0.11.1-mod7
-      '@meogic/lexical-clipboard': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-      '@meogic/lexical-selection': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-      '@meogic/lexical-utils': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-    dev: false
-
-  /@meogic/lexical-selection/0.11.1-mod7_@meogic+lexical@0.11.1-mod7:
-    resolution: {integrity: sha512-akYiGdOy9xRcsSOGAAhIYgpJtV3fUabZ7ckLpDOtjfKuf/YVbo2EKB2xUc6oEztI06q345uChdhG/E5ZoJnfHA==}
-    peerDependencies:
-      '@meogic/lexical': 0.11.1-mod7
-    dependencies:
-      '@meogic/lexical': 0.11.1-mod7
-    dev: false
-
-  /@meogic/lexical-table/0.11.1-mod7_@meogic+lexical@0.11.1-mod7:
-    resolution: {integrity: sha512-CG40Tes8m87754tRgYsXDl1+ulTmJePUBF1Xbtq55GFFiquVQBXMcB6EM7o7nH/xRlFPt7AQ3yT0dXO5AqT7YQ==}
-    peerDependencies:
-      '@meogic/lexical': 0.11.1-mod7
-    dependencies:
-      '@meogic/lexical': 0.11.1-mod7
-      '@meogic/lexical-utils': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-    dev: false
-
-  /@meogic/lexical-text/0.11.1-mod7_@meogic+lexical@0.11.1-mod7:
-    resolution: {integrity: sha512-d4fgmV76rA3O0fiPe3zk82wB3ytkNyhmyf/IrcLitOhMLtr3Nw7dhgUJn3mCm1AhR8r4KwsD1ImCQroCN49bvg==}
-    peerDependencies:
-      '@meogic/lexical': 0.11.1-mod7
-    dependencies:
-      '@meogic/lexical': 0.11.1-mod7
-    dev: false
-
-  /@meogic/lexical-utils/0.11.1-mod7_@meogic+lexical@0.11.1-mod7:
-    resolution: {integrity: sha512-iCcbYUd8jJ8TwMPUFsufvsQWiszwwq0LC0PyGolzfm0bc7uTgJ9MJGPrZ5sfGWNoPe42zRDgTIeJ1xQ2DMbsGQ==}
-    peerDependencies:
-      '@meogic/lexical': 0.11.1-mod7
-    dependencies:
-      '@meogic/lexical': 0.11.1-mod7
-      '@meogic/lexical-list': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-      '@meogic/lexical-selection': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-      '@meogic/lexical-table': 0.11.1-mod7_@meogic+lexical@0.11.1-mod7
-    dev: false
-
-  /@meogic/lexical/0.11.1-mod7:
-    resolution: {integrity: sha512-JyH+VJXOZ09ymtIB8gyNhNfNVWA46J0lnYN28BHOgE7jlBSdamYaBUaqEVW2S7n2gUTjOG7x2wd9TqNgs1DD2A==}
 
   /@nodelib/fs.scandir/2.1.5:
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -893,7 +854,7 @@ packages:
     resolution: {integrity: sha512-4p9vcSmxAayx72yn70joFoL44c9MO/0+iVEBIQXe3v2h2SiAsEIo/G5v6ObFWvNKRFjbrVadNf9LqEEZeQPzdA==}
     dev: true
 
-  /@typescript-eslint/eslint-plugin/5.59.11_940a8ffbc1fbfe92f76085ea9bd42b6c:
+  /@typescript-eslint/eslint-plugin/5.59.11_sqfi766b7p7jf53aqxvjxvblnq:
     resolution: {integrity: sha512-XxuOfTkCUiOSyBWIvHlUraLw/JT/6Io1365RO6ZuI88STKMavJZPNMU0lFcUTeQXEhHiv64CbxYxBNoDVSmghg==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
@@ -905,10 +866,10 @@ packages:
         optional: true
     dependencies:
       '@eslint-community/regexpp': 4.5.1
-      '@typescript-eslint/parser': 5.59.11_eslint@8.42.0+typescript@5.1.3
+      '@typescript-eslint/parser': 5.59.11_tizxnkcvjrb4cldxgwq5h3lj5u
       '@typescript-eslint/scope-manager': 5.59.11
-      '@typescript-eslint/type-utils': 5.59.11_eslint@8.42.0+typescript@5.1.3
-      '@typescript-eslint/utils': 5.59.11_eslint@8.42.0+typescript@5.1.3
+      '@typescript-eslint/type-utils': 5.59.11_tizxnkcvjrb4cldxgwq5h3lj5u
+      '@typescript-eslint/utils': 5.59.11_tizxnkcvjrb4cldxgwq5h3lj5u
       debug: 4.3.4
       eslint: 8.42.0
       grapheme-splitter: 1.0.4
@@ -921,7 +882,7 @@ packages:
       - supports-color
     dev: true
 
-  /@typescript-eslint/parser/5.59.11_eslint@8.42.0+typescript@5.1.3:
+  /@typescript-eslint/parser/5.59.11_tizxnkcvjrb4cldxgwq5h3lj5u:
     resolution: {integrity: sha512-s9ZF3M+Nym6CAZEkJJeO2TFHHDsKAM3ecNkLuH4i4s8/RCPnF5JRip2GyviYkeEAcwGMJxkqG9h2dAsnA1nZpA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
@@ -949,7 +910,7 @@ packages:
       '@typescript-eslint/visitor-keys': 5.59.11
     dev: true
 
-  /@typescript-eslint/type-utils/5.59.11_eslint@8.42.0+typescript@5.1.3:
+  /@typescript-eslint/type-utils/5.59.11_tizxnkcvjrb4cldxgwq5h3lj5u:
     resolution: {integrity: sha512-LZqVY8hMiVRF2a7/swmkStMYSoXMFlzL6sXV6U/2gL5cwnLWQgLEG8tjWPpaE4rMIdZ6VKWwcffPlo1jPfk43g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
@@ -960,7 +921,7 @@ packages:
         optional: true
     dependencies:
       '@typescript-eslint/typescript-estree': 5.59.11_typescript@5.1.3
-      '@typescript-eslint/utils': 5.59.11_eslint@8.42.0+typescript@5.1.3
+      '@typescript-eslint/utils': 5.59.11_tizxnkcvjrb4cldxgwq5h3lj5u
       debug: 4.3.4
       eslint: 8.42.0
       tsutils: 3.21.0_typescript@5.1.3
@@ -995,7 +956,7 @@ packages:
       - supports-color
     dev: true
 
-  /@typescript-eslint/utils/5.59.11_eslint@8.42.0+typescript@5.1.3:
+  /@typescript-eslint/utils/5.59.11_tizxnkcvjrb4cldxgwq5h3lj5u:
     resolution: {integrity: sha512-didu2rHSOMUdJThLk4aZ1Or8IcO3HzCw/ZvEjTTIfjIrcdd5cvSIwwDy2AOlE7htSNp7QIZ10fLMyRCveesMLg==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
@@ -1604,6 +1565,11 @@ packages:
 
   /debug/3.2.7:
     resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
+    peerDependencies:
+      supports-color: '*'
+    peerDependenciesMeta:
+      supports-color:
+        optional: true
     dependencies:
       ms: 2.1.3
     dev: true
@@ -1814,25 +1780,43 @@ packages:
       debug: 3.2.7
       is-core-module: 2.12.1
       resolve: 1.22.2
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
-  /eslint-module-utils/2.8.0_eslint@8.42.0:
+  /eslint-module-utils/2.8.0_aartv3asycikuu35yv36clal7i:
     resolution: {integrity: sha512-aWajIYfsqCKRDgUfjEXNN/JlrzauMuSEy5sbd7WXbtW3EH6A6MpwEh42c7qD+MqQo9QMJ6fWLAeIJynx0g6OAw==}
     engines: {node: '>=4'}
     peerDependencies:
+      '@typescript-eslint/parser': '*'
       eslint: '*'
+      eslint-import-resolver-node: '*'
+      eslint-import-resolver-typescript: '*'
+      eslint-import-resolver-webpack: '*'
     peerDependenciesMeta:
+      '@typescript-eslint/parser':
+        optional: true
       eslint:
         optional: true
+      eslint-import-resolver-node:
+        optional: true
+      eslint-import-resolver-typescript:
+        optional: true
+      eslint-import-resolver-webpack:
+        optional: true
     dependencies:
+      '@typescript-eslint/parser': 5.59.11_tizxnkcvjrb4cldxgwq5h3lj5u
       debug: 3.2.7
       eslint: 8.42.0
+      eslint-import-resolver-node: 0.3.7
+    transitivePeerDependencies:
+      - supports-color
     dev: true
 
-  /eslint-plugin-antfu/0.39.5_eslint@8.42.0+typescript@5.1.3:
+  /eslint-plugin-antfu/0.39.5_tizxnkcvjrb4cldxgwq5h3lj5u:
     resolution: {integrity: sha512-xdBARaxUfz/hKzsFMhhV+jUZBGMZOEektLAEdbFcZzPLe1zAHOjplkB0FihqmIHrqxCZsZVGLPfhipHiSnnQuQ==}
     dependencies:
-      '@typescript-eslint/utils': 5.59.11_eslint@8.42.0+typescript@5.1.3
+      '@typescript-eslint/utils': 5.59.11_tizxnkcvjrb4cldxgwq5h3lj5u
     transitivePeerDependencies:
       - eslint
       - supports-color
@@ -1867,12 +1851,17 @@ packages:
       htmlparser2: 8.0.2
     dev: true
 
-  /eslint-plugin-import/2.27.5_eslint@8.42.0:
+  /eslint-plugin-import/2.27.5_b34cytzsv57k5d564pxz54jodu:
     resolution: {integrity: sha512-LmEt3GVofgiGuiE+ORpnvP+kAm3h6MLZJ4Q5HCyHADofsb4VzXFsRiWj3c0OFiV+3DWFh0qg3v9gcPlfc3zRow==}
     engines: {node: '>=4'}
     peerDependencies:
+      '@typescript-eslint/parser': '*'
       eslint: ^2 || ^3 || ^4 || ^5 || ^6 || ^7.2.0 || ^8
+    peerDependenciesMeta:
+      '@typescript-eslint/parser':
+        optional: true
     dependencies:
+      '@typescript-eslint/parser': 5.59.11_tizxnkcvjrb4cldxgwq5h3lj5u
       array-includes: 3.1.6
       array.prototype.flat: 1.3.1
       array.prototype.flatmap: 1.3.1
@@ -1880,7 +1869,7 @@ packages:
       doctrine: 2.1.0
       eslint: 8.42.0
       eslint-import-resolver-node: 0.3.7
-      eslint-module-utils: 2.8.0_eslint@8.42.0
+      eslint-module-utils: 2.8.0_aartv3asycikuu35yv36clal7i
       has: 1.0.3
       is-core-module: 2.12.1
       is-glob: 4.0.3
@@ -1889,9 +1878,13 @@ packages:
       resolve: 1.22.2
       semver: 6.3.0
       tsconfig-paths: 3.14.2
+    transitivePeerDependencies:
+      - eslint-import-resolver-typescript
+      - eslint-import-resolver-webpack
+      - supports-color
     dev: true
 
-  /eslint-plugin-jest/27.2.1_aea2be115263ac2e4654ef12719a9a2a:
+  /eslint-plugin-jest/27.2.1_v2rl4eksmowc4rsu54jhdgu2fi:
     resolution: {integrity: sha512-l067Uxx7ZT8cO9NJuf+eJHvt6bqJyz2Z29wykyEdz/OtmcELQl2MQGQLX8J94O1cSJWAwUSEvCjwjA7KEK3Hmg==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     peerDependencies:
@@ -1904,8 +1897,8 @@ packages:
       jest:
         optional: true
     dependencies:
-      '@typescript-eslint/eslint-plugin': 5.59.11_940a8ffbc1fbfe92f76085ea9bd42b6c
-      '@typescript-eslint/utils': 5.59.11_eslint@8.42.0+typescript@5.1.3
+      '@typescript-eslint/eslint-plugin': 5.59.11_sqfi766b7p7jf53aqxvjxvblnq
+      '@typescript-eslint/utils': 5.59.11_tizxnkcvjrb4cldxgwq5h3lj5u
       eslint: 8.42.0
     transitivePeerDependencies:
       - supports-color
@@ -1992,7 +1985,7 @@ packages:
       strip-indent: 3.0.0
     dev: true
 
-  /eslint-plugin-unused-imports/2.0.0_fdae26399694add1f3a0ce75b32b08ff:
+  /eslint-plugin-unused-imports/2.0.0_7wxcmomwssw5d45azz23gkyi74:
     resolution: {integrity: sha512-3APeS/tQlTrFa167ThtP0Zm0vctjr4M44HMpeg1P4bK6wItarumq0Ma82xorMKdFsWpphQBlRPzw/pxiVELX1A==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
@@ -2002,7 +1995,7 @@ packages:
       '@typescript-eslint/eslint-plugin':
         optional: true
     dependencies:
-      '@typescript-eslint/eslint-plugin': 5.59.11_940a8ffbc1fbfe92f76085ea9bd42b6c
+      '@typescript-eslint/eslint-plugin': 5.59.11_sqfi766b7p7jf53aqxvjxvblnq
       eslint: 8.42.0
       eslint-rule-composer: 0.3.0
     dev: true
@@ -2273,6 +2266,7 @@ packages:
     resolution: {integrity: sha512-xiqMQR4xAeHTuB9uWm+fFRcIOgKBMiOBP+eXiyT7jsgVCq1bkVygt00oASowB7EdtpOHaaPgKt812P9ab+DDKA==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
+    requiresBuild: true
     dev: true
     optional: true
 
@@ -3607,6 +3601,10 @@ packages:
       any-promise: 1.3.0
     dev: true
 
+  /to-fast-properties/2.0.0:
+    resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}
+    engines: {node: '>=4'}
+
   /to-regex-range/5.0.1:
     resolution: {integrity: sha512-65P7iz6X5yEr1cwcgvQxbbIw7Uk3gOy5dIdtZ4rDveLqhrdJP+Li/Hx6tyK0NEb+2GCyneCMJiGqrADCSNk8sQ==}
     engines: {node: '>=8.0'}
@@ -3759,7 +3757,7 @@ packages:
       '@types/unist': 2.0.6
     dev: true
 
-  /unplugin-vue/4.2.1_@types+node@20.3.1+vue@3.3.4:
+  /unplugin-vue/4.2.1_n3vsdlp37wprc3crs54mnrmhzq:
     resolution: {integrity: sha512-RRTZfY6VWtjs+1NAJsdlNKc/sHN/WmrOkiuvXxJGfIqfUXkxNXizz3z7vUu65URJj3K7qD2p7liVHg2LAPEP8w==}
     engines: {node: '>=16.14.0'}
     peerDependencies:
@@ -4078,3 +4076,220 @@ packages:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
     dev: true
+
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-clipboard/npm?branch=meogic-main_lexical@0.12.2':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-clipboard/npm?branch=meogic-main}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-clipboard/npm?branch=meogic-main'
+    name: '@lexical/clipboard'
+    version: 0.12.2
+    peerDependencies:
+      lexical: 0.12.2
+    dependencies:
+      '@lexical/html': 0.12.2_lexical@0.12.2
+      '@lexical/list': 0.12.2_lexical@0.12.2
+      '@lexical/selection': 0.12.2_lexical@0.12.2
+      '@lexical/utils': 0.12.2_lexical@0.12.2
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+    dev: false
+
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-code/npm?branch=meogic-main_lexical@0.12.2':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-code/npm?branch=meogic-main}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-code/npm?branch=meogic-main'
+    name: '@lexical/code'
+    version: 0.12.2
+    peerDependencies:
+      lexical: 0.12.2
+    dependencies:
+      '@lexical/utils': 0.12.2_lexical@0.12.2
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+      prismjs: 1.29.0
+    dev: false
+
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-dragon/npm?branch=meogic-main_lexical@0.12.2':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-dragon/npm?branch=meogic-main}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-dragon/npm?branch=meogic-main'
+    name: '@lexical/dragon'
+    version: 0.12.2
+    peerDependencies:
+      lexical: 0.12.2
+    dependencies:
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+    dev: false
+
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-hashtag/npm?branch=meogic-main_lexical@0.12.2':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-hashtag/npm?branch=meogic-main}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-hashtag/npm?branch=meogic-main'
+    name: '@lexical/hashtag'
+    version: 0.12.2
+    peerDependencies:
+      lexical: 0.12.2
+    dependencies:
+      '@lexical/utils': 0.12.2_lexical@0.12.2
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+    dev: false
+
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-history/npm?branch=meogic-main_lexical@0.12.2':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-history/npm?branch=meogic-main}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-history/npm?branch=meogic-main'
+    name: '@lexical/history'
+    version: 0.12.2
+    peerDependencies:
+      lexical: 0.12.2
+    dependencies:
+      '@lexical/utils': 0.12.2_lexical@0.12.2
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+    dev: false
+
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-link/npm?branch=meogic-main_lexical@0.12.2':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-link/npm?branch=meogic-main}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-link/npm?branch=meogic-main'
+    name: '@lexical/link'
+    version: 0.12.2
+    peerDependencies:
+      lexical: 0.12.2
+    dependencies:
+      '@lexical/utils': 0.12.2_lexical@0.12.2
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+    dev: false
+
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-list/npm?branch=meogic-main_lexical@0.12.2':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-list/npm?branch=meogic-main}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-list/npm?branch=meogic-main'
+    name: '@lexical/list'
+    version: 0.12.2
+    peerDependencies:
+      lexical: 0.12.2
+    dependencies:
+      '@lexical/utils': 0.12.2_lexical@0.12.2
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+    dev: false
+
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-mark/npm?branch=meogic-main_lexical@0.12.2':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-mark/npm?branch=meogic-main}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-mark/npm?branch=meogic-main'
+    name: '@lexical/mark'
+    version: 0.12.2
+    peerDependencies:
+      lexical: 0.12.2
+    dependencies:
+      '@lexical/utils': 0.12.2_lexical@0.12.2
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+    dev: false
+
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-markdown/npm?branch=meogic-main_p5gts7wdhrxcazn4ulaipdotii':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-markdown/npm?branch=meogic-main}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-markdown/npm?branch=meogic-main'
+    name: '@lexical/markdown'
+    version: 0.12.2
+    peerDependencies:
+      lexical: 0.12.2
+    dependencies:
+      '@lexical/code': 0.12.2_lexical@0.12.2
+      '@lexical/link': 0.12.2_lexical@0.12.2
+      '@lexical/list': 0.12.2_lexical@0.12.2
+      '@lexical/rich-text': 0.12.2_sfhholgpstmiz5nsmmzjlg3bt4
+      '@lexical/text': 0.12.2_lexical@0.12.2
+      '@lexical/utils': 0.12.2_lexical@0.12.2
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+    transitivePeerDependencies:
+      - '@lexical/clipboard'
+      - '@lexical/selection'
+    dev: false
+
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-overflow/npm?branch=meogic-main_lexical@0.12.2':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-overflow/npm?branch=meogic-main}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-overflow/npm?branch=meogic-main'
+    name: '@lexical/overflow'
+    version: 0.12.2
+    peerDependencies:
+      lexical: 0.12.2
+    dependencies:
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+    dev: false
+
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-plain-text/npm?branch=meogic-main_sfhholgpstmiz5nsmmzjlg3bt4':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-plain-text/npm?branch=meogic-main}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-plain-text/npm?branch=meogic-main'
+    name: '@lexical/plain-text'
+    version: 0.12.2
+    peerDependencies:
+      '@lexical/clipboard': 0.12.2
+      '@lexical/selection': 0.12.2
+      '@lexical/utils': 0.12.2
+      lexical: 0.12.2
+    dependencies:
+      '@lexical/clipboard': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-clipboard/npm?branch=meogic-main_lexical@0.12.2'
+      '@lexical/selection': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-selection/npm?branch=meogic-main_lexical@0.12.2'
+      '@lexical/utils': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-utils/npm?branch=meogic-main_lexical@0.12.2'
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+    dev: false
+
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-rich-text/npm?branch=meogic-main_sfhholgpstmiz5nsmmzjlg3bt4':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-rich-text/npm?branch=meogic-main}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-rich-text/npm?branch=meogic-main'
+    name: '@lexical/rich-text'
+    version: 0.12.2
+    peerDependencies:
+      '@lexical/clipboard': 0.12.2
+      '@lexical/selection': 0.12.2
+      '@lexical/utils': 0.12.2
+      lexical: 0.12.2
+    dependencies:
+      '@lexical/clipboard': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-clipboard/npm?branch=meogic-main_lexical@0.12.2'
+      '@lexical/selection': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-selection/npm?branch=meogic-main_lexical@0.12.2'
+      '@lexical/utils': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-utils/npm?branch=meogic-main_lexical@0.12.2'
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+    dev: false
+
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-selection/npm?branch=meogic-main_lexical@0.12.2':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-selection/npm?branch=meogic-main}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-selection/npm?branch=meogic-main'
+    name: '@lexical/selection'
+    version: 0.12.2
+    peerDependencies:
+      lexical: 0.12.2
+    dependencies:
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+    dev: false
+
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-table/npm?branch=meogic-main_lexical@0.12.2':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-table/npm?branch=meogic-main}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-table/npm?branch=meogic-main'
+    name: '@lexical/table'
+    version: 0.12.2
+    peerDependencies:
+      lexical: 0.12.2
+    dependencies:
+      '@lexical/utils': 0.12.2_lexical@0.12.2
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+    dev: false
+
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-text/npm?branch=meogic-main_lexical@0.12.2':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-text/npm?branch=meogic-main}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-text/npm?branch=meogic-main'
+    name: '@lexical/text'
+    version: 0.12.2
+    peerDependencies:
+      lexical: 0.12.2
+    dependencies:
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+    dev: false
+
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-utils/npm?branch=meogic-main_lexical@0.12.2':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-utils/npm?branch=meogic-main}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-utils/npm?branch=meogic-main'
+    name: '@lexical/utils'
+    version: 0.12.2
+    peerDependencies:
+      lexical: 0.12.2
+    dependencies:
+      '@lexical/list': 0.12.2_lexical@0.12.2
+      '@lexical/selection': 0.12.2_lexical@0.12.2
+      '@lexical/table': 0.12.2_lexical@0.12.2
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+    dev: false
+
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main}
+    name: lexical
+    version: 0.12.2

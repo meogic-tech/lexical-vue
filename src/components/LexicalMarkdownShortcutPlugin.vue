@@ -1,6 +1,6 @@
 <script lang="ts" setup>
-import { TRANSFORMERS, registerMarkdownShortcuts } from '@meogic/lexical-markdown'
-import type { Transformer } from '@meogic/lexical-markdown'
+import { TRANSFORMERS, registerMarkdownShortcuts } from '@lexical/markdown'
+import type { Transformer } from '@lexical/markdown'
 import { useEditor, useMounted } from '../composables'
 
 const props = withDefaults(defineProps<{

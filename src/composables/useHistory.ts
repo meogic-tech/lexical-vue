@@ -1,8 +1,8 @@
-import type { HistoryState } from '@meogic/lexical-history'
-import type { LexicalEditor } from '@meogic/lexical'
+import type { HistoryState } from '@lexical/history'
+import type { LexicalEditor } from 'lexical'
 import { computed, unref, watchPostEffect } from 'vue'
 
-import { createEmptyHistoryState, registerHistory } from '@meogic/lexical-history'
+import { createEmptyHistoryState, registerHistory } from '@lexical/history'
 import type { MaybeRef } from '../types'
 
 export function useHistory(
