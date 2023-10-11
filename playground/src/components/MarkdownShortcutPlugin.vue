@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { LexicalMarkdownShortcutPlugin } from '@meogic/lexical-vue'
+import { LexicalMarkdownShortcutPlugin } from 'lexical-vue'
 import type {
   Transformer,
 } from '@lexical/markdown'

@@ -22,7 +22,7 @@ import {
   LexicalHistoryPlugin,
   LexicalOnChangePlugin,
   LexicalPlainTextPlugin,
-} from '@meogic/lexical-vue'
+} from 'lexical-vue'
 
 const config = {
   editable: true,

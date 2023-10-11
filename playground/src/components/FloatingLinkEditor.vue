@@ -4,7 +4,7 @@ import { $isLinkNode, TOGGLE_LINK_COMMAND } from '@lexical/link'
 import { mergeRegister } from '@lexical/utils'
 import type { CommandListenerPriority, GridSelection, LexicalNode, NodeSelection, RangeSelection } from 'lexical'
 import { $getSelection, $isRangeSelection, SELECTION_CHANGE_COMMAND } from 'lexical'
-import { useEditor } from '@meogic/lexical-vue'
+import { useEditor } from 'lexical-vue'
 import { onMounted, onUnmounted, ref, watchEffect } from 'vue'
 import { getSelectedNode } from '../utils'
 

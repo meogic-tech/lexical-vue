@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { LexicalTreeViewPlugin } from '@meogic/lexical-vue'
+import { LexicalTreeViewPlugin } from 'lexical-vue'
 </script>
 
 <template>

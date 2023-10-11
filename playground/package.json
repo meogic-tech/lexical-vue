@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "lexical": "https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main",
-    "@meogic/lexical-vue": "workspace:*",
+    "lexical-vue": "workspace:*",
     "vue": "^3.3.4"
   },
   "devDependencies": {

@@ -9,7 +9,7 @@ import {
   LexicalLinkPlugin,
   LexicalListPlugin,
   LexicalRichTextPlugin,
-} from '@meogic/lexical-vue'
+} from 'lexical-vue'
 import { $createHeadingNode, $createQuoteNode, HeadingNode, QuoteNode } from '@lexical/rich-text'
 import { TableCellNode, TableNode, TableRowNode } from '@lexical/table'
 import { $createListItemNode, $createListNode, ListItemNode, ListNode } from '@lexical/list'
@@ -46,7 +46,7 @@ function prePopulatedRichText() {
       $createTextNode('The playground is a demo environment built with '),
       $createTextNode('lexical').toggleFormat('code'),
       $createTextNode(' and '),
-      $createTextNode('@meogic/lexical-vue').toggleFormat('code'),
+      $createTextNode('lexical-vue').toggleFormat('code'),
       $createTextNode('.'),
       $createTextNode(' Try typing in '),
       $createTextNode('some text').toggleFormat('bold'),

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted, ref } from 'vue'
-import { useEditor } from '@meogic/lexical-vue'
+import { useEditor } from 'lexical-vue'
 import type {
   RangeSelection,
 } from 'lexical'

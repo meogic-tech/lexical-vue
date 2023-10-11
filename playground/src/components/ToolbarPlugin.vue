@@ -16,7 +16,7 @@ import {
   $isParentElementRTL,
 } from '@lexical/selection'
 import { $getNearestNodeOfType, mergeRegister } from '@lexical/utils'
-import { useEditor } from '@meogic/lexical-vue'
+import { useEditor } from 'lexical-vue'
 import { onMounted, onUnmounted, ref, watch } from 'vue'
 import { $isListNode, ListNode } from '@lexical/list'
 import { $isHeadingNode } from '@lexical/rich-text'

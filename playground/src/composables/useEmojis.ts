@@ -8,7 +8,7 @@ import type { LexicalEditor } from 'lexical'
 
 import { TextNode } from 'lexical'
 
-import { useEffect } from '@meogic/lexical-vue'
+import { useEffect } from 'lexical-vue'
 import { $createEmojiNode, EmojiNode } from '../components/EmojiNode'
 
 const emojis: Map<string, [string, string]> = new Map([
