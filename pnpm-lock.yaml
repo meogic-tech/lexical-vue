@@ -5,26 +5,26 @@ importers:
   .:
     specifiers:
       '@antfu/eslint-config': ^0.39.5
-      '@lexical/clipboard': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-clipboard/npm?branch=meogic-main
-      '@lexical/code': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-code/npm?branch=meogic-main
-      '@lexical/dragon': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-dragon/npm?branch=meogic-main
-      '@lexical/hashtag': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-hashtag/npm?branch=meogic-main
-      '@lexical/history': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-history/npm?branch=meogic-main
-      '@lexical/link': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-link/npm?branch=meogic-main
-      '@lexical/list': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-list/npm?branch=meogic-main
-      '@lexical/mark': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-mark/npm?branch=meogic-main
-      '@lexical/markdown': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-markdown/npm?branch=meogic-main
-      '@lexical/overflow': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-overflow/npm?branch=meogic-main
-      '@lexical/plain-text': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-plain-text/npm?branch=meogic-main
-      '@lexical/rich-text': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-rich-text/npm?branch=meogic-main
-      '@lexical/selection': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-selection/npm?branch=meogic-main
-      '@lexical/table': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-table/npm?branch=meogic-main
-      '@lexical/text': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-text/npm?branch=meogic-main
-      '@lexical/utils': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-utils/npm?branch=meogic-main
+      '@lexical/clipboard': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-clipboard/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e
+      '@lexical/code': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-code/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e
+      '@lexical/dragon': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-dragon/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e
+      '@lexical/hashtag': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-hashtag/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e
+      '@lexical/history': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-history/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e
+      '@lexical/link': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-link/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e
+      '@lexical/list': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-list/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e
+      '@lexical/mark': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-mark/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e
+      '@lexical/markdown': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-markdown/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e
+      '@lexical/overflow': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-overflow/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e
+      '@lexical/plain-text': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-plain-text/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e
+      '@lexical/rich-text': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-rich-text/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e
+      '@lexical/selection': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-selection/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e
+      '@lexical/table': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-table/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e
+      '@lexical/text': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-text/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e
+      '@lexical/utils': https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-utils/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e
       '@types/node': ^20.3.0
       bumpp: ^9.1.1
       eslint: ^8.42.0
-      lexical: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main
+      lexical: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e
       tsup: ^6.7.0
       typescript: ^5.1.3
       unplugin-vue: ^4.2.1
@@ -32,28 +32,28 @@ importers:
       vue: ^3.3.4
       vue-tsc: ^1.6.5
     dependencies:
-      '@lexical/clipboard': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-clipboard/npm?branch=meogic-main_lexical@0.12.2'
-      '@lexical/code': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-code/npm?branch=meogic-main_lexical@0.12.2'
-      '@lexical/dragon': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-dragon/npm?branch=meogic-main_lexical@0.12.2'
-      '@lexical/hashtag': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-hashtag/npm?branch=meogic-main_lexical@0.12.2'
-      '@lexical/history': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-history/npm?branch=meogic-main_lexical@0.12.2'
-      '@lexical/link': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-link/npm?branch=meogic-main_lexical@0.12.2'
-      '@lexical/list': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-list/npm?branch=meogic-main_lexical@0.12.2'
-      '@lexical/mark': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-mark/npm?branch=meogic-main_lexical@0.12.2'
-      '@lexical/markdown': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-markdown/npm?branch=meogic-main_p5gts7wdhrxcazn4ulaipdotii'
-      '@lexical/overflow': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-overflow/npm?branch=meogic-main_lexical@0.12.2'
-      '@lexical/plain-text': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-plain-text/npm?branch=meogic-main_sfhholgpstmiz5nsmmzjlg3bt4'
-      '@lexical/rich-text': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-rich-text/npm?branch=meogic-main_sfhholgpstmiz5nsmmzjlg3bt4'
-      '@lexical/selection': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-selection/npm?branch=meogic-main_lexical@0.12.2'
-      '@lexical/table': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-table/npm?branch=meogic-main_lexical@0.12.2'
-      '@lexical/text': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-text/npm?branch=meogic-main_lexical@0.12.2'
-      '@lexical/utils': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-utils/npm?branch=meogic-main_lexical@0.12.2'
+      '@lexical/clipboard': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-clipboard/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2'
+      '@lexical/code': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-code/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2'
+      '@lexical/dragon': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-dragon/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2'
+      '@lexical/hashtag': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-hashtag/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2'
+      '@lexical/history': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-history/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2'
+      '@lexical/link': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-link/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2'
+      '@lexical/list': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-list/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2'
+      '@lexical/mark': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-mark/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2'
+      '@lexical/markdown': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-markdown/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_p5gts7wdhrxcazn4ulaipdotii'
+      '@lexical/overflow': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-overflow/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2'
+      '@lexical/plain-text': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-plain-text/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_sfhholgpstmiz5nsmmzjlg3bt4'
+      '@lexical/rich-text': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-rich-text/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_sfhholgpstmiz5nsmmzjlg3bt4'
+      '@lexical/selection': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-selection/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2'
+      '@lexical/table': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-table/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2'
+      '@lexical/text': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-text/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2'
+      '@lexical/utils': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-utils/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2'
     devDependencies:
       '@antfu/eslint-config': 0.39.5_tizxnkcvjrb4cldxgwq5h3lj5u
       '@types/node': 20.3.1
       bumpp: 9.1.1
       eslint: 8.42.0
-      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
       tsup: 6.7.0_typescript@5.1.3
       typescript: 5.1.3
       unplugin-vue: 4.2.1_n3vsdlp37wprc3crs54mnrmhzq
@@ -63,16 +63,16 @@ importers:
 
   playground:
     specifiers:
-      'lexical-vue': workspace:*
       '@vitejs/plugin-vue': ^4.2.3
       lexical: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main
+      lexical-vue: workspace:*
       typescript: ^5.1.3
       vite: ^4.3.9
       vue: ^3.3.4
       vue-tsc: ^1.6.5
     dependencies:
-      'lexical-vue': link:..
       lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+      lexical-vue: link:..
       vue: 3.3.4
     devDependencies:
       '@vitejs/plugin-vue': 4.2.3_vite@4.3.9+vue@3.3.4
@@ -718,7 +718,7 @@ packages:
       lexical: 0.12.2
     dependencies:
       '@lexical/utils': 0.12.2_lexical@0.12.2
-      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
       prismjs: 1.29.0
     dev: false
 
@@ -728,7 +728,7 @@ packages:
       lexical: 0.12.2
     dependencies:
       '@lexical/selection': 0.12.2_lexical@0.12.2
-      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     dev: false
 
   /@lexical/link/0.12.2_lexical@0.12.2:
@@ -737,7 +737,7 @@ packages:
       lexical: 0.12.2
     dependencies:
       '@lexical/utils': 0.12.2_lexical@0.12.2
-      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     dev: false
 
   /@lexical/list/0.12.2_lexical@0.12.2:
@@ -746,7 +746,7 @@ packages:
       lexical: 0.12.2
     dependencies:
       '@lexical/utils': 0.12.2_lexical@0.12.2
-      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     dev: false
 
   /@lexical/rich-text/0.12.2_sfhholgpstmiz5nsmmzjlg3bt4:
@@ -757,10 +757,10 @@ packages:
       '@lexical/utils': 0.12.2
       lexical: 0.12.2
     dependencies:
-      '@lexical/clipboard': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-clipboard/npm?branch=meogic-main_lexical@0.12.2'
-      '@lexical/selection': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-selection/npm?branch=meogic-main_lexical@0.12.2'
+      '@lexical/clipboard': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-clipboard/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2'
+      '@lexical/selection': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-selection/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2'
       '@lexical/utils': 0.12.2_lexical@0.12.2
-      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     dev: false
 
   /@lexical/selection/0.12.2_lexical@0.12.2:
@@ -768,7 +768,7 @@ packages:
     peerDependencies:
       lexical: 0.12.2
     dependencies:
-      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     dev: false
 
   /@lexical/table/0.12.2_lexical@0.12.2:
@@ -777,7 +777,7 @@ packages:
       lexical: 0.12.2
     dependencies:
       '@lexical/utils': 0.12.2_lexical@0.12.2
-      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     dev: false
 
   /@lexical/text/0.12.2_lexical@0.12.2:
@@ -785,7 +785,7 @@ packages:
     peerDependencies:
       lexical: 0.12.2
     dependencies:
-      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     dev: false
 
   /@lexical/utils/0.12.2_lexical@0.12.2:
@@ -796,7 +796,7 @@ packages:
       '@lexical/list': 0.12.2_lexical@0.12.2
       '@lexical/selection': 0.12.2_lexical@0.12.2
       '@lexical/table': 0.12.2_lexical@0.12.2
-      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     dev: false
 
   /@nodelib/fs.scandir/2.1.5:
@@ -4077,9 +4077,9 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-clipboard/npm?branch=meogic-main_lexical@0.12.2':
-    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-clipboard/npm?branch=meogic-main}
-    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-clipboard/npm?branch=meogic-main'
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-clipboard/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-clipboard/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-clipboard/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     name: '@lexical/clipboard'
     version: 0.12.2
     peerDependencies:
@@ -4089,96 +4089,96 @@ packages:
       '@lexical/list': 0.12.2_lexical@0.12.2
       '@lexical/selection': 0.12.2_lexical@0.12.2
       '@lexical/utils': 0.12.2_lexical@0.12.2
-      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     dev: false
 
-  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-code/npm?branch=meogic-main_lexical@0.12.2':
-    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-code/npm?branch=meogic-main}
-    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-code/npm?branch=meogic-main'
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-code/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-code/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-code/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     name: '@lexical/code'
     version: 0.12.2
     peerDependencies:
       lexical: 0.12.2
     dependencies:
       '@lexical/utils': 0.12.2_lexical@0.12.2
-      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
       prismjs: 1.29.0
     dev: false
 
-  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-dragon/npm?branch=meogic-main_lexical@0.12.2':
-    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-dragon/npm?branch=meogic-main}
-    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-dragon/npm?branch=meogic-main'
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-dragon/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-dragon/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-dragon/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     name: '@lexical/dragon'
     version: 0.12.2
     peerDependencies:
       lexical: 0.12.2
     dependencies:
-      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     dev: false
 
-  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-hashtag/npm?branch=meogic-main_lexical@0.12.2':
-    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-hashtag/npm?branch=meogic-main}
-    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-hashtag/npm?branch=meogic-main'
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-hashtag/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-hashtag/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-hashtag/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     name: '@lexical/hashtag'
     version: 0.12.2
     peerDependencies:
       lexical: 0.12.2
     dependencies:
       '@lexical/utils': 0.12.2_lexical@0.12.2
-      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     dev: false
 
-  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-history/npm?branch=meogic-main_lexical@0.12.2':
-    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-history/npm?branch=meogic-main}
-    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-history/npm?branch=meogic-main'
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-history/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-history/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-history/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     name: '@lexical/history'
     version: 0.12.2
     peerDependencies:
       lexical: 0.12.2
     dependencies:
       '@lexical/utils': 0.12.2_lexical@0.12.2
-      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     dev: false
 
-  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-link/npm?branch=meogic-main_lexical@0.12.2':
-    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-link/npm?branch=meogic-main}
-    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-link/npm?branch=meogic-main'
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-link/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-link/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-link/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     name: '@lexical/link'
     version: 0.12.2
     peerDependencies:
       lexical: 0.12.2
     dependencies:
       '@lexical/utils': 0.12.2_lexical@0.12.2
-      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     dev: false
 
-  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-list/npm?branch=meogic-main_lexical@0.12.2':
-    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-list/npm?branch=meogic-main}
-    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-list/npm?branch=meogic-main'
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-list/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-list/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-list/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     name: '@lexical/list'
     version: 0.12.2
     peerDependencies:
       lexical: 0.12.2
     dependencies:
       '@lexical/utils': 0.12.2_lexical@0.12.2
-      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     dev: false
 
-  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-mark/npm?branch=meogic-main_lexical@0.12.2':
-    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-mark/npm?branch=meogic-main}
-    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-mark/npm?branch=meogic-main'
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-mark/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-mark/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-mark/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     name: '@lexical/mark'
     version: 0.12.2
     peerDependencies:
       lexical: 0.12.2
     dependencies:
       '@lexical/utils': 0.12.2_lexical@0.12.2
-      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     dev: false
 
-  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-markdown/npm?branch=meogic-main_p5gts7wdhrxcazn4ulaipdotii':
-    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-markdown/npm?branch=meogic-main}
-    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-markdown/npm?branch=meogic-main'
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-markdown/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_p5gts7wdhrxcazn4ulaipdotii':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-markdown/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-markdown/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     name: '@lexical/markdown'
     version: 0.12.2
     peerDependencies:
@@ -4190,26 +4190,26 @@ packages:
       '@lexical/rich-text': 0.12.2_sfhholgpstmiz5nsmmzjlg3bt4
       '@lexical/text': 0.12.2_lexical@0.12.2
       '@lexical/utils': 0.12.2_lexical@0.12.2
-      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     transitivePeerDependencies:
       - '@lexical/clipboard'
       - '@lexical/selection'
     dev: false
 
-  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-overflow/npm?branch=meogic-main_lexical@0.12.2':
-    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-overflow/npm?branch=meogic-main}
-    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-overflow/npm?branch=meogic-main'
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-overflow/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-overflow/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-overflow/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     name: '@lexical/overflow'
     version: 0.12.2
     peerDependencies:
       lexical: 0.12.2
     dependencies:
-      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     dev: false
 
-  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-plain-text/npm?branch=meogic-main_sfhholgpstmiz5nsmmzjlg3bt4':
-    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-plain-text/npm?branch=meogic-main}
-    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-plain-text/npm?branch=meogic-main'
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-plain-text/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_sfhholgpstmiz5nsmmzjlg3bt4':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-plain-text/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-plain-text/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     name: '@lexical/plain-text'
     version: 0.12.2
     peerDependencies:
@@ -4218,15 +4218,15 @@ packages:
       '@lexical/utils': 0.12.2
       lexical: 0.12.2
     dependencies:
-      '@lexical/clipboard': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-clipboard/npm?branch=meogic-main_lexical@0.12.2'
-      '@lexical/selection': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-selection/npm?branch=meogic-main_lexical@0.12.2'
-      '@lexical/utils': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-utils/npm?branch=meogic-main_lexical@0.12.2'
-      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+      '@lexical/clipboard': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-clipboard/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2'
+      '@lexical/selection': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-selection/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2'
+      '@lexical/utils': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-utils/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2'
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     dev: false
 
-  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-rich-text/npm?branch=meogic-main_sfhholgpstmiz5nsmmzjlg3bt4':
-    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-rich-text/npm?branch=meogic-main}
-    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-rich-text/npm?branch=meogic-main'
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-rich-text/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_sfhholgpstmiz5nsmmzjlg3bt4':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-rich-text/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-rich-text/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     name: '@lexical/rich-text'
     version: 0.12.2
     peerDependencies:
@@ -4235,49 +4235,49 @@ packages:
       '@lexical/utils': 0.12.2
       lexical: 0.12.2
     dependencies:
-      '@lexical/clipboard': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-clipboard/npm?branch=meogic-main_lexical@0.12.2'
-      '@lexical/selection': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-selection/npm?branch=meogic-main_lexical@0.12.2'
-      '@lexical/utils': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-utils/npm?branch=meogic-main_lexical@0.12.2'
-      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+      '@lexical/clipboard': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-clipboard/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2'
+      '@lexical/selection': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-selection/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2'
+      '@lexical/utils': '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-utils/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2'
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     dev: false
 
-  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-selection/npm?branch=meogic-main_lexical@0.12.2':
-    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-selection/npm?branch=meogic-main}
-    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-selection/npm?branch=meogic-main'
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-selection/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-selection/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-selection/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     name: '@lexical/selection'
     version: 0.12.2
     peerDependencies:
       lexical: 0.12.2
     dependencies:
-      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     dev: false
 
-  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-table/npm?branch=meogic-main_lexical@0.12.2':
-    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-table/npm?branch=meogic-main}
-    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-table/npm?branch=meogic-main'
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-table/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-table/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-table/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     name: '@lexical/table'
     version: 0.12.2
     peerDependencies:
       lexical: 0.12.2
     dependencies:
       '@lexical/utils': 0.12.2_lexical@0.12.2
-      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     dev: false
 
-  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-text/npm?branch=meogic-main_lexical@0.12.2':
-    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-text/npm?branch=meogic-main}
-    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-text/npm?branch=meogic-main'
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-text/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-text/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-text/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     name: '@lexical/text'
     version: 0.12.2
     peerDependencies:
       lexical: 0.12.2
     dependencies:
-      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     dev: false
 
-  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-utils/npm?branch=meogic-main_lexical@0.12.2':
-    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-utils/npm?branch=meogic-main}
-    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-utils/npm?branch=meogic-main'
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-utils/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e_lexical@0.12.2':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-utils/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e}
+    id: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical-utils/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     name: '@lexical/utils'
     version: 0.12.2
     peerDependencies:
@@ -4286,10 +4286,16 @@ packages:
       '@lexical/list': 0.12.2_lexical@0.12.2
       '@lexical/selection': 0.12.2_lexical@0.12.2
       '@lexical/table': 0.12.2_lexical@0.12.2
-      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main'
+      lexical: '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e'
     dev: false
 
   '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main':
     resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?branch=meogic-main}
+    name: lexical
+    version: 0.12.2
+    dev: false
+
+  '@gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e':
+    resolution: {tarball: https://gh2npm-vercel.meogic.com/api/meogic-tech/lexical-for-meogic/packages/lexical/npm?commit=30d10f393d01cadc91b0e12653d9f37c32d8344e}
     name: lexical
     version: 0.12.2
