@@ -1,12 +1,12 @@
-import { type LinkMatcher } from '../composables';
-declare const _default: import("vue").DefineComponent<__VLS_TypePropsToRuntimeProps<{
+import { type LinkMatcher } from './shared';
+declare const _default: import("vue").DefineComponent<__VLS_TypePropsToOption<{
     matchers: LinkMatcher[];
 }>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {
     change: (value: {
         url: string | null;
         prevUrl: string | null;
     }) => void;
-}, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToRuntimeProps<{
+}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_TypePropsToOption<{
     matchers: LinkMatcher[];
 }>>> & {
     onChange?: ((value: {
@@ -16,7 +16,7 @@ declare const _default: import("vue").DefineComponent<__VLS_TypePropsToRuntimePr
 }, {}, {}>;
 export default _default;
 type __VLS_NonUndefinedable<T> = T extends undefined ? never : T;
-type __VLS_TypePropsToRuntimeProps<T> = {
+type __VLS_TypePropsToOption<T> = {
     [K in keyof T]-?: {} extends Pick<T, K> ? {
         type: import('vue').PropType<__VLS_NonUndefinedable<T[K]>>;
     } : {

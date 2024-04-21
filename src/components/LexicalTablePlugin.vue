@@ -27,12 +27,8 @@ import {
   $isTextNode,
   $nodesOfType,
   COMMAND_PRIORITY_EDITOR,
-  DEPRECATED_$computeGridMap,
-  DEPRECATED_$getNodeTriplet,
-  DEPRECATED_$isGridRowNode,
 } from 'lexical'
 import invariant from 'tiny-invariant'
-import { $insertNodeToNearestRoot } from '@lexical/utils'
 import { useEffect, useLexicalComposer, useMounted } from '../composables'
 
 const props = withDefaults(defineProps<{
@@ -47,40 +43,31 @@ const props = withDefaults(defineProps<{
 
 const editor = useLexicalComposer()
 
-// TODO: extract to utils
-function $insertFirst(parent: ElementNode, node: LexicalNode): void {
-  const firstChild = parent.getFirstChild()
-  if (firstChild !== null)
-    firstChild.insertBefore(node)
-
-  else
-    parent.append(node)
-}
-
 useMounted(() => {
   if (!editor.hasNodes([TableNode, TableCellNode, TableRowNode])) {
-    throw new Error(
-      'TablePlugin: TableNode, TableCellNode or TableRowNode not registered on editor',
+    invariant(
+        false,
+        'TablePlugin: TableNode, TableCellNode or TableRowNode not registered on editor',
     )
   }
 
   return editor.registerCommand<InsertTableCommandPayload>(
-    INSERT_TABLE_COMMAND,
-    ({ columns, rows, includeHeaders }) => {
-      const tableNode = $createTableNodeWithDimensions(
-        Number(rows),
-        Number(columns),
-        includeHeaders,
-      )
-      $insertNodeToNearestRoot(tableNode)
+      INSERT_TABLE_COMMAND,
+      ({ columns, rows, includeHeaders }) => {
+        const tableNode = $createTableNodeWithDimensions(
+            Number(rows),
+            Number(columns),
+            includeHeaders,
+        )
+        $insertNodeToNearestRoot(tableNode)
 
-      const firstDescendant = tableNode.getFirstDescendant()
-      if ($isTextNode(firstDescendant))
-        firstDescendant.select()
+        const firstDescendant = tableNode.getFirstDescendant()
+        if ($isTextNode(firstDescendant))
+          firstDescendant.select()
 
-      return true
-    },
-    COMMAND_PRIORITY_EDITOR,
+        return true
+      },
+      COMMAND_PRIORITY_EDITOR,
   )
 })
 
@@ -90,14 +77,14 @@ useMounted(() => {
   const initializeTableNode = (tableNode: TableNode) => {
     const nodeKey = tableNode.getKey()
     const tableElement = editor.getElementByKey(
-      nodeKey,
+        nodeKey,
     ) as HTMLTableElementWithWithTableSelectionState
     if (tableElement && !tableSelections.has(nodeKey)) {
       const tableSelection = applyTableHandlers(
-        tableNode,
-        tableElement,
-        editor,
-        props.hasTabHandler,
+          tableNode,
+          tableElement,
+          editor,
+          props.hasTabHandler,
       )
       tableSelections.set(nodeKey, tableSelection)
     }
@@ -114,26 +101,26 @@ useMounted(() => {
   })
 
   const unregisterMutationListener = editor.registerMutationListener(
-    TableNode,
-    (nodeMutations) => {
-      for (const [nodeKey, mutation] of nodeMutations) {
-        if (mutation === 'created') {
-          editor.getEditorState().read(() => {
-            const tableNode = $getNodeByKey<TableNode>(nodeKey)
-            if ($isTableNode(tableNode))
-              initializeTableNode(tableNode)
-          })
-        }
-        else if (mutation === 'destroyed') {
-          const tableSelection = tableSelections.get(nodeKey)
+      TableNode,
+      (nodeMutations) => {
+        for (const [nodeKey, mutation] of nodeMutations) {
+          if (mutation === 'created') {
+            editor.getEditorState().read(() => {
+              const tableNode = $getNodeByKey<TableNode>(nodeKey)
+              if ($isTableNode(tableNode))
+                initializeTableNode(tableNode)
+            })
+          }
+          else if (mutation === 'destroyed') {
+            const tableSelection = tableSelections.get(nodeKey)
 
-          if (tableSelection !== undefined) {
-            tableSelection.removeListeners()
-            tableSelections.delete(nodeKey)
+            if (tableSelection !== undefined) {
+              tableSelection.removeListeners()
+              tableSelections.delete(nodeKey)
+            }
           }
         }
-      }
-    },
+      },
   )
 
   return () => {
@@ -161,8 +148,8 @@ useEffect(() => {
       const columnsCount = gridMap[0].length
       let row = gridNode.getFirstChild()
       invariant(
-        $isTableRowNode(row),
-        'Expected TableNode first child to be a RowNode',
+          $isTableRowNode(row),
+          'Expected TableNode first child to be a RowNode',
       )
 
       const unmerged = []
@@ -170,8 +157,8 @@ useEffect(() => {
         if (i !== 0) {
           row = row.getNextSibling()
           invariant(
-            $isTableRowNode(row),
-            'Expected TableNode first child to be a RowNode',
+              $isTableRowNode(row),
+              'Expected TableNode first child to be a RowNode',
           )
         }
         let lastRowCell: null | TableCellNode = null
@@ -184,8 +171,8 @@ useEffect(() => {
           }
           else if (cell.getColSpan() > 1 || cell.getRowSpan() > 1) {
             invariant(
-              $isTableCellNode(cell),
-              'Expected TableNode cell to be a TableCellNode',
+                $isTableCellNode(cell),
+                'Expected TableNode cell to be a TableCellNode',
             )
             const newCell = $createTableCellNode(cell.__headerState)
             if (lastRowCell !== null)

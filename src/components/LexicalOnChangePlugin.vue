@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted } from 'vue'
-import type { EditorState, LexicalEditor } from 'lexical'
+import {$getRoot, EditorState, LexicalEditor} from 'lexical'
 import { useLexicalComposer } from '../composables'
-import { useMounted } from '../composables/useMounted'
 
 const props = withDefaults(defineProps<{
   ignoreInitialChange?: boolean

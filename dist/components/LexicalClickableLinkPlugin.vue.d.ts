@@ -1,23 +1,13 @@
 declare const _default: import("vue").DefineComponent<__VLS_WithDefaults<__VLS_TypePropsToOption<{
-    hasCellMerge?: boolean | undefined;
-    hasCellBackgroundColor?: boolean | undefined;
-    hasTabHandler?: boolean | undefined;
+    newTab?: boolean | undefined;
 }>, {
-    hasCellMerge: boolean;
-    hasCellBackgroundColor: boolean;
-    hasTabHandler: boolean;
+    newTab: boolean;
 }>, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, {}, string, import("vue").PublicProps, Readonly<import("vue").ExtractPropTypes<__VLS_WithDefaults<__VLS_TypePropsToOption<{
-    hasCellMerge?: boolean | undefined;
-    hasCellBackgroundColor?: boolean | undefined;
-    hasTabHandler?: boolean | undefined;
+    newTab?: boolean | undefined;
 }>, {
-    hasCellMerge: boolean;
-    hasCellBackgroundColor: boolean;
-    hasTabHandler: boolean;
+    newTab: boolean;
 }>>>, {
-    hasCellMerge: boolean;
-    hasCellBackgroundColor: boolean;
-    hasTabHandler: boolean;
+    newTab: boolean;
 }, {}>;
 export default _default;
 type __VLS_WithDefaults<P, D> = {

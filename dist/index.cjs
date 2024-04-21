@@ -1,34 +1,123 @@
+"use strict";
+var __create = Object.create;
+var __defProp = Object.defineProperty;
+var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
+var __getOwnPropNames = Object.getOwnPropertyNames;
+var __getProtoOf = Object.getPrototypeOf;
+var __hasOwnProp = Object.prototype.hasOwnProperty;
+var __export = (target, all) => {
+  for (var name in all)
+    __defProp(target, name, { get: all[name], enumerable: true });
+};
+var __copyProps = (to, from, except, desc) => {
+  if (from && typeof from === "object" || typeof from === "function") {
+    for (let key of __getOwnPropNames(from))
+      if (!__hasOwnProp.call(to, key) && key !== except)
+        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
+  }
+  return to;
+};
+var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
+  // If the importer is in node compatibility mode or this is not an ESM
+  // file that has been converted to a CommonJS file using a Babel-
+  // compatible transform (i.e. "__esModule" has not been set), then set
+  // "default" to the CommonJS "module.exports" for node compatibility.
+  isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
+  mod
+));
+var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
+
+// src/index.ts
+var src_exports = {};
+__export(src_exports, {
+  $createDecoratorBlockNode: () => $createDecoratorBlockNode,
+  $isDecoratorBlockNode: () => $isDecoratorBlockNode,
+  AutoEmbedOption: () => AutoEmbedOption,
+  DecoratorBlockNode: () => DecoratorBlockNode,
+  INSERT_EMBED_COMMAND: () => INSERT_EMBED_COMMAND,
+  LexicalAutoEmbedPlugin: () => LexicalAutoEmbedPlugin_default,
+  LexicalAutoFocusPlugin: () => LexicalAutoFocusPlugin_default,
+  LexicalAutoLinkPlugin: () => LexicalAutoLinkPlugin_default,
+  LexicalAutoScrollPlugin: () => LexicalAutoScrollPlugin_default,
+  LexicalBlockWithAlignableContents: () => LexicalBlockWithAlignableContents_default,
+  LexicalCharacterLimitPlugin: () => LexicalCharacterLimitPlugin_default,
+  LexicalCheckListPlugin: () => LexicalCheckListPlugin_default,
+  LexicalClearEditorPlugin: () => LexicalClearEditorPlugin_default,
+  LexicalClickableLinkPlugin: () => LexicalClickableLinkPlugin_default,
+  LexicalCollaborationPlugin: () => LexicalCollaborationPlugin_default,
+  LexicalComposer: () => LexicalComposer_default,
+  LexicalContentEditable: () => LexicalContentEditable_default,
+  LexicalContextMenuPlugin: () => LexicalContextMenuPlugin_default,
+  LexicalDecoratedTeleports: () => LexicalDecoratedTeleports_default,
+  LexicalHashtagPlugin: () => LexicalHashtagPlugin_default,
+  LexicalHistoryPlugin: () => LexicalHistoryPlugin_default,
+  LexicalLinkPlugin: () => LexicalLinkPlugin_default,
+  LexicalListPlugin: () => LexicalListPlugin_default,
+  LexicalMarkdownShortcutPlugin: () => LexicalMarkdownShortcutPlugin_default,
+  LexicalNodeMenuPlugin: () => LexicalNodeMenuPlugin_default,
+  LexicalOnChangePlugin: () => LexicalOnChangePlugin_default,
+  LexicalPlainTextPlugin: () => LexicalPlainTextPlugin_default,
+  LexicalRichTextPlugin: () => LexicalRichTextPlugin_default,
+  LexicalTabIndentationPlugin: () => LexicalTabIndentationPlugin_default,
+  LexicalTablePlugin: () => LexicalTablePlugin_default,
+  LexicalTreeViewPlugin: () => LexicalTreeViewPlugin_default,
+  LexicalTypeaheadMenuPlugin: () => LexicalTypeaheadMenuPlugin_default,
+  MenuOption: () => MenuOption2,
+  URL_MATCHER: () => URL_MATCHER,
+  mergePrevious: () => mergePrevious,
+  useBasicTypeaheadTriggerMatch: () => useBasicTypeaheadTriggerMatch,
+  useCanShowPlaceholder: () => useCanShowPlaceholder,
+  useCharacterLimit: () => useCharacterLimit,
+  useDecorators: () => useDecorators,
+  useEditor: () => useEditor,
+  useEffect: () => useEffect,
+  useHistory: () => useHistory,
+  useLexicalCommandsLog: () => useLexicalCommandsLog,
+  useLexicalComposer: () => useLexicalComposer,
+  useLexicalIsTextContentEmpty: () => useLexicalIsTextContentEmpty,
+  useLexicalNodeSelection: () => useLexicalNodeSelection,
+  useLexicalTextEntity: () => useLexicalTextEntity,
+  useList: () => useList,
+  useMounted: () => useMounted,
+  usePlainTextSetup: () => usePlainTextSetup,
+  useRichTextSetup: () => useRichTextSetup,
+  useYjsCollaboration: () => useYjsCollaboration,
+  useYjsFocusTracking: () => useYjsFocusTracking,
+  useYjsHistory: () => useYjsHistory
+});
+module.exports = __toCommonJS(src_exports);
+
 // src/composables/useCanShowPlaceholder.ts
-import { readonly, ref } from "vue";
-import { $canShowPlaceholderCurry } from "@lexical/text";
-import { mergeRegister } from "@lexical/utils";
+var import_vue2 = require("vue");
+var import_text = require("@lexical/text");
+var import_utils = require("@lexical/utils");
 
 // src/composables/useMounted.ts
-import { onMounted, onUnmounted } from "vue";
+var import_vue = require("vue");
 function useMounted(cb) {
   let unregister;
-  onMounted(() => {
+  (0, import_vue.onMounted)(() => {
     unregister = cb();
   });
-  onUnmounted(() => {
+  (0, import_vue.onUnmounted)(() => {
     unregister?.();
   });
 }
 
 // src/composables/useCanShowPlaceholder.ts
 function canShowPlaceholderFromCurrentEditorState(editor) {
-  const currentCanShowPlaceholder = editor.getEditorState().read($canShowPlaceholderCurry(editor.isComposing()));
+  const currentCanShowPlaceholder = editor.getEditorState().read((0, import_text.$canShowPlaceholderCurry)(editor.isComposing()));
   return currentCanShowPlaceholder;
 }
 function useCanShowPlaceholder(editor) {
-  const initialState = editor.getEditorState().read($canShowPlaceholderCurry(editor.isComposing()));
-  const canShowPlaceholder = ref(initialState);
+  const initialState = editor.getEditorState().read((0, import_text.$canShowPlaceholderCurry)(editor.isComposing()));
+  const canShowPlaceholder = (0, import_vue2.ref)(initialState);
   function resetCanShowPlaceholder() {
     const currentCanShowPlaceholder = canShowPlaceholderFromCurrentEditorState(editor);
     canShowPlaceholder.value = currentCanShowPlaceholder;
   }
   useMounted(() => {
-    return mergeRegister(
+    return (0, import_utils.mergeRegister)(
       editor.registerUpdateListener(() => {
         resetCanShowPlaceholder();
       }),
@@ -37,25 +126,15 @@ function useCanShowPlaceholder(editor) {
       })
     );
   });
-  return readonly(canShowPlaceholder);
+  return (0, import_vue2.readonly)(canShowPlaceholder);
 }
 
 // src/composables/useCharacterLimit.ts
-import {
-  $createOverflowNode,
-  $isOverflowNode,
-  OverflowNode
-} from "@lexical/overflow";
-import { $rootTextContent } from "@lexical/text";
-import { $dfs, mergeRegister as mergeRegister2 } from "@lexical/utils";
-import {
-  $getSelection,
-  $isLeafNode,
-  $isRangeSelection,
-  $isTextNode,
-  $setSelection
-} from "lexical";
-import invariant from "tiny-invariant";
+var import_overflow = require("@lexical/overflow");
+var import_text2 = require("@lexical/text");
+var import_utils2 = require("@lexical/utils");
+var import_lexical = require("lexical");
+var import_tiny_invariant = __toESM(require("tiny-invariant"), 1);
 function useCharacterLimit(editor, maxCharacters, optional = Object.freeze({})) {
   const {
     strlen = (input) => input.length,
@@ -64,15 +143,15 @@ function useCharacterLimit(editor, maxCharacters, optional = Object.freeze({})) 
     }
   } = optional;
   useMounted(() => {
-    if (!editor.hasNodes([OverflowNode])) {
-      invariant(
+    if (!editor.hasNodes([import_overflow.OverflowNode])) {
+      (0, import_tiny_invariant.default)(
         false,
         "useCharacterLimit: OverflowNode not registered on editor"
       );
     }
-    let text = editor.getEditorState().read($rootTextContent);
+    let text = editor.getEditorState().read(import_text2.$rootTextContent);
     let lastComputedTextLength = 0;
-    return mergeRegister2(
+    return (0, import_utils2.mergeRegister)(
       editor.registerTextContentListener((currentText) => {
         text = currentText;
       }),
@@ -130,12 +209,12 @@ function findOffset(text, maxCharacters, strlen) {
   return offsetUtf16;
 }
 function $wrapOverflowedNodes(offset) {
-  const dfsNodes = $dfs();
+  const dfsNodes = (0, import_utils2.$dfs)();
   const dfsNodesLength = dfsNodes.length;
   let accumulatedLength = 0;
   for (let i = 0; i < dfsNodesLength; i += 1) {
     const { node } = dfsNodes[i];
-    if ($isOverflowNode(node)) {
+    if ((0, import_overflow.$isOverflowNode)(node)) {
       const previousLength = accumulatedLength;
       const nextLength = accumulatedLength + node.getTextContentSize();
       if (nextLength <= offset) {
@@ -143,11 +222,11 @@ function $wrapOverflowedNodes(offset) {
         const previousSibling = node.getPreviousSibling();
         const nextSibling = node.getNextSibling();
         $unwrapNode(node);
-        const selection = $getSelection();
-        if ($isRangeSelection(selection) && (!selection.anchor.getNode().isAttached() || !selection.focus.getNode().isAttached())) {
-          if ($isTextNode(previousSibling))
+        const selection = (0, import_lexical.$getSelection)();
+        if ((0, import_lexical.$isRangeSelection)(selection) && (!selection.anchor.getNode().isAttached() || !selection.focus.getNode().isAttached())) {
+          if ((0, import_lexical.$isTextNode)(previousSibling))
             previousSibling.select();
-          else if ($isTextNode(nextSibling))
+          else if ((0, import_lexical.$isTextNode)(nextSibling))
             nextSibling.select();
           else if (parent !== null)
             parent.select();
@@ -156,18 +235,18 @@ function $wrapOverflowedNodes(offset) {
         const descendant = node.getFirstDescendant();
         const descendantLength = descendant !== null ? descendant.getTextContentSize() : 0;
         const previousPlusDescendantLength = previousLength + descendantLength;
-        const firstDescendantIsSimpleText = $isTextNode(descendant) && descendant.isSimpleText();
+        const firstDescendantIsSimpleText = (0, import_lexical.$isTextNode)(descendant) && descendant.isSimpleText();
         const firstDescendantDoesNotOverflow = previousPlusDescendantLength <= offset;
         if (firstDescendantIsSimpleText || firstDescendantDoesNotOverflow)
           $unwrapNode(node);
       }
-    } else if ($isLeafNode(node)) {
+    } else if ((0, import_lexical.$isLeafNode)(node)) {
       const previousAccumulatedLength = accumulatedLength;
       accumulatedLength += node.getTextContentSize();
-      if (accumulatedLength > offset && !$isOverflowNode(node.getParent())) {
-        const previousSelection = $getSelection();
+      if (accumulatedLength > offset && !(0, import_overflow.$isOverflowNode)(node.getParent())) {
+        const previousSelection = (0, import_lexical.$getSelection)();
         let overflowNode;
-        if (previousAccumulatedLength < offset && $isTextNode(node) && node.isSimpleText()) {
+        if (previousAccumulatedLength < offset && (0, import_lexical.$isTextNode)(node) && node.isSimpleText()) {
           const [, overflowedText] = node.splitText(
             offset - previousAccumulatedLength
           );
@@ -176,14 +255,14 @@ function $wrapOverflowedNodes(offset) {
           overflowNode = $wrapNode(node);
         }
         if (previousSelection !== null)
-          $setSelection(previousSelection);
+          (0, import_lexical.$setSelection)(previousSelection);
         mergePrevious(overflowNode);
       }
     }
   }
 }
 function $wrapNode(node) {
-  const overflowNode = $createOverflowNode();
+  const overflowNode = (0, import_overflow.$createOverflowNode)();
   node.insertBefore(overflowNode);
   overflowNode.append(node);
   return overflowNode;
@@ -198,7 +277,7 @@ function $unwrapNode(node) {
 }
 function mergePrevious(overflowNode) {
   const previousNode = overflowNode.getPreviousSibling();
-  if (!$isOverflowNode(previousNode))
+  if (!(0, import_overflow.$isOverflowNode)(previousNode))
     return;
   const firstChild = overflowNode.getFirstChild();
   const previousNodeChildren = previousNode.getChildren();
@@ -209,8 +288,8 @@ function mergePrevious(overflowNode) {
     for (let i = 0; i < previousNodeChildrenLength; i++)
       firstChild.insertBefore(previousNodeChildren[i]);
   }
-  const selection = $getSelection();
-  if ($isRangeSelection(selection)) {
+  const selection = (0, import_lexical.$getSelection)();
+  if ((0, import_lexical.$isRangeSelection)(selection)) {
     const anchor = selection.anchor;
     const anchorNode = anchor.getNode();
     const focus = selection.focus;
@@ -238,24 +317,24 @@ function mergePrevious(overflowNode) {
 }
 
 // src/composables/useDecorators.ts
-import { Teleport, computed, h, shallowRef, unref } from "vue";
+var import_vue3 = require("vue");
 function useDecorators(editor) {
-  const decorators = shallowRef(editor.getDecorators());
+  const decorators = (0, import_vue3.shallowRef)(editor.getDecorators());
   useMounted(() => {
     return editor.registerDecoratorListener((nextDecorators) => {
       decorators.value = nextDecorators;
     });
   });
-  return computed(() => {
+  return (0, import_vue3.computed)(() => {
     const decoratedTeleports = [];
-    const decoratorKeys = Object.keys(unref(decorators));
+    const decoratorKeys = Object.keys((0, import_vue3.unref)(decorators));
     for (let i = 0; i < decoratorKeys.length; i++) {
       const nodeKey = decoratorKeys[i];
       const vueDecorator = decorators.value[nodeKey];
       const element = editor.getElementByKey(nodeKey);
       if (element !== null) {
         decoratedTeleports.push(
-          h(Teleport, {
+          (0, import_vue3.h)(import_vue3.Teleport, {
             to: element
           }, vueDecorator)
         );
@@ -266,17 +345,17 @@ function useDecorators(editor) {
 }
 
 // src/composables/useLexicalComposer.ts
-import { inject } from "vue";
-import invariant2 from "tiny-invariant";
+var import_vue4 = require("vue");
+var import_tiny_invariant2 = __toESM(require("tiny-invariant"), 1);
 
 // src/composables/inject.ts
 var LexicalEditorProviderKey = "LexicalEditorProviderKey";
 
 // src/composables/useLexicalComposer.ts
 function useLexicalComposer() {
-  const editor = inject(LexicalEditorProviderKey);
+  const editor = (0, import_vue4.inject)(LexicalEditorProviderKey);
   if (!editor) {
-    invariant2(
+    (0, import_tiny_invariant2.default)(
       false,
       "useLexicalComposer: cannot find a LexicalComposer"
     );
@@ -286,48 +365,42 @@ function useLexicalComposer() {
 var useEditor = useLexicalComposer;
 
 // src/composables/useHistory.ts
-import { computed as computed2, unref as unref2, watchEffect } from "vue";
-import { createEmptyHistoryState, registerHistory } from "@lexical/history";
+var import_vue5 = require("vue");
+var import_history = require("@lexical/history");
 function useHistory(editor, externalHistoryState, delay) {
-  const historyState = computed2(
-    () => unref2(externalHistoryState) || createEmptyHistoryState()
+  const historyState = (0, import_vue5.computed)(
+    () => (0, import_vue5.unref)(externalHistoryState) || (0, import_history.createEmptyHistoryState)()
   );
-  watchEffect((onInvalidate) => {
-    const unregisterListener = registerHistory(unref2(editor), historyState.value, unref2(delay) || 1e3);
+  (0, import_vue5.watchEffect)((onInvalidate) => {
+    const unregisterListener = (0, import_history.registerHistory)((0, import_vue5.unref)(editor), historyState.value, (0, import_vue5.unref)(delay) || 1e3);
     onInvalidate(unregisterListener);
   });
 }
 
 // src/composables/useLexicalIsTextContentEmpty.ts
-import { readonly as readonly2, ref as ref2 } from "vue";
-import { $isRootTextContentEmptyCurry } from "@lexical/text";
+var import_vue6 = require("vue");
+var import_text3 = require("@lexical/text");
 function useLexicalIsTextContentEmpty(editor, trim) {
-  const isEmpty = ref2(
-    editor.getEditorState().read($isRootTextContentEmptyCurry(editor.isComposing(), trim))
+  const isEmpty = (0, import_vue6.ref)(
+    editor.getEditorState().read((0, import_text3.$isRootTextContentEmptyCurry)(editor.isComposing(), trim))
   );
   useMounted(() => {
     return editor.registerUpdateListener(({ editorState }) => {
       const isComposing = editor.isComposing();
       isEmpty.value = editorState.read(
-        $isRootTextContentEmptyCurry(isComposing, trim)
+        (0, import_text3.$isRootTextContentEmptyCurry)(isComposing, trim)
       );
     });
   });
-  return readonly2(isEmpty);
+  return (0, import_vue6.readonly)(isEmpty);
 }
 
 // src/composables/useLexicalNodeSelection.ts
-import {
-  $createNodeSelection,
-  $getNodeByKey,
-  $getSelection as $getSelection2,
-  $isNodeSelection,
-  $setSelection as $setSelection2
-} from "lexical";
-import { readonly as readonly3, ref as ref3, unref as unref3, watchEffect as watchEffect2 } from "vue";
+var import_lexical2 = require("lexical");
+var import_vue7 = require("vue");
 function isNodeSelected(editor, key) {
   return editor.getEditorState().read(() => {
-    const node = $getNodeByKey(key);
+    const node = (0, import_lexical2.$getNodeByKey)(key);
     if (node === null)
       return false;
     return node.isSelected();
@@ -335,10 +408,10 @@ function isNodeSelected(editor, key) {
 }
 function useLexicalNodeSelection(key) {
   const editor = useLexicalComposer();
-  const isSelected = ref3(isNodeSelected(editor, unref3(key)));
-  watchEffect2((onInvalidate) => {
+  const isSelected = (0, import_vue7.ref)(isNodeSelected(editor, (0, import_vue7.unref)(key)));
+  (0, import_vue7.watchEffect)((onInvalidate) => {
     const unregisterListener = editor.registerUpdateListener(() => {
-      isSelected.value = isNodeSelected(editor, unref3(key));
+      isSelected.value = isNodeSelected(editor, (0, import_vue7.unref)(key));
     });
     onInvalidate(() => {
       unregisterListener();
@@ -346,130 +419,120 @@ function useLexicalNodeSelection(key) {
   });
   const setSelected = (selected) => {
     editor.update(() => {
-      let selection = $getSelection2();
-      if (!$isNodeSelection(selection)) {
-        selection = $createNodeSelection();
-        $setSelection2(selection);
+      let selection = (0, import_lexical2.$getSelection)();
+      if (!(0, import_lexical2.$isNodeSelection)(selection)) {
+        selection = (0, import_lexical2.$createNodeSelection)();
+        (0, import_lexical2.$setSelection)(selection);
       }
-      if ($isNodeSelection(selection)) {
+      if ((0, import_lexical2.$isNodeSelection)(selection)) {
         if (selected)
-          selection.add(unref3(key));
+          selection.add((0, import_vue7.unref)(key));
         else
-          selection.delete(unref3(key));
+          selection.delete((0, import_vue7.unref)(key));
       }
     });
   };
   const clearSelection = () => {
     editor.update(() => {
-      const selection = $getSelection2();
-      if ($isNodeSelection(selection))
+      const selection = (0, import_lexical2.$getSelection)();
+      if ((0, import_lexical2.$isNodeSelection)(selection))
         selection.clear();
     });
   };
   return {
-    isSelected: readonly3(isSelected),
+    isSelected: (0, import_vue7.readonly)(isSelected),
     setSelected,
     clearSelection
   };
 }
 
 // src/composables/useLexicalTextEntity.ts
-import { registerLexicalTextEntity } from "@lexical/text";
-import { mergeRegister as mergeRegister3 } from "@lexical/utils";
+var import_text4 = require("@lexical/text");
+var import_utils3 = require("@lexical/utils");
 function useLexicalTextEntity(getMatch, targetNode, createNode) {
   const editor = useLexicalComposer();
   useMounted(() => {
-    return mergeRegister3(
-      ...registerLexicalTextEntity(editor, getMatch, targetNode, createNode)
+    return (0, import_utils3.mergeRegister)(
+      ...(0, import_text4.registerLexicalTextEntity)(editor, getMatch, targetNode, createNode)
     );
   });
 }
 
 // src/composables/useList.ts
-import {
-  $handleListInsertParagraph,
-  INSERT_ORDERED_LIST_COMMAND,
-  INSERT_UNORDERED_LIST_COMMAND,
-  REMOVE_LIST_COMMAND,
-  insertList,
-  removeList
-} from "@lexical/list";
-import { mergeRegister as mergeRegister4 } from "@lexical/utils";
-import {
-  COMMAND_PRIORITY_LOW,
-  INSERT_PARAGRAPH_COMMAND
-} from "lexical";
+var import_list = require("@lexical/list");
+var import_utils4 = require("@lexical/utils");
+var import_lexical3 = require("lexical");
 function useList(editor) {
   useMounted(() => {
-    return mergeRegister4(
+    return (0, import_utils4.mergeRegister)(
       editor.registerCommand(
-        INSERT_ORDERED_LIST_COMMAND,
+        import_list.INSERT_ORDERED_LIST_COMMAND,
         () => {
-          insertList(editor, "number");
+          (0, import_list.insertList)(editor, "number");
           return true;
         },
-        COMMAND_PRIORITY_LOW
+        import_lexical3.COMMAND_PRIORITY_LOW
       ),
       editor.registerCommand(
-        INSERT_UNORDERED_LIST_COMMAND,
+        import_list.INSERT_UNORDERED_LIST_COMMAND,
         () => {
-          insertList(editor, "bullet");
+          (0, import_list.insertList)(editor, "bullet");
           return true;
         },
-        COMMAND_PRIORITY_LOW
+        import_lexical3.COMMAND_PRIORITY_LOW
       ),
       editor.registerCommand(
-        REMOVE_LIST_COMMAND,
+        import_list.REMOVE_LIST_COMMAND,
         () => {
-          removeList(editor);
+          (0, import_list.removeList)(editor);
           return true;
         },
-        COMMAND_PRIORITY_LOW
+        import_lexical3.COMMAND_PRIORITY_LOW
       ),
       editor.registerCommand(
-        INSERT_PARAGRAPH_COMMAND,
+        import_lexical3.INSERT_PARAGRAPH_COMMAND,
         () => {
-          const hasHandledInsertParagraph = $handleListInsertParagraph();
+          const hasHandledInsertParagraph = (0, import_list.$handleListInsertParagraph)();
           if (hasHandledInsertParagraph)
             return true;
           return false;
         },
-        COMMAND_PRIORITY_LOW
+        import_lexical3.COMMAND_PRIORITY_LOW
       )
     );
   });
 }
 
 // src/composables/usePlainTextSetup.ts
-import { registerDragonSupport } from "@lexical/dragon";
-import { registerPlainText } from "@lexical/plain-text";
-import { mergeRegister as mergeRegister5 } from "@lexical/utils";
+var import_dragon = require("@lexical/dragon");
+var import_plain_text = require("@lexical/plain-text");
+var import_utils5 = require("@lexical/utils");
 function usePlainTextSetup(editor) {
   useMounted(() => {
-    return mergeRegister5(
-      registerPlainText(editor),
-      registerDragonSupport(editor)
+    return (0, import_utils5.mergeRegister)(
+      (0, import_plain_text.registerPlainText)(editor),
+      (0, import_dragon.registerDragonSupport)(editor)
     );
   });
 }
 
 // src/composables/useRichTextSetup.ts
-import { registerDragonSupport as registerDragonSupport2 } from "@lexical/dragon";
-import { registerRichText } from "@lexical/rich-text";
-import { mergeRegister as mergeRegister6 } from "@lexical/utils";
+var import_dragon2 = require("@lexical/dragon");
+var import_rich_text = require("@lexical/rich-text");
+var import_utils6 = require("@lexical/utils");
 function useRichTextSetup(editor) {
   useMounted(() => {
-    return mergeRegister6(
-      registerRichText(editor),
-      registerDragonSupport2(editor)
+    return (0, import_utils6.mergeRegister)(
+      (0, import_rich_text.registerRichText)(editor),
+      (0, import_dragon2.registerDragonSupport)(editor)
     );
   });
 }
 
 // src/composables/useEffect.ts
-import { watchEffect as watchEffect3 } from "vue";
+var import_vue8 = require("vue");
 function useEffect(cb, options) {
-  watchEffect3((onInvalidate) => {
+  (0, import_vue8.watchEffect)((onInvalidate) => {
     const unregister = cb();
     onInvalidate(() => unregister?.());
   }, {
@@ -479,34 +542,15 @@ function useEffect(cb, options) {
 }
 
 // src/composables/useYjsCollaboration.ts
-import { mergeRegister as mergeRegister7 } from "@lexical/utils";
-import {
-  CONNECTED_COMMAND,
-  TOGGLE_CONNECT_COMMAND,
-  createBinding,
-  createUndoManager,
-  initLocalState,
-  setLocalStateFocus,
-  syncCursorPositions,
-  syncLexicalUpdateToYjs,
-  syncYjsChangesToLexical
-} from "@lexical/yjs";
-import {
-  $createParagraphNode,
-  $getRoot,
-  $getSelection as $getSelection3,
-  BLUR_COMMAND,
-  COMMAND_PRIORITY_EDITOR,
-  FOCUS_COMMAND,
-  REDO_COMMAND,
-  UNDO_COMMAND
-} from "lexical";
-import { UndoManager } from "yjs";
-import { computed as computed3, ref as ref4, toRaw } from "vue";
+var import_utils7 = require("@lexical/utils");
+var import_yjs = require("@lexical/yjs");
+var import_lexical4 = require("lexical");
+var import_yjs2 = require("yjs");
+var import_vue9 = require("vue");
 function useYjsCollaboration(editor, id, provider, docMap, name, color, shouldBootstrap, initialEditorState, excludedProperties, awarenessData) {
-  const isReloadingDoc = ref4(false);
-  const doc = ref4(docMap.get(id));
-  const binding = computed3(() => createBinding(editor, provider, id, toRaw(doc.value), docMap, excludedProperties));
+  const isReloadingDoc = (0, import_vue9.ref)(false);
+  const doc = (0, import_vue9.ref)(docMap.get(id));
+  const binding = (0, import_vue9.computed)(() => (0, import_yjs.createBinding)(editor, provider, id, (0, import_vue9.toRaw)(doc.value), docMap, excludedProperties));
   const connect = () => {
     provider.connect();
   };
@@ -520,7 +564,7 @@ function useYjsCollaboration(editor, id, provider, docMap, name, color, shouldBo
     const { root } = binding.value;
     const { awareness } = provider;
     const onStatus = ({ status }) => {
-      editor.dispatchCommand(CONNECTED_COMMAND, status === "connected");
+      editor.dispatchCommand(import_yjs.CONNECTED_COMMAND, status === "connected");
     };
     const onSync = (isSynced) => {
       if (shouldBootstrap && isSynced && root.isEmpty() && root._xmlText._length === 0 && isReloadingDoc.value === false)
@@ -528,16 +572,16 @@ function useYjsCollaboration(editor, id, provider, docMap, name, color, shouldBo
       isReloadingDoc.value = false;
     };
     const onAwarenessUpdate = () => {
-      syncCursorPositions(binding.value, provider);
+      (0, import_yjs.syncCursorPositions)(binding.value, provider);
     };
     const onYjsTreeChanges = (events, transaction) => {
       const origin = transaction.origin;
-      if (toRaw(origin) !== binding.value) {
-        const isFromUndoManger = origin instanceof UndoManager;
-        syncYjsChangesToLexical(binding.value, provider, events, isFromUndoManger);
+      if ((0, import_vue9.toRaw)(origin) !== binding.value) {
+        const isFromUndoManger = origin instanceof import_yjs2.UndoManager;
+        (0, import_yjs.syncYjsChangesToLexical)(binding.value, provider, events, isFromUndoManger);
       }
     };
-    initLocalState(
+    (0, import_yjs.initLocalState)(
       provider,
       name,
       color,
@@ -558,7 +602,7 @@ function useYjsCollaboration(editor, id, provider, docMap, name, color, shouldBo
     const removeListener = editor.registerUpdateListener(
       ({ prevEditorState, editorState, dirtyLeaves, dirtyElements, normalizedNodes, tags }) => {
         if (tags.has("skip-collab") === false) {
-          syncLexicalUpdateToYjs(
+          (0, import_yjs.syncLexicalUpdateToYjs)(
             binding.value,
             provider,
             prevEditorState,
@@ -586,7 +630,7 @@ function useYjsCollaboration(editor, id, provider, docMap, name, color, shouldBo
   });
   useEffect(() => {
     return editor.registerCommand(
-      TOGGLE_CONNECT_COMMAND,
+      import_yjs.TOGGLE_CONNECT_COMMAND,
       (payload) => {
         if (connect !== void 0 && disconnect !== void 0) {
           const shouldConnect = payload;
@@ -600,35 +644,35 @@ function useYjsCollaboration(editor, id, provider, docMap, name, color, shouldBo
         }
         return true;
       },
-      COMMAND_PRIORITY_EDITOR
+      import_lexical4.COMMAND_PRIORITY_EDITOR
     );
   });
   return binding;
 }
 function useYjsFocusTracking(editor, provider, name, color, awarenessData) {
   useEffect(() => {
-    return mergeRegister7(
+    return (0, import_utils7.mergeRegister)(
       editor.registerCommand(
-        FOCUS_COMMAND,
+        import_lexical4.FOCUS_COMMAND,
         () => {
-          setLocalStateFocus(provider, name, color, true, awarenessData || {});
+          (0, import_yjs.setLocalStateFocus)(provider, name, color, true, awarenessData || {});
           return false;
         },
-        COMMAND_PRIORITY_EDITOR
+        import_lexical4.COMMAND_PRIORITY_EDITOR
       ),
       editor.registerCommand(
-        BLUR_COMMAND,
+        import_lexical4.BLUR_COMMAND,
         () => {
-          setLocalStateFocus(provider, name, color, false, awarenessData || {});
+          (0, import_yjs.setLocalStateFocus)(provider, name, color, false, awarenessData || {});
           return false;
         },
-        COMMAND_PRIORITY_EDITOR
+        import_lexical4.COMMAND_PRIORITY_EDITOR
       )
     );
   });
 }
 function useYjsHistory(editor, binding) {
-  const undoManager = computed3(() => createUndoManager(binding, binding.root.getSharedType()));
+  const undoManager = (0, import_vue9.computed)(() => (0, import_yjs.createUndoManager)(binding, binding.root.getSharedType()));
   useEffect(() => {
     const undo = () => {
       undoManager.value.undo();
@@ -636,22 +680,22 @@ function useYjsHistory(editor, binding) {
     const redo = () => {
       undoManager.value.redo();
     };
-    return mergeRegister7(
+    return (0, import_utils7.mergeRegister)(
       editor.registerCommand(
-        UNDO_COMMAND,
+        import_lexical4.UNDO_COMMAND,
         () => {
           undo();
           return true;
         },
-        COMMAND_PRIORITY_EDITOR
+        import_lexical4.COMMAND_PRIORITY_EDITOR
       ),
       editor.registerCommand(
-        REDO_COMMAND,
+        import_lexical4.REDO_COMMAND,
         () => {
           redo();
           return true;
         },
-        COMMAND_PRIORITY_EDITOR
+        import_lexical4.COMMAND_PRIORITY_EDITOR
       )
     );
   });
@@ -663,7 +707,7 @@ function useYjsHistory(editor, binding) {
 function initializeEditor(editor, initialEditorState) {
   editor.update(
     () => {
-      const root = $getRoot();
+      const root = (0, import_lexical4.$getRoot)();
       if (root.isEmpty()) {
         if (initialEditorState) {
           switch (typeof initialEditorState) {
@@ -679,7 +723,7 @@ function initializeEditor(editor, initialEditorState) {
             case "function": {
               editor.update(
                 () => {
-                  const root1 = $getRoot();
+                  const root1 = (0, import_lexical4.$getRoot)();
                   if (root1.isEmpty())
                     initialEditorState(editor);
                 },
@@ -689,10 +733,10 @@ function initializeEditor(editor, initialEditorState) {
             }
           }
         } else {
-          const paragraph = $createParagraphNode();
+          const paragraph = (0, import_lexical4.$createParagraphNode)();
           root.append(paragraph);
           const { activeElement } = document;
-          if ($getSelection3() !== null || activeElement !== null && activeElement === editor.getRootElement())
+          if ((0, import_lexical4.$getSelection)() !== null || activeElement !== null && activeElement === editor.getRootElement())
             paragraph.select();
         }
       }
@@ -705,7 +749,7 @@ function initializeEditor(editor, initialEditorState) {
 function clearEditorSkipCollab(editor, binding) {
   editor.update(
     () => {
-      const root = $getRoot();
+      const root = (0, import_lexical4.$getRoot)();
       root.clear();
       root.select();
     },
@@ -734,10 +778,10 @@ function clearEditorSkipCollab(editor, binding) {
 }
 
 // src/composables/useLexicalCommandsLog.ts
-import { COMMAND_PRIORITY_HIGH } from "lexical";
-import { readonly as readonly4, ref as ref5 } from "vue";
+var import_lexical5 = require("lexical");
+var import_vue10 = require("vue");
 function useLexicalCommandsLog(editor) {
-  const loggedCommands = ref5([]);
+  const loggedCommands = (0, import_vue10.ref)([]);
   useMounted(() => {
     const unregisterCommandListeners = /* @__PURE__ */ new Set();
     for (const [command] of editor._commands) {
@@ -756,7 +800,7 @@ function useLexicalCommandsLog(editor) {
               loggedCommands.value.shift();
             return false;
           },
-          COMMAND_PRIORITY_HIGH
+          import_lexical5.COMMAND_PRIORITY_HIGH
         )
       );
     }
@@ -764,12 +808,12 @@ function useLexicalCommandsLog(editor) {
       unregisterCommandListeners.forEach((unregister) => unregister());
     };
   });
-  return readonly4(loggedCommands);
+  return (0, import_vue10.readonly)(loggedCommands);
 }
 
 // src/components/LexicalDecoratedTeleports.ts
-import { defineComponent } from "vue";
-var LexicalDecoratedTeleports_default = defineComponent({
+var import_vue11 = require("vue");
+var LexicalDecoratedTeleports_default = (0, import_vue11.defineComponent)({
   name: "LexicalDecoratedTeleports",
   setup() {
     const editor = useLexicalComposer();
@@ -779,11 +823,11 @@ var LexicalDecoratedTeleports_default = defineComponent({
 });
 
 // src/components/LexicalContentEditable.vue
-import { defineComponent as _defineComponent } from "vue";
-import { openBlock as _openBlock, createElementBlock as _createElementBlock } from "vue";
-import { ref as ref6 } from "vue";
+var import_vue12 = require("vue");
+var import_vue13 = require("vue");
+var import_vue14 = require("vue");
 var _hoisted_1 = ["id", "aria-activedescendant", "aria-autocomplete", "aria-controls", "aria-describedby", "aria-expanded", "aria-label", "aria-labelledby", "aria-multiline", "aria-owns", "aria-required", "autocapitalize", "autocomplete", "autocorrect", "contenteditable", "role", "spellcheck", "tabindex"];
-var _sfc_main = /* @__PURE__ */ _defineComponent({
+var _sfc_main = /* @__PURE__ */ (0, import_vue12.defineComponent)({
   __name: "LexicalContentEditable",
   props: {
     ariaActivedescendant: {},
@@ -807,9 +851,9 @@ var _sfc_main = /* @__PURE__ */ _defineComponent({
     enableGrammarly: { type: Boolean }
   },
   setup(__props) {
-    const root = ref6(null);
+    const root = (0, import_vue14.ref)(null);
     const editor = useLexicalComposer();
-    const editable = ref6(false);
+    const editable = (0, import_vue14.ref)(false);
     useMounted(() => {
       if (root.value) {
         editor.setRootElement(root.value);
@@ -820,7 +864,7 @@ var _sfc_main = /* @__PURE__ */ _defineComponent({
       });
     });
     return (_ctx, _cache) => {
-      return _openBlock(), _createElementBlock("div", {
+      return (0, import_vue13.openBlock)(), (0, import_vue13.createElementBlock)("div", {
         id: _ctx.id,
         ref_key: "root",
         ref: root,
@@ -848,22 +892,22 @@ var _sfc_main = /* @__PURE__ */ _defineComponent({
 var LexicalContentEditable_default = _sfc_main;
 
 // src/components/LexicalPlainTextPlugin.vue
-import { defineComponent as _defineComponent2 } from "vue";
-import { unref as _unref, renderSlot as _renderSlot, createCommentVNode as _createCommentVNode, createVNode as _createVNode, Fragment as _Fragment, openBlock as _openBlock2, createElementBlock as _createElementBlock2 } from "vue";
-var _sfc_main2 = /* @__PURE__ */ _defineComponent2({
+var import_vue15 = require("vue");
+var import_vue16 = require("vue");
+var _sfc_main2 = /* @__PURE__ */ (0, import_vue15.defineComponent)({
   __name: "LexicalPlainTextPlugin",
   setup(__props) {
     const editor = useLexicalComposer();
     const showPlaceholder = useCanShowPlaceholder(editor);
     usePlainTextSetup(editor);
     return (_ctx, _cache) => {
-      return _openBlock2(), _createElementBlock2(
-        _Fragment,
+      return (0, import_vue16.openBlock)(), (0, import_vue16.createElementBlock)(
+        import_vue16.Fragment,
         null,
         [
-          _unref(showPlaceholder) ? _renderSlot(_ctx.$slots, "placeholder", { key: 0 }) : _createCommentVNode("v-if", true),
-          _renderSlot(_ctx.$slots, "contentEditable"),
-          _createVNode(_unref(LexicalDecoratedTeleports_default))
+          (0, import_vue16.unref)(showPlaceholder) ? (0, import_vue16.renderSlot)(_ctx.$slots, "placeholder", { key: 0 }) : (0, import_vue16.createCommentVNode)("v-if", true),
+          (0, import_vue16.renderSlot)(_ctx.$slots, "contentEditable"),
+          (0, import_vue16.createVNode)((0, import_vue16.unref)(LexicalDecoratedTeleports_default))
         ],
         64
         /* STABLE_FRAGMENT */
@@ -874,11 +918,11 @@ var _sfc_main2 = /* @__PURE__ */ _defineComponent2({
 var LexicalPlainTextPlugin_default = _sfc_main2;
 
 // src/components/LexicalComposer.vue
-import { defineComponent as _defineComponent3 } from "vue";
-import { renderSlot as _renderSlot2 } from "vue";
-import { onMounted as onMounted2, provide } from "vue";
-import { $createParagraphNode as $createParagraphNode2, $getRoot as $getRoot2, $getSelection as $getSelection4, createEditor } from "lexical";
-var _sfc_main3 = /* @__PURE__ */ _defineComponent3({
+var import_vue17 = require("vue");
+var import_vue18 = require("vue");
+var import_vue19 = require("vue");
+var import_lexical6 = require("lexical");
+var _sfc_main3 = /* @__PURE__ */ (0, import_vue17.defineComponent)({
   __name: "LexicalComposer",
   props: {
     initialConfig: {}
@@ -888,7 +932,7 @@ var _sfc_main3 = /* @__PURE__ */ _defineComponent3({
     const props = __props;
     const emit = __emit;
     const HISTORY_MERGE_OPTIONS = { tag: "history-merge" };
-    const editor = createEditor({
+    const editor = (0, import_lexical6.createEditor)({
       editable: props.initialConfig.editable,
       html: props.initialConfig.html,
       namespace: props.initialConfig.namespace,
@@ -904,12 +948,12 @@ var _sfc_main3 = /* @__PURE__ */ _defineComponent3({
         return;
       if (initialEditorState === void 0) {
         editor2.update(() => {
-          const root = $getRoot2();
+          const root = (0, import_lexical6.$getRoot)();
           if (root.isEmpty()) {
-            const paragraph = $createParagraphNode2();
+            const paragraph = (0, import_lexical6.$createParagraphNode)();
             root.append(paragraph);
             const activeElement = document.activeElement;
-            if ($getSelection4() !== null || activeElement !== null && activeElement === editor2.getRootElement())
+            if ((0, import_lexical6.$getSelection)() !== null || activeElement !== null && activeElement === editor2.getRootElement())
               paragraph.select();
           }
         }, HISTORY_MERGE_OPTIONS);
@@ -926,7 +970,7 @@ var _sfc_main3 = /* @__PURE__ */ _defineComponent3({
           }
           case "function": {
             editor2.update(() => {
-              const root = $getRoot2();
+              const root = (0, import_lexical6.$getRoot)();
               if (root.isEmpty())
                 initialEditorState(editor2);
             }, HISTORY_MERGE_OPTIONS);
@@ -935,23 +979,23 @@ var _sfc_main3 = /* @__PURE__ */ _defineComponent3({
         }
       }
     }
-    provide(LexicalEditorProviderKey, editor);
-    onMounted2(() => {
+    (0, import_vue19.provide)(LexicalEditorProviderKey, editor);
+    (0, import_vue19.onMounted)(() => {
       const isEditable = props.initialConfig.editable;
       editor.setEditable(isEditable !== void 0 ? isEditable : true);
     });
     return (_ctx, _cache) => {
-      return _renderSlot2(_ctx.$slots, "default");
+      return (0, import_vue18.renderSlot)(_ctx.$slots, "default");
     };
   }
 });
 var LexicalComposer_default = _sfc_main3;
 
 // src/components/LexicalOnChangePlugin.vue
-import { defineComponent as _defineComponent4 } from "vue";
-import { onMounted as onMounted3, onUnmounted as onUnmounted2 } from "vue";
-import { $getRoot as $getRoot3 } from "lexical";
-var _sfc_main4 = /* @__PURE__ */ _defineComponent4({
+var import_vue20 = require("vue");
+var import_vue21 = require("vue");
+var import_lexical7 = require("lexical");
+var _sfc_main4 = /* @__PURE__ */ (0, import_vue20.defineComponent)({
   __name: "LexicalOnChangePlugin",
   props: {
     ignoreInitialChange: { type: Boolean, default: true },
@@ -964,8 +1008,8 @@ var _sfc_main4 = /* @__PURE__ */ _defineComponent4({
     const emit = __emit;
     const editor = useLexicalComposer();
     let unregisterListener;
-    const getRoot = $getRoot3;
-    onMounted3(() => {
+    const getRoot = import_lexical7.$getRoot;
+    (0, import_vue21.onMounted)(() => {
       unregisterListener = editor.registerUpdateListener(({ editorState, dirtyElements, dirtyLeaves, prevEditorState, tags }) => {
         if (props.ignoreSelectionChange && dirtyElements.size === 0 && dirtyLeaves.size === 0)
           return;
@@ -977,7 +1021,7 @@ var _sfc_main4 = /* @__PURE__ */ _defineComponent4({
         });
       });
     });
-    onUnmounted2(() => {
+    (0, import_vue21.onUnmounted)(() => {
       unregisterListener?.();
     });
     return (_ctx, _cache) => {
@@ -988,8 +1032,8 @@ var _sfc_main4 = /* @__PURE__ */ _defineComponent4({
 var LexicalOnChangePlugin_default = _sfc_main4;
 
 // src/components/LexicalHistoryPlugin.vue
-import { defineComponent as _defineComponent5 } from "vue";
-var _sfc_main5 = /* @__PURE__ */ _defineComponent5({
+var import_vue22 = require("vue");
+var _sfc_main5 = /* @__PURE__ */ (0, import_vue22.defineComponent)({
   __name: "LexicalHistoryPlugin",
   props: {
     externalHistoryState: {}
@@ -1006,27 +1050,20 @@ var _sfc_main5 = /* @__PURE__ */ _defineComponent5({
 var LexicalHistoryPlugin_default = _sfc_main5;
 
 // src/components/LexicalTreeViewPlugin.vue
-import { defineComponent as _defineComponent6 } from "vue";
-import { createElementVNode as _createElementVNode, openBlock as _openBlock3, createElementBlock as _createElementBlock3, createCommentVNode as _createCommentVNode2, toDisplayString as _toDisplayString, normalizeClass as _normalizeClass } from "vue";
-import { $generateHtmlFromNodes } from "@lexical/html";
-import { $isLinkNode } from "@lexical/link";
-import { $isMarkNode } from "@lexical/mark";
-import { $isTableSelection } from "@lexical/table";
-import { mergeRegister as mergeRegister8 } from "@lexical/utils";
-import {
-  $getRoot as $getRoot4,
-  $getSelection as $getSelection5,
-  $isElementNode,
-  $isNodeSelection as $isNodeSelection2,
-  $isRangeSelection as $isRangeSelection2,
-  $isTextNode as $isTextNode2
-} from "lexical";
-import { computed as computed4, ref as ref7, watchEffect as watchEffect4 } from "vue";
+var import_vue23 = require("vue");
+var import_vue24 = require("vue");
+var import_html = require("@lexical/html");
+var import_link = require("@lexical/link");
+var import_mark = require("@lexical/mark");
+var import_table = require("@lexical/table");
+var import_utils8 = require("@lexical/utils");
+var import_lexical8 = require("lexical");
+var import_vue25 = require("vue");
 var _hoisted_12 = {
   key: 0,
   style: { "padding": "20px" }
 };
-var _hoisted_2 = /* @__PURE__ */ _createElementVNode(
+var _hoisted_2 = /* @__PURE__ */ (0, import_vue24.createElementVNode)(
   "span",
   { style: { "margin-right": "20px" } },
   " Detected large EditorState, this can impact debugging performance. ",
@@ -1035,7 +1072,7 @@ var _hoisted_2 = /* @__PURE__ */ _createElementVNode(
 );
 var _hoisted_3 = { key: 1 };
 var _hoisted_4 = ["max"];
-var _sfc_main6 = /* @__PURE__ */ _defineComponent6({
+var _sfc_main6 = /* @__PURE__ */ (0, import_vue23.defineComponent)({
   __name: "LexicalTreeViewPlugin",
   props: {
     treeTypeButtonClassName: {},
@@ -1084,19 +1121,19 @@ var _sfc_main6 = /* @__PURE__ */ _defineComponent6({
       if (exportDOM) {
         let htmlString = "";
         editorState.read(() => {
-          htmlString = printPrettyHTML($generateHtmlFromNodes(editor2));
+          htmlString = printPrettyHTML((0, import_html.$generateHtmlFromNodes)(editor2));
         });
         return htmlString;
       }
       let res = " root\n";
       const selectionString = editorState.read(() => {
-        const selection = $getSelection5();
-        visitTree($getRoot4(), (node, indent) => {
+        const selection = (0, import_lexical8.$getSelection)();
+        visitTree((0, import_lexical8.$getRoot)(), (node, indent) => {
           const nodeKey = node.getKey();
           const nodeKeyDisplay = `(${nodeKey})`;
           const typeDisplay = node.getType() || "";
           const isSelected = node.isSelected();
-          const idsDisplay = $isMarkNode(node) ? ` id: [ ${node.getIDs().join(", ")} ] ` : "";
+          const idsDisplay = (0, import_mark.$isMarkNode)(node) ? ` id: [ ${node.getIDs().join(", ")} ] ` : "";
           res += `${isSelected ? SYMBOLS.selectedLine : " "} ${indent.join(
             " "
           )} ${nodeKeyDisplay} ${typeDisplay} ${idsDisplay} ${printNode(node)}
@@ -1110,7 +1147,7 @@ var _sfc_main6 = /* @__PURE__ */ _defineComponent6({
             typeDisplay
           });
         });
-        return selection === null ? ": null" : $isRangeSelection2(selection) ? printRangeSelection(selection) : $isTableSelection(selection) ? printTableSelection(selection) : printNodeSelection(selection);
+        return selection === null ? ": null" : (0, import_lexical8.$isRangeSelection)(selection) ? printRangeSelection(selection) : (0, import_table.$isTableSelection)(selection) ? printTableSelection(selection) : printNodeSelection(selection);
       });
       res += `
  selection${selectionString}`;
@@ -1134,7 +1171,7 @@ var _sfc_main6 = /* @__PURE__ */ _defineComponent6({
       return res;
     }
     function printNodeSelection(selection) {
-      if (!$isNodeSelection2(selection))
+      if (!(0, import_lexical8.$isNodeSelection)(selection))
         return "";
       return `: node
   \u2514 [${Array.from(selection._nodes).join(", ")}]`;
@@ -1153,7 +1190,7 @@ var _sfc_main6 = /* @__PURE__ */ _defineComponent6({
             i === childNodesLength - 1 ? SYMBOLS.isLastChild : SYMBOLS.hasNextSibling
           )
         );
-        if ($isElementNode(childNode)) {
+        if ((0, import_lexical8.$isElementNode)(childNode)) {
           visitTree(
             childNode,
             visitor,
@@ -1171,12 +1208,12 @@ var _sfc_main6 = /* @__PURE__ */ _defineComponent6({
       );
     }
     function printNode(node) {
-      if ($isTextNode2(node)) {
+      if ((0, import_lexical8.$isTextNode)(node)) {
         const text = node.getTextContent();
         const title = text.length === 0 ? "(empty)" : `"${normalize(text)}"`;
         const properties = printAllTextNodeProperties(node);
         return [title, properties.length !== 0 ? `{ ${properties} }` : null].filter(Boolean).join(" ").trim();
-      } else if ($isLinkNode(node)) {
+      } else if ((0, import_link.$isLinkNode)(node)) {
         const link = node.getURL();
         const title = link.length === 0 ? "(empty)" : `"${normalize(link)}"`;
         const properties = printAllLinkNodeProperties(node);
@@ -1260,7 +1297,7 @@ var _sfc_main6 = /* @__PURE__ */ _defineComponent6({
       selection,
       typeDisplay
     }) {
-      if (!$isTextNode2(node) || !$isRangeSelection2(selection) || !isSelected || $isElementNode(node))
+      if (!(0, import_lexical8.$isTextNode)(node) || !(0, import_lexical8.$isRangeSelection)(selection) || !isSelected || (0, import_lexical8.$isElementNode)(node))
         return "";
       const anchor = selection.anchor;
       const focus = selection.focus;
@@ -1311,7 +1348,7 @@ ${indentAfter}`);
     }
     function $getSelectionStartEnd(node, selection) {
       const anchorAndFocus = selection.getStartEndPoints();
-      if ($isNodeSelection2(selection) || anchorAndFocus === null)
+      if ((0, import_lexical8.$isNodeSelection)(selection) || anchorAndFocus === null)
         return [-1, -1];
       const [anchor, focus] = anchorAndFocus;
       const textContent = node.getTextContent();
@@ -1339,17 +1376,17 @@ ${indentAfter}`);
       ];
     }
     const editor = useLexicalComposer();
-    const timeStampedEditorStates = ref7([]);
-    const content = ref7("");
-    const timeTravelEnabled = ref7(false);
-    const showExportDOM = ref7(false);
-    const playingIndexRef = ref7(0);
-    const treeElementRef = ref7(null);
-    const inputRef = ref7(null);
-    const isPlaying = ref7(false);
-    const isLimited = ref7(false);
-    const showLimited = ref7(false);
-    const lastEditorStateRef = ref7(null);
+    const timeStampedEditorStates = (0, import_vue25.ref)([]);
+    const content = (0, import_vue25.ref)("");
+    const timeTravelEnabled = (0, import_vue25.ref)(false);
+    const showExportDOM = (0, import_vue25.ref)(false);
+    const playingIndexRef = (0, import_vue25.ref)(0);
+    const treeElementRef = (0, import_vue25.ref)(null);
+    const inputRef = (0, import_vue25.ref)(null);
+    const isPlaying = (0, import_vue25.ref)(false);
+    const isLimited = (0, import_vue25.ref)(false);
+    const showLimited = (0, import_vue25.ref)(false);
+    const lastEditorStateRef = (0, import_vue25.ref)(null);
     const commandsLog = useLexicalCommandsLog(editor);
     function generateTree(editorState) {
       const treeText = generateContent(editor, commandsLog.value, showExportDOM.value);
@@ -1361,13 +1398,13 @@ ${indentAfter}`);
         ];
       }
     }
-    watchEffect4(() => {
+    (0, import_vue25.watchEffect)(() => {
       const editorState = editor.getEditorState();
       if (!showLimited.value && editorState._nodeMap.size < 1e3)
         content.value = generateContent(editor, commandsLog.value, showExportDOM.value);
     });
-    watchEffect4((onInvalidate) => {
-      const unregisterListener = mergeRegister8(
+    (0, import_vue25.watchEffect)((onInvalidate) => {
+      const unregisterListener = (0, import_utils8.mergeRegister)(
         editor.registerUpdateListener(({ editorState }) => {
           if (!showLimited.value && editorState._nodeMap.size > 1e3) {
             lastEditorStateRef.value = editorState;
@@ -1386,9 +1423,9 @@ ${indentAfter}`);
         unregisterListener();
       });
     });
-    const totalEditorStates = computed4(() => timeStampedEditorStates.value.length);
+    const totalEditorStates = (0, import_vue25.computed)(() => timeStampedEditorStates.value.length);
     let timeoutId;
-    watchEffect4((onInvalidate) => {
+    (0, import_vue25.watchEffect)((onInvalidate) => {
       if (isPlaying.value) {
         const play = () => {
           const currentIndex = playingIndexRef.value;
@@ -1416,7 +1453,7 @@ ${indentAfter}`);
       });
     });
     let element = null;
-    watchEffect4((onInvalidate) => {
+    (0, import_vue25.watchEffect)((onInvalidate) => {
       element = treeElementRef.value;
       if (element !== null) {
         element.__lexicalEditor = editor;
@@ -1456,15 +1493,15 @@ ${indentAfter}`);
       }
     }
     return (_ctx, _cache) => {
-      return _openBlock3(), _createElementBlock3(
+      return (0, import_vue24.openBlock)(), (0, import_vue24.createElementBlock)(
         "div",
         {
-          class: _normalizeClass(_ctx.viewClassName)
+          class: (0, import_vue24.normalizeClass)(_ctx.viewClassName)
         },
         [
-          showLimited.value && isLimited.value ? (_openBlock3(), _createElementBlock3("div", _hoisted_12, [
+          showLimited.value && isLimited.value ? ((0, import_vue24.openBlock)(), (0, import_vue24.createElementBlock)("div", _hoisted_12, [
             _hoisted_2,
-            _createElementVNode("button", {
+            (0, import_vue24.createElementVNode)("button", {
               style: { "background": "transparent", "border": "1px solid white", "color": "white", "cursor": "pointer", "padding": "5px" },
               onClick: _cache[0] || (_cache[0] = ($event) => {
                 {
@@ -1477,53 +1514,53 @@ ${indentAfter}`);
                 }
               })
             }, " Show full tree ")
-          ])) : _createCommentVNode2("v-if", true),
-          !showLimited.value ? (_openBlock3(), _createElementBlock3("div", _hoisted_3, [
-            _createElementVNode(
+          ])) : (0, import_vue24.createCommentVNode)("v-if", true),
+          !showLimited.value ? ((0, import_vue24.openBlock)(), (0, import_vue24.createElementBlock)("div", _hoisted_3, [
+            (0, import_vue24.createElementVNode)(
               "button",
               {
-                class: _normalizeClass(_ctx.treeTypeButtonClassName),
+                class: (0, import_vue24.normalizeClass)(_ctx.treeTypeButtonClassName),
                 type: "button",
                 onClick: _cache[1] || (_cache[1] = ($event) => showExportDOM.value = !showExportDOM.value)
               },
-              _toDisplayString(showExportDOM.value ? "Tree" : "Export DOM"),
+              (0, import_vue24.toDisplayString)(showExportDOM.value ? "Tree" : "Export DOM"),
               3
               /* TEXT, CLASS */
             )
-          ])) : _createCommentVNode2("v-if", true),
-          !timeTravelEnabled.value && (showLimited.value || !isLimited.value) && totalEditorStates.value > 2 ? (_openBlock3(), _createElementBlock3(
+          ])) : (0, import_vue24.createCommentVNode)("v-if", true),
+          !timeTravelEnabled.value && (showLimited.value || !isLimited.value) && totalEditorStates.value > 2 ? ((0, import_vue24.openBlock)(), (0, import_vue24.createElementBlock)(
             "button",
             {
               key: 2,
-              class: _normalizeClass(_ctx.timeTravelButtonClassName),
+              class: (0, import_vue24.normalizeClass)(_ctx.timeTravelButtonClassName),
               onClick: enableTimeTravel
             },
             " Time Travel ",
             2
             /* CLASS */
-          )) : _createCommentVNode2("v-if", true),
-          showLimited.value || !isLimited.value ? (_openBlock3(), _createElementBlock3(
+          )) : (0, import_vue24.createCommentVNode)("v-if", true),
+          showLimited.value || !isLimited.value ? ((0, import_vue24.openBlock)(), (0, import_vue24.createElementBlock)(
             "pre",
             {
               key: 3,
               ref_key: "treeElementRef",
               ref: treeElementRef
             },
-            _toDisplayString(content.value),
+            (0, import_vue24.toDisplayString)(content.value),
             513
             /* TEXT, NEED_PATCH */
-          )) : _createCommentVNode2("v-if", true),
-          timeTravelEnabled.value && (showLimited.value || !isLimited.value) ? (_openBlock3(), _createElementBlock3(
+          )) : (0, import_vue24.createCommentVNode)("v-if", true),
+          timeTravelEnabled.value && (showLimited.value || !isLimited.value) ? ((0, import_vue24.openBlock)(), (0, import_vue24.createElementBlock)(
             "div",
             {
               key: 4,
-              class: _normalizeClass(_ctx.timeTravelPanelClassName)
+              class: (0, import_vue24.normalizeClass)(_ctx.timeTravelPanelClassName)
             },
             [
-              _createElementVNode(
+              (0, import_vue24.createElementVNode)(
                 "button",
                 {
-                  class: _normalizeClass(_ctx.timeTravelPanelButtonClassName),
+                  class: (0, import_vue24.normalizeClass)(_ctx.timeTravelPanelButtonClassName),
                   onClick: _cache[2] || (_cache[2] = ($event) => {
                     {
                       if (playingIndexRef.value === totalEditorStates.value - 1) {
@@ -1533,23 +1570,23 @@ ${indentAfter}`);
                     }
                   })
                 },
-                _toDisplayString(isPlaying.value ? "Pause" : "Play"),
+                (0, import_vue24.toDisplayString)(isPlaying.value ? "Pause" : "Play"),
                 3
                 /* TEXT, CLASS */
               ),
-              _createElementVNode("input", {
+              (0, import_vue24.createElementVNode)("input", {
                 ref_key: "inputRef",
                 ref: inputRef,
-                class: _normalizeClass(_ctx.timeTravelPanelSliderClassName),
+                class: (0, import_vue24.normalizeClass)(_ctx.timeTravelPanelSliderClassName),
                 type: "range",
                 min: "1",
                 max: totalEditorStates.value - 1,
                 onInput: updateEditorState
               }, null, 42, _hoisted_4),
-              _createElementVNode(
+              (0, import_vue24.createElementVNode)(
                 "button",
                 {
-                  class: _normalizeClass(_ctx.timeTravelPanelButtonClassName),
+                  class: (0, import_vue24.normalizeClass)(_ctx.timeTravelPanelButtonClassName),
                   onClick: exit
                 },
                 " Exit ",
@@ -1559,7 +1596,7 @@ ${indentAfter}`);
             ],
             2
             /* CLASS */
-          )) : _createCommentVNode2("v-if", true)
+          )) : (0, import_vue24.createCommentVNode)("v-if", true)
         ],
         2
         /* CLASS */
@@ -1570,9 +1607,9 @@ ${indentAfter}`);
 var LexicalTreeViewPlugin_default = _sfc_main6;
 
 // src/components/LexicalAutoFocusPlugin.vue
-import { defineComponent as _defineComponent7 } from "vue";
-import { nextTick, onMounted as onMounted4 } from "vue";
-var _sfc_main7 = /* @__PURE__ */ _defineComponent7({
+var import_vue26 = require("vue");
+var import_vue27 = require("vue");
+var _sfc_main7 = /* @__PURE__ */ (0, import_vue26.defineComponent)({
   __name: "LexicalAutoFocusPlugin",
   props: {
     defaultSelection: {}
@@ -1580,8 +1617,8 @@ var _sfc_main7 = /* @__PURE__ */ _defineComponent7({
   setup(__props) {
     const props = __props;
     const editor = useLexicalComposer();
-    onMounted4(() => {
-      nextTick(() => {
+    (0, import_vue27.onMounted)(() => {
+      (0, import_vue27.nextTick)(() => {
         editor.focus(
           () => {
             const activeElement = document.activeElement;
@@ -1602,22 +1639,22 @@ var _sfc_main7 = /* @__PURE__ */ _defineComponent7({
 var LexicalAutoFocusPlugin_default = _sfc_main7;
 
 // src/components/LexicalRichTextPlugin.vue
-import { defineComponent as _defineComponent8 } from "vue";
-import { renderSlot as _renderSlot3, unref as _unref2, createCommentVNode as _createCommentVNode3, createVNode as _createVNode2, Fragment as _Fragment2, openBlock as _openBlock4, createElementBlock as _createElementBlock4 } from "vue";
-var _sfc_main8 = /* @__PURE__ */ _defineComponent8({
+var import_vue28 = require("vue");
+var import_vue29 = require("vue");
+var _sfc_main8 = /* @__PURE__ */ (0, import_vue28.defineComponent)({
   __name: "LexicalRichTextPlugin",
   setup(__props) {
     const editor = useLexicalComposer();
     const showPlaceholder = useCanShowPlaceholder(editor);
     useRichTextSetup(editor);
     return (_ctx, _cache) => {
-      return _openBlock4(), _createElementBlock4(
-        _Fragment2,
+      return (0, import_vue29.openBlock)(), (0, import_vue29.createElementBlock)(
+        import_vue29.Fragment,
         null,
         [
-          _renderSlot3(_ctx.$slots, "contentEditable"),
-          _unref2(showPlaceholder) ? _renderSlot3(_ctx.$slots, "placeholder", { key: 0 }) : _createCommentVNode3("v-if", true),
-          _createVNode2(_unref2(LexicalDecoratedTeleports_default))
+          (0, import_vue29.renderSlot)(_ctx.$slots, "contentEditable"),
+          (0, import_vue29.unref)(showPlaceholder) ? (0, import_vue29.renderSlot)(_ctx.$slots, "placeholder", { key: 0 }) : (0, import_vue29.createCommentVNode)("v-if", true),
+          (0, import_vue29.createVNode)((0, import_vue29.unref)(LexicalDecoratedTeleports_default))
         ],
         64
         /* STABLE_FRAGMENT */
@@ -1628,8 +1665,8 @@ var _sfc_main8 = /* @__PURE__ */ _defineComponent8({
 var LexicalRichTextPlugin_default = _sfc_main8;
 
 // src/components/LexicalListPlugin.vue
-import { defineComponent as _defineComponent9 } from "vue";
-var _sfc_main9 = /* @__PURE__ */ _defineComponent9({
+var import_vue30 = require("vue");
+var _sfc_main9 = /* @__PURE__ */ (0, import_vue30.defineComponent)({
   __name: "LexicalListPlugin",
   setup(__props) {
     const editor = useLexicalComposer();
@@ -1642,22 +1679,12 @@ var _sfc_main9 = /* @__PURE__ */ _defineComponent9({
 var LexicalListPlugin_default = _sfc_main9;
 
 // src/components/LexicalLinkPlugin.vue
-import { defineComponent as _defineComponent10 } from "vue";
-import {
-  LinkNode,
-  TOGGLE_LINK_COMMAND,
-  toggleLink
-} from "@lexical/link";
-import {
-  $getSelection as $getSelection6,
-  $isElementNode as $isElementNode2,
-  $isRangeSelection as $isRangeSelection3,
-  COMMAND_PRIORITY_LOW as COMMAND_PRIORITY_LOW2,
-  PASTE_COMMAND
-} from "lexical";
-import invariant3 from "tiny-invariant";
-import { mergeRegister as mergeRegister9 } from "@lexical/utils";
-var _sfc_main10 = /* @__PURE__ */ _defineComponent10({
+var import_vue31 = require("vue");
+var import_link2 = require("@lexical/link");
+var import_lexical9 = require("lexical");
+var import_tiny_invariant3 = __toESM(require("tiny-invariant"));
+var import_utils9 = require("@lexical/utils");
+var _sfc_main10 = /* @__PURE__ */ (0, import_vue31.defineComponent)({
   __name: "LexicalLinkPlugin",
   props: {
     validateUrl: { type: Function }
@@ -1666,46 +1693,46 @@ var _sfc_main10 = /* @__PURE__ */ _defineComponent10({
     const props = __props;
     const editor = useLexicalComposer();
     useMounted(() => {
-      if (!editor.hasNodes([LinkNode]))
-        invariant3(false, "LinkPlugin: LinkNode not registered on editor");
-      return mergeRegister9(
+      if (!editor.hasNodes([import_link2.LinkNode]))
+        (0, import_tiny_invariant3.default)(false, "LinkPlugin: LinkNode not registered on editor");
+      return (0, import_utils9.mergeRegister)(
         editor.registerCommand(
-          TOGGLE_LINK_COMMAND,
+          import_link2.TOGGLE_LINK_COMMAND,
           (payload) => {
             if (payload === null) {
-              toggleLink(payload);
+              (0, import_link2.toggleLink)(payload);
               return true;
             } else if (typeof payload === "string") {
               if (props.validateUrl === void 0 || props.validateUrl(payload)) {
-                toggleLink(payload);
+                (0, import_link2.toggleLink)(payload);
                 return true;
               }
               return false;
             } else {
               const { url, target, rel, title } = payload;
-              toggleLink(url, { rel, target, title });
+              (0, import_link2.toggleLink)(url, { rel, target, title });
               return true;
             }
           },
-          COMMAND_PRIORITY_LOW2
+          import_lexical9.COMMAND_PRIORITY_LOW
         ),
         props.validateUrl !== void 0 ? editor.registerCommand(
-          PASTE_COMMAND,
+          import_lexical9.PASTE_COMMAND,
           (event) => {
-            const selection = $getSelection6();
-            if (!$isRangeSelection3(selection) || selection.isCollapsed() || !(event instanceof ClipboardEvent) || event.clipboardData == null)
+            const selection = (0, import_lexical9.$getSelection)();
+            if (!(0, import_lexical9.$isRangeSelection)(selection) || selection.isCollapsed() || !(event instanceof ClipboardEvent) || event.clipboardData == null)
               return false;
             const clipboardText = event.clipboardData.getData("text");
             if (!props.validateUrl?.(clipboardText))
               return false;
-            if (!selection.getNodes().some((node) => $isElementNode2(node))) {
-              editor.dispatchCommand(TOGGLE_LINK_COMMAND, clipboardText);
+            if (!selection.getNodes().some((node) => (0, import_lexical9.$isElementNode)(node))) {
+              editor.dispatchCommand(import_link2.TOGGLE_LINK_COMMAND, clipboardText);
               event.preventDefault();
               return true;
             }
             return false;
           },
-          COMMAND_PRIORITY_LOW2
+          import_lexical9.COMMAND_PRIORITY_LOW
         ) : () => {
         }
       );
@@ -1718,30 +1745,12 @@ var _sfc_main10 = /* @__PURE__ */ _defineComponent10({
 var LexicalLinkPlugin_default = _sfc_main10;
 
 // src/components/LexicalTablePlugin.vue
-import { defineComponent as _defineComponent11 } from "vue";
-import {
-  $computeTableMap,
-  $createTableCellNode,
-  $createTableNodeWithDimensions,
-  $getNodeTriplet,
-  $isTableCellNode,
-  $isTableNode,
-  $isTableRowNode,
-  INSERT_TABLE_COMMAND,
-  TableCellNode,
-  TableNode,
-  TableRowNode,
-  applyTableHandlers
-} from "@lexical/table";
-import { $insertFirst, $insertNodeToNearestRoot } from "@lexical/utils";
-import {
-  $getNodeByKey as $getNodeByKey2,
-  $isTextNode as $isTextNode3,
-  $nodesOfType,
-  COMMAND_PRIORITY_EDITOR as COMMAND_PRIORITY_EDITOR2
-} from "lexical";
-import invariant4 from "tiny-invariant";
-var _sfc_main11 = /* @__PURE__ */ _defineComponent11({
+var import_vue32 = require("vue");
+var import_table2 = require("@lexical/table");
+var import_utils10 = require("@lexical/utils");
+var import_lexical10 = require("lexical");
+var import_tiny_invariant4 = __toESM(require("tiny-invariant"));
+var _sfc_main11 = /* @__PURE__ */ (0, import_vue32.defineComponent)({
   __name: "LexicalTablePlugin",
   props: {
     hasCellMerge: { type: Boolean, default: true },
@@ -1752,27 +1761,27 @@ var _sfc_main11 = /* @__PURE__ */ _defineComponent11({
     const props = __props;
     const editor = useLexicalComposer();
     useMounted(() => {
-      if (!editor.hasNodes([TableNode, TableCellNode, TableRowNode])) {
-        invariant4(
+      if (!editor.hasNodes([import_table2.TableNode, import_table2.TableCellNode, import_table2.TableRowNode])) {
+        (0, import_tiny_invariant4.default)(
           false,
           "TablePlugin: TableNode, TableCellNode or TableRowNode not registered on editor"
         );
       }
       return editor.registerCommand(
-        INSERT_TABLE_COMMAND,
+        import_table2.INSERT_TABLE_COMMAND,
         ({ columns, rows, includeHeaders }) => {
-          const tableNode = $createTableNodeWithDimensions(
+          const tableNode = (0, import_table2.$createTableNodeWithDimensions)(
             Number(rows),
             Number(columns),
             includeHeaders
           );
-          $insertNodeToNearestRoot(tableNode);
+          (0, import_utils10.$insertNodeToNearestRoot)(tableNode);
           const firstDescendant = tableNode.getFirstDescendant();
-          if ($isTextNode3(firstDescendant))
+          if ((0, import_lexical10.$isTextNode)(firstDescendant))
             firstDescendant.select();
           return true;
         },
-        COMMAND_PRIORITY_EDITOR2
+        import_lexical10.COMMAND_PRIORITY_EDITOR
       );
     });
     useMounted(() => {
@@ -1783,7 +1792,7 @@ var _sfc_main11 = /* @__PURE__ */ _defineComponent11({
           nodeKey
         );
         if (tableElement && !tableSelections.has(nodeKey)) {
-          const tableSelection = applyTableHandlers(
+          const tableSelection = (0, import_table2.applyTableHandlers)(
             tableNode,
             tableElement,
             editor,
@@ -1793,20 +1802,20 @@ var _sfc_main11 = /* @__PURE__ */ _defineComponent11({
         }
       };
       editor.getEditorState().read(() => {
-        const tableNodes = $nodesOfType(TableNode);
+        const tableNodes = (0, import_lexical10.$nodesOfType)(import_table2.TableNode);
         for (const tableNode of tableNodes) {
-          if ($isTableNode(tableNode))
+          if ((0, import_table2.$isTableNode)(tableNode))
             initializeTableNode(tableNode);
         }
       });
       const unregisterMutationListener = editor.registerMutationListener(
-        TableNode,
+        import_table2.TableNode,
         (nodeMutations) => {
           for (const [nodeKey, mutation] of nodeMutations) {
             if (mutation === "created") {
               editor.getEditorState().read(() => {
-                const tableNode = $getNodeByKey2(nodeKey);
-                if ($isTableNode(tableNode))
+                const tableNode = (0, import_lexical10.$getNodeByKey)(nodeKey);
+                if ((0, import_table2.$isTableNode)(tableNode))
                   initializeTableNode(tableNode);
               });
             } else if (mutation === "destroyed") {
@@ -1828,23 +1837,23 @@ var _sfc_main11 = /* @__PURE__ */ _defineComponent11({
     useEffect(() => {
       if (props.hasCellMerge)
         return;
-      return editor.registerNodeTransform(TableCellNode, (node) => {
+      return editor.registerNodeTransform(import_table2.TableCellNode, (node) => {
         if (node.getColSpan() > 1 || node.getRowSpan() > 1) {
-          const [, , gridNode] = $getNodeTriplet(node);
-          const [gridMap] = $computeTableMap(gridNode, node, node);
+          const [, , gridNode] = (0, import_table2.$getNodeTriplet)(node);
+          const [gridMap] = (0, import_table2.$computeTableMap)(gridNode, node, node);
           const rowsCount = gridMap.length;
           const columnsCount = gridMap[0].length;
           let row = gridNode.getFirstChild();
-          invariant4(
-            $isTableRowNode(row),
+          (0, import_tiny_invariant4.default)(
+            (0, import_table2.$isTableRowNode)(row),
             "Expected TableNode first child to be a RowNode"
           );
           const unmerged = [];
           for (let i = 0; i < rowsCount; i++) {
             if (i !== 0) {
               row = row.getNextSibling();
-              invariant4(
-                $isTableRowNode(row),
+              (0, import_tiny_invariant4.default)(
+                (0, import_table2.$isTableRowNode)(row),
                 "Expected TableNode first child to be a RowNode"
               );
             }
@@ -1856,15 +1865,15 @@ var _sfc_main11 = /* @__PURE__ */ _defineComponent11({
                 lastRowCell = cell;
                 unmerged.push(cell);
               } else if (cell.getColSpan() > 1 || cell.getRowSpan() > 1) {
-                invariant4(
-                  $isTableCellNode(cell),
+                (0, import_tiny_invariant4.default)(
+                  (0, import_table2.$isTableCellNode)(cell),
                   "Expected TableNode cell to be a TableCellNode"
                 );
-                const newCell = $createTableCellNode(cell.__headerState);
+                const newCell = (0, import_table2.$createTableCellNode)(cell.__headerState);
                 if (lastRowCell !== null)
                   lastRowCell.insertAfter(newCell);
                 else
-                  $insertFirst(row, newCell);
+                  (0, import_utils10.$insertFirst)(row, newCell);
               }
             }
           }
@@ -1878,7 +1887,7 @@ var _sfc_main11 = /* @__PURE__ */ _defineComponent11({
     useEffect(() => {
       if (props.hasCellBackgroundColor)
         return;
-      return editor.registerNodeTransform(TableCellNode, (node) => {
+      return editor.registerNodeTransform(import_table2.TableCellNode, (node) => {
         if (node.getBackgroundColor() !== null)
           node.setBackgroundColor(null);
       });
@@ -1891,32 +1900,26 @@ var _sfc_main11 = /* @__PURE__ */ _defineComponent11({
 var LexicalTablePlugin_default = _sfc_main11;
 
 // src/components/LexicalClearEditorPlugin.vue
-import { defineComponent as _defineComponent12 } from "vue";
-import {
-  $createParagraphNode as $createParagraphNode3,
-  $getRoot as $getRoot5,
-  $getSelection as $getSelection7,
-  CLEAR_EDITOR_COMMAND,
-  COMMAND_PRIORITY_EDITOR as COMMAND_PRIORITY_EDITOR3
-} from "lexical";
-import { useAttrs } from "vue";
-var _sfc_main12 = /* @__PURE__ */ _defineComponent12({
+var import_vue33 = require("vue");
+var import_lexical11 = require("lexical");
+var import_vue34 = require("vue");
+var _sfc_main12 = /* @__PURE__ */ (0, import_vue33.defineComponent)({
   __name: "LexicalClearEditorPlugin",
   emits: ["clear"],
   setup(__props, { emit: __emit }) {
     const emit = __emit;
     const editor = useLexicalComposer();
-    const attrs = useAttrs();
+    const attrs = (0, import_vue34.useAttrs)();
     useMounted(() => {
       const emitExists = Boolean(attrs.onClear);
       return editor.registerCommand(
-        CLEAR_EDITOR_COMMAND,
+        import_lexical11.CLEAR_EDITOR_COMMAND,
         (_payload) => {
           editor.update(() => {
             if (emitExists) {
-              const root = $getRoot5();
-              const selection = $getSelection7();
-              const paragraph = $createParagraphNode3();
+              const root = (0, import_lexical11.$getRoot)();
+              const selection = (0, import_lexical11.$getSelection)();
+              const paragraph = (0, import_lexical11.$createParagraphNode)();
               root.clear();
               root.append(paragraph);
               if (selection !== null)
@@ -1927,7 +1930,7 @@ var _sfc_main12 = /* @__PURE__ */ _defineComponent12({
           });
           return true;
         },
-        COMMAND_PRIORITY_EDITOR3
+        import_lexical11.COMMAND_PRIORITY_EDITOR
       );
     });
     return (_ctx, _cache) => {
@@ -1938,11 +1941,11 @@ var _sfc_main12 = /* @__PURE__ */ _defineComponent12({
 var LexicalClearEditorPlugin_default = _sfc_main12;
 
 // src/components/LexicalCharacterLimitPlugin.vue
-import { defineComponent as _defineComponent13 } from "vue";
-import { toDisplayString as _toDisplayString2, normalizeClass as _normalizeClass2, openBlock as _openBlock5, createElementBlock as _createElementBlock5 } from "vue";
-import { computed as computed5, ref as ref8 } from "vue";
+var import_vue35 = require("vue");
+var import_vue36 = require("vue");
+var import_vue37 = require("vue");
 var CHARACTER_LIMIT = 5;
-var _sfc_main13 = /* @__PURE__ */ _defineComponent13({
+var _sfc_main13 = /* @__PURE__ */ (0, import_vue35.defineComponent)({
   __name: "LexicalCharacterLimitPlugin",
   props: {
     charset: { default: "UTF-16" }
@@ -1966,11 +1969,11 @@ var _sfc_main13 = /* @__PURE__ */ _defineComponent13({
       }
       return currentTextEncoder.encode(text).length;
     }
-    const remainingCharacters = ref8(0);
+    const remainingCharacters = (0, import_vue37.ref)(0);
     function setRemainingCharacters(payload) {
       remainingCharacters.value = payload;
     }
-    const characterLimitProps = computed5(
+    const characterLimitProps = (0, import_vue37.computed)(
       () => ({
         remainingCharacters: setRemainingCharacters,
         strlen: (text) => {
@@ -1985,12 +1988,12 @@ var _sfc_main13 = /* @__PURE__ */ _defineComponent13({
     );
     useCharacterLimit(editor, CHARACTER_LIMIT, characterLimitProps.value);
     return (_ctx, _cache) => {
-      return _openBlock5(), _createElementBlock5(
+      return (0, import_vue36.openBlock)(), (0, import_vue36.createElementBlock)(
         "span",
         {
-          class: _normalizeClass2(`characters-limit ${remainingCharacters.value < 0 ? "characters-limit-exceeded" : ""}`)
+          class: (0, import_vue36.normalizeClass)(`characters-limit ${remainingCharacters.value < 0 ? "characters-limit-exceeded" : ""}`)
         },
-        _toDisplayString2(remainingCharacters.value),
+        (0, import_vue36.toDisplayString)(remainingCharacters.value),
         3
         /* TEXT, CLASS */
       );
@@ -2000,9 +2003,9 @@ var _sfc_main13 = /* @__PURE__ */ _defineComponent13({
 var LexicalCharacterLimitPlugin_default = _sfc_main13;
 
 // src/components/LexicalAutoScrollPlugin.vue
-import { defineComponent as _defineComponent14 } from "vue";
-import { $getSelection as $getSelection8, $isRangeSelection as $isRangeSelection4 } from "lexical";
-var _sfc_main14 = /* @__PURE__ */ _defineComponent14({
+var import_vue38 = require("vue");
+var import_lexical12 = require("lexical");
+var _sfc_main14 = /* @__PURE__ */ (0, import_vue38.defineComponent)({
   __name: "LexicalAutoScrollPlugin",
   props: {
     scrollRef: {}
@@ -2015,8 +2018,8 @@ var _sfc_main14 = /* @__PURE__ */ _defineComponent14({
         const scrollElement = props.scrollRef;
         if (!scrollElement || !tags.has("scroll-into-view"))
           return;
-        const selection = editorState.read(() => $getSelection8());
-        if (!$isRangeSelection4(selection) || !selection.isCollapsed())
+        const selection = editorState.read(() => (0, import_lexical12.$getSelection)());
+        if (!(0, import_lexical12.$isRangeSelection)(selection) || !selection.isCollapsed())
           return;
         const anchorElement = editor.getElementByKey(selection.anchor.key);
         if (anchorElement === null)
@@ -2036,11 +2039,11 @@ var _sfc_main14 = /* @__PURE__ */ _defineComponent14({
 var LexicalAutoScrollPlugin_default = _sfc_main14;
 
 // src/components/LexicalHashtagPlugin.vue
-import { defineComponent as _defineComponent15 } from "vue";
-import { $createHashtagNode, HashtagNode } from "@lexical/hashtag";
-import { onMounted as onMounted5 } from "vue";
-import invariant5 from "tiny-invariant";
-var _sfc_main15 = /* @__PURE__ */ _defineComponent15({
+var import_vue39 = require("vue");
+var import_hashtag = require("@lexical/hashtag");
+var import_vue40 = require("vue");
+var import_tiny_invariant5 = __toESM(require("tiny-invariant"));
+var _sfc_main15 = /* @__PURE__ */ (0, import_vue39.defineComponent)({
   __name: "LexicalHashtagPlugin",
   setup(__props) {
     function getHashtagRegexStringChars() {
@@ -2076,12 +2079,12 @@ var _sfc_main15 = /* @__PURE__ */ _defineComponent15({
     }
     const REGEX = new RegExp(getHashtagRegexString(), "i");
     const editor = useLexicalComposer();
-    onMounted5(() => {
-      if (!editor.hasNodes([HashtagNode]))
-        invariant5(false, "HashtagPlugin: HashtagNode not registered on editor");
+    (0, import_vue40.onMounted)(() => {
+      if (!editor.hasNodes([import_hashtag.HashtagNode]))
+        (0, import_tiny_invariant5.default)(false, "HashtagPlugin: HashtagNode not registered on editor");
     });
     function createHashtagNode(textNode) {
-      return $createHashtagNode(textNode.getTextContent());
+      return (0, import_hashtag.$createHashtagNode)(textNode.getTextContent());
     }
     function getHashtagMatch(text) {
       const matchArr = REGEX.exec(text);
@@ -2092,7 +2095,7 @@ var _sfc_main15 = /* @__PURE__ */ _defineComponent15({
       const endOffset = startOffset + hashtagLength;
       return { end: endOffset, start: startOffset };
     }
-    useLexicalTextEntity(getHashtagMatch, HashtagNode, createHashtagNode);
+    useLexicalTextEntity(getHashtagMatch, import_hashtag.HashtagNode, createHashtagNode);
     return (_ctx, _cache) => {
       return null;
     };
@@ -2101,8 +2104,8 @@ var _sfc_main15 = /* @__PURE__ */ _defineComponent15({
 var LexicalHashtagPlugin_default = _sfc_main15;
 
 // src/components/LexicalDecoratorBlockNode.ts
-import { DecoratorNode } from "lexical";
-var DecoratorBlockNode = class extends DecoratorNode {
+var import_lexical13 = require("lexical");
+var DecoratorBlockNode = class extends import_lexical13.DecoratorNode {
   __format;
   constructor(format, key) {
     super(key);
@@ -2134,26 +2137,12 @@ function $isDecoratorBlockNode(node) {
 }
 
 // src/components/LexicalBlockWithAlignableContents.vue
-import { defineComponent as _defineComponent16 } from "vue";
-import { unref as _unref3, renderSlot as _renderSlot4, normalizeClass as _normalizeClass3, normalizeStyle as _normalizeStyle, openBlock as _openBlock6, createElementBlock as _createElementBlock6 } from "vue";
-import {
-  $getNearestBlockElementAncestorOrThrow,
-  mergeRegister as mergeRegister10
-} from "@lexical/utils";
-import {
-  $getNodeByKey as $getNodeByKey3,
-  $getSelection as $getSelection9,
-  $isDecoratorNode,
-  $isNodeSelection as $isNodeSelection3,
-  $isRangeSelection as $isRangeSelection5,
-  CLICK_COMMAND,
-  COMMAND_PRIORITY_LOW as COMMAND_PRIORITY_LOW3,
-  FORMAT_ELEMENT_COMMAND,
-  KEY_BACKSPACE_COMMAND,
-  KEY_DELETE_COMMAND
-} from "lexical";
-import { ref as ref9 } from "vue";
-var _sfc_main16 = /* @__PURE__ */ _defineComponent16({
+var import_vue41 = require("vue");
+var import_vue42 = require("vue");
+var import_utils11 = require("@lexical/utils");
+var import_lexical14 = require("lexical");
+var import_vue43 = require("vue");
+var _sfc_main16 = /* @__PURE__ */ (0, import_vue41.defineComponent)({
   __name: "LexicalBlockWithAlignableContents",
   props: {
     format: {},
@@ -2165,34 +2154,34 @@ var _sfc_main16 = /* @__PURE__ */ _defineComponent16({
     const props = __props;
     const editor = useLexicalComposer();
     const { isSelected, setSelected, clearSelection } = useLexicalNodeSelection(props.nodeKey);
-    const containerRef = ref9(null);
+    const containerRef = (0, import_vue43.ref)(null);
     function onDelete(event) {
-      if (isSelected.value && $isNodeSelection3($getSelection9())) {
+      if (isSelected.value && (0, import_lexical14.$isNodeSelection)((0, import_lexical14.$getSelection)())) {
         event.preventDefault();
-        const node = $getNodeByKey3(props.nodeKey);
-        if ($isDecoratorNode(node))
+        const node = (0, import_lexical14.$getNodeByKey)(props.nodeKey);
+        if ((0, import_lexical14.$isDecoratorNode)(node))
           node?.remove();
       }
       return false;
     }
     useMounted(() => {
-      return mergeRegister10(
+      return (0, import_utils11.mergeRegister)(
         editor.registerCommand(
-          FORMAT_ELEMENT_COMMAND,
+          import_lexical14.FORMAT_ELEMENT_COMMAND,
           (formatType) => {
             if (isSelected.value) {
-              const selection = $getSelection9();
-              if ($isNodeSelection3(selection)) {
-                const node = $getNodeByKey3(props.nodeKey);
+              const selection = (0, import_lexical14.$getSelection)();
+              if ((0, import_lexical14.$isNodeSelection)(selection)) {
+                const node = (0, import_lexical14.$getNodeByKey)(props.nodeKey);
                 if (node && $isDecoratorBlockNode(node))
                   node.setFormat(formatType);
-              } else if ($isRangeSelection5(selection)) {
+              } else if ((0, import_lexical14.$isRangeSelection)(selection)) {
                 const nodes = selection.getNodes();
                 for (const node of nodes) {
                   if ($isDecoratorBlockNode(node)) {
                     node.setFormat(formatType);
                   } else {
-                    const element = $getNearestBlockElementAncestorOrThrow(node);
+                    const element = (0, import_utils11.$getNearestBlockElementAncestorOrThrow)(node);
                     element.setFormat(formatType);
                   }
                 }
@@ -2201,10 +2190,10 @@ var _sfc_main16 = /* @__PURE__ */ _defineComponent16({
             }
             return false;
           },
-          COMMAND_PRIORITY_LOW3
+          import_lexical14.COMMAND_PRIORITY_LOW
         ),
         editor.registerCommand(
-          CLICK_COMMAND,
+          import_lexical14.CLICK_COMMAND,
           (event) => {
             if (event.target === containerRef.value) {
               event.preventDefault();
@@ -2215,31 +2204,31 @@ var _sfc_main16 = /* @__PURE__ */ _defineComponent16({
             }
             return false;
           },
-          COMMAND_PRIORITY_LOW3
+          import_lexical14.COMMAND_PRIORITY_LOW
         ),
         editor.registerCommand(
-          KEY_DELETE_COMMAND,
+          import_lexical14.KEY_DELETE_COMMAND,
           onDelete,
-          COMMAND_PRIORITY_LOW3
+          import_lexical14.COMMAND_PRIORITY_LOW
         ),
         editor.registerCommand(
-          KEY_BACKSPACE_COMMAND,
+          import_lexical14.KEY_BACKSPACE_COMMAND,
           onDelete,
-          COMMAND_PRIORITY_LOW3
+          import_lexical14.COMMAND_PRIORITY_LOW
         )
       );
     });
     return (_ctx, _cache) => {
-      return _openBlock6(), _createElementBlock6(
+      return (0, import_vue42.openBlock)(), (0, import_vue42.createElementBlock)(
         "div",
         {
           ref_key: "containerRef",
           ref: containerRef,
-          style: _normalizeStyle(`text-align: ${_ctx.format}`),
-          class: _normalizeClass3([_ctx.baseClass, _unref3(isSelected) ? _ctx.focusClass : ""])
+          style: (0, import_vue42.normalizeStyle)(`text-align: ${_ctx.format}`),
+          class: (0, import_vue42.normalizeClass)([_ctx.baseClass, (0, import_vue42.unref)(isSelected) ? _ctx.focusClass : ""])
         },
         [
-          _renderSlot4(_ctx.$slots, "default")
+          (0, import_vue42.renderSlot)(_ctx.$slots, "default")
         ],
         6
         /* CLASS, STYLE */
@@ -2250,26 +2239,10 @@ var _sfc_main16 = /* @__PURE__ */ _defineComponent16({
 var LexicalBlockWithAlignableContents_default = _sfc_main16;
 
 // src/components/LexicalCheckListPlugin.vue
-import { defineComponent as _defineComponent17 } from "vue";
-import {
-  $getNearestNodeFromDOMNode,
-  $getSelection as $getSelection10,
-  $isElementNode as $isElementNode3,
-  $isRangeSelection as $isRangeSelection6,
-  COMMAND_PRIORITY_LOW as COMMAND_PRIORITY_LOW4,
-  KEY_ARROW_DOWN_COMMAND,
-  KEY_ARROW_LEFT_COMMAND,
-  KEY_ARROW_UP_COMMAND,
-  KEY_ESCAPE_COMMAND,
-  KEY_SPACE_COMMAND
-} from "lexical";
-import {
-  $isListItemNode,
-  $isListNode,
-  INSERT_CHECK_LIST_COMMAND,
-  insertList as insertList2
-} from "@lexical/list";
-import { $findMatchingParent, mergeRegister as mergeRegister11 } from "@lexical/utils";
+var import_vue44 = require("vue");
+var import_lexical15 = require("lexical");
+var import_list2 = require("@lexical/list");
+var import_utils12 = require("@lexical/utils");
 
 // src/composables/listenerManager.ts
 var handleClickAndPointerDownListenersCount = 0;
@@ -2288,36 +2261,36 @@ function registerClickAndPointerListeners(register, unregister) {
 }
 
 // src/components/LexicalCheckListPlugin.vue
-var _sfc_main17 = /* @__PURE__ */ _defineComponent17({
+var _sfc_main17 = /* @__PURE__ */ (0, import_vue44.defineComponent)({
   __name: "LexicalCheckListPlugin",
   setup(__props) {
     const editor = useLexicalComposer();
     useMounted(() => {
-      return mergeRegister11(
+      return (0, import_utils12.mergeRegister)(
         editor.registerCommand(
-          INSERT_CHECK_LIST_COMMAND,
+          import_list2.INSERT_CHECK_LIST_COMMAND,
           () => {
-            insertList2(editor, "check");
+            (0, import_list2.insertList)(editor, "check");
             return true;
           },
-          COMMAND_PRIORITY_LOW4
+          import_lexical15.COMMAND_PRIORITY_LOW
         ),
         editor.registerCommand(
-          KEY_ARROW_DOWN_COMMAND,
+          import_lexical15.KEY_ARROW_DOWN_COMMAND,
           (event) => {
             return handleArrownUpOrDown(event, editor, false);
           },
-          COMMAND_PRIORITY_LOW4
+          import_lexical15.COMMAND_PRIORITY_LOW
         ),
         editor.registerCommand(
-          KEY_ARROW_UP_COMMAND,
+          import_lexical15.KEY_ARROW_UP_COMMAND,
           (event) => {
             return handleArrownUpOrDown(event, editor, true);
           },
-          COMMAND_PRIORITY_LOW4
+          import_lexical15.COMMAND_PRIORITY_LOW
         ),
         editor.registerCommand(
-          KEY_ESCAPE_COMMAND,
+          import_lexical15.KEY_ESCAPE_COMMAND,
           (_event) => {
             const activeItem = getActiveCheckListItem();
             if (activeItem != null) {
@@ -2328,16 +2301,16 @@ var _sfc_main17 = /* @__PURE__ */ _defineComponent17({
             }
             return false;
           },
-          COMMAND_PRIORITY_LOW4
+          import_lexical15.COMMAND_PRIORITY_LOW
         ),
         editor.registerCommand(
-          KEY_SPACE_COMMAND,
+          import_lexical15.KEY_SPACE_COMMAND,
           (event) => {
             const activeItem = getActiveCheckListItem();
             if (activeItem != null) {
               editor.update(() => {
-                const listItemNode = $getNearestNodeFromDOMNode(activeItem);
-                if ($isListItemNode(listItemNode)) {
+                const listItemNode = (0, import_lexical15.$getNearestNodeFromDOMNode)(activeItem);
+                if ((0, import_list2.$isListItemNode)(listItemNode)) {
                   event.preventDefault();
                   listItemNode.toggleChecked();
                 }
@@ -2346,25 +2319,25 @@ var _sfc_main17 = /* @__PURE__ */ _defineComponent17({
             }
             return false;
           },
-          COMMAND_PRIORITY_LOW4
+          import_lexical15.COMMAND_PRIORITY_LOW
         ),
         editor.registerCommand(
-          KEY_ARROW_LEFT_COMMAND,
+          import_lexical15.KEY_ARROW_LEFT_COMMAND,
           (event) => {
             return editor.getEditorState().read(() => {
-              const selection = $getSelection10();
-              if ($isRangeSelection6(selection) && selection.isCollapsed()) {
+              const selection = (0, import_lexical15.$getSelection)();
+              if ((0, import_lexical15.$isRangeSelection)(selection) && selection.isCollapsed()) {
                 const { anchor } = selection;
                 const isElement = anchor.type === "element";
                 if (isElement || anchor.offset === 0) {
                   const anchorNode = anchor.getNode();
-                  const elementNode = $findMatchingParent(
+                  const elementNode = (0, import_utils12.$findMatchingParent)(
                     anchorNode,
-                    (node) => $isElementNode3(node) && !node.isInline()
+                    (node) => (0, import_lexical15.$isElementNode)(node) && !node.isInline()
                   );
-                  if ($isListItemNode(elementNode)) {
+                  if ((0, import_list2.$isListItemNode)(elementNode)) {
                     const parent = elementNode.getParent();
-                    if ($isListNode(parent) && parent.getListType() === "check" && (isElement || elementNode.getFirstDescendant() === anchorNode)) {
+                    if ((0, import_list2.$isListNode)(parent) && parent.getListType() === "check" && (isElement || elementNode.getFirstDescendant() === anchorNode)) {
                       const domNode = editor.getElementByKey(elementNode.__key);
                       if (domNode != null && document.activeElement !== domNode) {
                         domNode.focus();
@@ -2378,7 +2351,7 @@ var _sfc_main17 = /* @__PURE__ */ _defineComponent17({
               return false;
             });
           },
-          COMMAND_PRIORITY_LOW4
+          import_lexical15.COMMAND_PRIORITY_LOW
         ),
         listenPointerDown()
       );
@@ -2413,8 +2386,8 @@ var _sfc_main17 = /* @__PURE__ */ _defineComponent17({
         const editor2 = findEditor(domNode);
         if (editor2 !== null) {
           editor2.update(() => {
-            const node = $getNearestNodeFromDOMNode(domNode);
-            if ($isListItemNode(node)) {
+            const node = (0, import_lexical15.$getNearestNodeFromDOMNode)(domNode);
+            if ((0, import_list2.$isListItemNode)(node)) {
               domNode.focus();
               node.toggleChecked();
             }
@@ -2443,15 +2416,15 @@ var _sfc_main17 = /* @__PURE__ */ _defineComponent17({
     function findCheckListItemSibling(node, backward) {
       let sibling = backward ? node.getPreviousSibling() : node.getNextSibling();
       let parent = node;
-      while (sibling == null && $isListItemNode(parent)) {
+      while (sibling == null && (0, import_list2.$isListItemNode)(parent)) {
         parent = parent.getParentOrThrow().getParent();
         if (parent !== null) {
           sibling = backward ? parent.getPreviousSibling() : parent.getNextSibling();
         }
       }
-      while ($isListItemNode(sibling)) {
+      while ((0, import_list2.$isListItemNode)(sibling)) {
         const firstChild = backward ? sibling.getLastChild() : sibling.getFirstChild();
-        if (!$isListNode(firstChild))
+        if (!(0, import_list2.$isListNode)(firstChild))
           return sibling;
         sibling = backward ? firstChild.getLastChild() : firstChild.getFirstChild();
       }
@@ -2461,8 +2434,8 @@ var _sfc_main17 = /* @__PURE__ */ _defineComponent17({
       const activeItem = getActiveCheckListItem();
       if (activeItem != null) {
         editor2.update(() => {
-          const listItem = $getNearestNodeFromDOMNode(activeItem);
-          if (!$isListItemNode(listItem))
+          const listItem = (0, import_lexical15.$getNearestNodeFromDOMNode)(activeItem);
+          if (!(0, import_list2.$isListItemNode)(listItem))
             return;
           const nextListItem = findCheckListItemSibling(listItem, backward);
           if (nextListItem != null) {
@@ -2487,18 +2460,18 @@ var _sfc_main17 = /* @__PURE__ */ _defineComponent17({
 var LexicalCheckListPlugin_default = _sfc_main17;
 
 // src/components/LexicalMarkdownShortcutPlugin.vue
-import { defineComponent as _defineComponent18 } from "vue";
-import { TRANSFORMERS, registerMarkdownShortcuts } from "@lexical/markdown";
-var _sfc_main18 = /* @__PURE__ */ _defineComponent18({
+var import_vue45 = require("vue");
+var import_markdown = require("@lexical/markdown");
+var _sfc_main18 = /* @__PURE__ */ (0, import_vue45.defineComponent)({
   __name: "LexicalMarkdownShortcutPlugin",
   props: {
-    transformers: { default: () => [...TRANSFORMERS] }
+    transformers: { default: () => [...import_markdown.TRANSFORMERS] }
   },
   setup(__props) {
     const props = __props;
     const editor = useLexicalComposer();
     useMounted(() => {
-      return registerMarkdownShortcuts(editor, props.transformers);
+      return (0, import_markdown.registerMarkdownShortcuts)(editor, props.transformers);
     });
     return (_ctx, _cache) => {
       return null;
@@ -2508,33 +2481,26 @@ var _sfc_main18 = /* @__PURE__ */ _defineComponent18({
 var LexicalMarkdownShortcutPlugin_default = _sfc_main18;
 
 // src/components/LexicalTabIndentationPlugin.vue
-import { defineComponent as _defineComponent19 } from "vue";
-import {
-  $getSelection as $getSelection11,
-  $isRangeSelection as $isRangeSelection7,
-  COMMAND_PRIORITY_EDITOR as COMMAND_PRIORITY_EDITOR4,
-  INDENT_CONTENT_COMMAND,
-  KEY_TAB_COMMAND,
-  OUTDENT_CONTENT_COMMAND
-} from "lexical";
-var _sfc_main19 = /* @__PURE__ */ _defineComponent19({
+var import_vue46 = require("vue");
+var import_lexical16 = require("lexical");
+var _sfc_main19 = /* @__PURE__ */ (0, import_vue46.defineComponent)({
   __name: "LexicalTabIndentationPlugin",
   setup(__props) {
     const editor = useLexicalComposer();
     useMounted(() => {
       return editor.registerCommand(
-        KEY_TAB_COMMAND,
+        import_lexical16.KEY_TAB_COMMAND,
         (event) => {
-          const selection = $getSelection11();
-          if (!$isRangeSelection7(selection))
+          const selection = (0, import_lexical16.$getSelection)();
+          if (!(0, import_lexical16.$isRangeSelection)(selection))
             return false;
           event.preventDefault();
           return editor.dispatchCommand(
-            event.shiftKey ? OUTDENT_CONTENT_COMMAND : INDENT_CONTENT_COMMAND,
+            event.shiftKey ? import_lexical16.OUTDENT_CONTENT_COMMAND : import_lexical16.INDENT_CONTENT_COMMAND,
             void 0
           );
         },
-        COMMAND_PRIORITY_EDITOR4
+        import_lexical16.COMMAND_PRIORITY_EDITOR
       );
     });
     return (_ctx, _cache) => {
@@ -2545,12 +2511,12 @@ var _sfc_main19 = /* @__PURE__ */ _defineComponent19({
 var LexicalTabIndentationPlugin_default = _sfc_main19;
 
 // src/components/LexicalCollaborationPlugin.vue
-import { defineComponent as _defineComponent20 } from "vue";
-import { unref as _unref4, createElementVNode as _createElementVNode2, Teleport as _Teleport, openBlock as _openBlock7, createBlock as _createBlock } from "vue";
-import { computed as computed6, watchEffect as watchEffect5 } from "vue";
+var import_vue48 = require("vue");
+var import_vue49 = require("vue");
+var import_vue50 = require("vue");
 
 // src/composables/useCollaborationContext.ts
-import { ref as ref10 } from "vue";
+var import_vue47 = require("vue");
 var entries = [
   ["Cat", "rgb(125, 50, 0)"],
   ["Dog", "rgb(100, 0, 0)"],
@@ -2570,7 +2536,7 @@ var entries = [
   ["Squid", "rgb(150, 0, 150)"]
 ];
 var randomEntry = entries[Math.floor(Math.random() * entries.length)];
-var useCollaborationContext_default = ref10({
+var useCollaborationContext_default = (0, import_vue47.ref)({
   clientID: 0,
   color: randomEntry[1],
   isCollabActive: false,
@@ -2579,7 +2545,7 @@ var useCollaborationContext_default = ref10({
 });
 
 // src/components/LexicalCollaborationPlugin.vue
-var _sfc_main20 = /* @__PURE__ */ _defineComponent20({
+var _sfc_main20 = /* @__PURE__ */ (0, import_vue48.defineComponent)({
   __name: "LexicalCollaborationPlugin",
   props: {
     id: {},
@@ -2594,7 +2560,7 @@ var _sfc_main20 = /* @__PURE__ */ _defineComponent20({
   },
   setup(__props) {
     const props = __props;
-    watchEffect5(() => {
+    (0, import_vue50.watchEffect)(() => {
       if (props.username !== void 0)
         useCollaborationContext_default.value.name = props.username;
       if (props.cursorColor !== void 0)
@@ -2608,7 +2574,7 @@ var _sfc_main20 = /* @__PURE__ */ _defineComponent20({
           useCollaborationContext_default.value.isCollabActive = false;
       };
     });
-    const provider = computed6(() => props.providerFactory(props.id, useCollaborationContext_default.value.yjsDocMap));
+    const provider = (0, import_vue50.computed)(() => props.providerFactory(props.id, useCollaborationContext_default.value.yjsDocMap));
     const binding = useYjsCollaboration(
       editor,
       props.id,
@@ -2621,7 +2587,7 @@ var _sfc_main20 = /* @__PURE__ */ _defineComponent20({
       props.excludedProperties,
       props.awarenessData
     );
-    watchEffect5(() => {
+    (0, import_vue50.watchEffect)(() => {
       useCollaborationContext_default.value.clientID = binding.value.clientID;
     });
     useYjsHistory(editor, binding.value);
@@ -2633,13 +2599,13 @@ var _sfc_main20 = /* @__PURE__ */ _defineComponent20({
       props.awarenessData
     );
     return (_ctx, _cache) => {
-      return _openBlock7(), _createBlock(_Teleport, {
+      return (0, import_vue49.openBlock)(), (0, import_vue49.createBlock)(import_vue49.Teleport, {
         to: _ctx.cursorsContainerRef || "body"
       }, [
-        _createElementVNode2(
+        (0, import_vue49.createElementVNode)(
           "div",
           {
-            ref: (element) => _unref4(binding).cursorsContainer = element
+            ref: (element) => (0, import_vue49.unref)(binding).cursorsContainer = element
           },
           null,
           512
@@ -2652,17 +2618,11 @@ var _sfc_main20 = /* @__PURE__ */ _defineComponent20({
 var LexicalCollaborationPlugin_default = _sfc_main20;
 
 // src/components/LexicalClickableLinkPlugin.vue
-import { defineComponent as _defineComponent21 } from "vue";
-import { $isLinkNode as $isLinkNode2 } from "@lexical/link";
-import { $findMatchingParent as $findMatchingParent2, isHTMLAnchorElement } from "@lexical/utils";
-import {
-  $getNearestNodeFromDOMNode as $getNearestNodeFromDOMNode2,
-  $getSelection as $getSelection12,
-  $isElementNode as $isElementNode4,
-  $isRangeSelection as $isRangeSelection8,
-  getNearestEditorFromDOMNode
-} from "lexical";
-var _sfc_main21 = /* @__PURE__ */ _defineComponent21({
+var import_vue51 = require("vue");
+var import_link3 = require("@lexical/link");
+var import_utils13 = require("@lexical/utils");
+var import_lexical17 = require("lexical");
+var _sfc_main21 = /* @__PURE__ */ (0, import_vue51.defineComponent)({
   __name: "LexicalClickableLinkPlugin",
   props: {
     newTab: { type: Boolean, default: true }
@@ -2684,23 +2644,23 @@ var _sfc_main21 = /* @__PURE__ */ _defineComponent21({
         const target = event.target;
         if (!(target instanceof Node))
           return;
-        const nearestEditor = getNearestEditorFromDOMNode(target);
+        const nearestEditor = (0, import_lexical17.getNearestEditorFromDOMNode)(target);
         if (nearestEditor === null)
           return;
         let url = null;
         let urlTarget = null;
         nearestEditor.update(() => {
-          const clickedNode = $getNearestNodeFromDOMNode2(target);
+          const clickedNode = (0, import_lexical17.$getNearestNodeFromDOMNode)(target);
           if (clickedNode !== null) {
-            const maybeLinkNode = $findMatchingParent2(
+            const maybeLinkNode = (0, import_utils13.$findMatchingParent)(
               clickedNode,
-              $isElementNode4
+              import_lexical17.$isElementNode
             );
-            if ($isLinkNode2(maybeLinkNode)) {
+            if ((0, import_link3.$isLinkNode)(maybeLinkNode)) {
               url = maybeLinkNode.sanitizeUrl(maybeLinkNode.getURL());
               urlTarget = maybeLinkNode.getTarget();
             } else {
-              const a = findMatchingDOM(target, isHTMLAnchorElement);
+              const a = findMatchingDOM(target, import_utils13.isHTMLAnchorElement);
               if (a !== null) {
                 url = a.href;
                 urlTarget = a.target;
@@ -2710,8 +2670,8 @@ var _sfc_main21 = /* @__PURE__ */ _defineComponent21({
         });
         if (url === null || url === "")
           return;
-        const selection = editor.getEditorState().read($getSelection12);
-        if ($isRangeSelection8(selection) && !selection.isCollapsed()) {
+        const selection = editor.getEditorState().read(import_lexical17.$getSelection);
+        if ((0, import_lexical17.$isRangeSelection)(selection) && !selection.isCollapsed()) {
           event.preventDefault();
           return;
         }
@@ -2745,15 +2705,13 @@ var _sfc_main21 = /* @__PURE__ */ _defineComponent21({
 var LexicalClickableLinkPlugin_default = _sfc_main21;
 
 // src/components/LexicalContextMenuPlugin.vue
-import { defineComponent as _defineComponent23 } from "vue";
-import { unref as _unref5, normalizeProps as _normalizeProps, guardReactiveProps as _guardReactiveProps, renderSlot as _renderSlot6, withCtx as _withCtx, openBlock as _openBlock8, createBlock as _createBlock2 } from "vue";
-import { onMounted as onMounted6, onUnmounted as onUnmounted4, ref as ref13 } from "vue";
+var import_vue56 = require("vue");
+var import_vue57 = require("vue");
+var import_vue58 = require("vue");
 
 // src/components/LexicalMenu/shared.ts
-import {
-  createCommand
-} from "lexical";
-import { ref as ref11, watchEffect as watchEffect6 } from "vue";
+var import_lexical18 = require("lexical");
+var import_vue52 = require("vue");
 var MenuOption2 = class {
   key;
   ref;
@@ -2792,7 +2750,7 @@ function isTriggerVisibleInNearestScrollContainer(targetElement, containerElemen
 }
 function useDynamicPositioning(resolution, targetElement, onReposition, onVisibilityChange) {
   const editor = useLexicalComposer();
-  watchEffect6((onInvalidate) => {
+  (0, import_vue52.watchEffect)((onInvalidate) => {
     if (targetElement.value != null && resolution.value != null) {
       const rootElement = editor.getRootElement();
       const rootScrollParent = rootElement != null ? getScrollParent(rootElement, false) : document.body;
@@ -2834,10 +2792,10 @@ function useDynamicPositioning(resolution, targetElement, onReposition, onVisibi
     }
   });
 }
-var SCROLL_TYPEAHEAD_OPTION_INTO_VIEW_COMMAND = createCommand("SCROLL_TYPEAHEAD_OPTION_INTO_VIEW_COMMAND");
+var SCROLL_TYPEAHEAD_OPTION_INTO_VIEW_COMMAND = (0, import_lexical18.createCommand)("SCROLL_TYPEAHEAD_OPTION_INTO_VIEW_COMMAND");
 function useMenuAnchorRef(resolution, setResolution, className, parent = document.body) {
   const editor = useLexicalComposer();
-  const anchorElementRef = ref11(document.createElement("div"));
+  const anchorElementRef = (0, import_vue52.ref)(document.createElement("div"));
   const positionMenu = () => {
     anchorElementRef.value.style.top = anchorElementRef.value.style.bottom;
     const rootElement = editor.getRootElement();
@@ -2877,7 +2835,7 @@ function useMenuAnchorRef(resolution, setResolution, className, parent = documen
       rootElement.setAttribute("aria-controls", "typeahead-menu");
     }
   };
-  watchEffect6(() => {
+  (0, import_vue52.watchEffect)(() => {
     const rootElement = editor.getRootElement();
     if (resolution.value !== null) {
       positionMenu();
@@ -2906,12 +2864,12 @@ function useMenuAnchorRef(resolution, setResolution, className, parent = documen
 }
 
 // src/components/LexicalMenu/index.vue
-import { defineComponent as _defineComponent22 } from "vue";
-import { renderSlot as _renderSlot5 } from "vue";
-import { computed as computed7, onUnmounted as onUnmounted3, ref as ref12, watch, watchEffect as watchEffect7 } from "vue";
-import { $getSelection as $getSelection13, $isRangeSelection as $isRangeSelection9, KEY_ARROW_DOWN_COMMAND as KEY_ARROW_DOWN_COMMAND2, KEY_ARROW_UP_COMMAND as KEY_ARROW_UP_COMMAND2, KEY_ENTER_COMMAND, KEY_ESCAPE_COMMAND as KEY_ESCAPE_COMMAND2, KEY_TAB_COMMAND as KEY_TAB_COMMAND2 } from "lexical";
-import { mergeRegister as mergeRegister12 } from "@lexical/utils";
-var _sfc_main22 = /* @__PURE__ */ _defineComponent22({
+var import_vue53 = require("vue");
+var import_vue54 = require("vue");
+var import_vue55 = require("vue");
+var import_lexical19 = require("lexical");
+var import_utils14 = require("@lexical/utils");
+var _sfc_main22 = /* @__PURE__ */ (0, import_vue53.defineComponent)({
   __name: "index",
   props: {
     close: { type: Function },
@@ -2926,8 +2884,8 @@ var _sfc_main22 = /* @__PURE__ */ _defineComponent22({
   setup(__props, { emit: __emit }) {
     const props = __props;
     const emit = __emit;
-    const selectedIndex = ref12(null);
-    const matchString = computed7(() => props.resolution.match && props.resolution.match.matchingString);
+    const selectedIndex = (0, import_vue55.ref)(null);
+    const matchString = (0, import_vue55.computed)(() => props.resolution.match && props.resolution.match.matchingString);
     function setHighlightedIndex(index) {
       selectedIndex.value = index;
     }
@@ -2940,8 +2898,8 @@ var _sfc_main22 = /* @__PURE__ */ _defineComponent22({
       return triggerOffset;
     }
     function $splitNodeContainingQuery(match) {
-      const selection = $getSelection13();
-      if (!$isRangeSelection9(selection) || !selection.isCollapsed())
+      const selection = (0, import_lexical19.$getSelection)();
+      if (!(0, import_lexical19.$isRangeSelection)(selection) || !selection.isCollapsed())
         return null;
       const anchor = selection.anchor;
       if (anchor.type !== "text")
@@ -2967,7 +2925,7 @@ var _sfc_main22 = /* @__PURE__ */ _defineComponent22({
         [, newNode] = anchorNode.splitText(startOffset, selectionOffset);
       return newNode;
     }
-    watch(matchString, () => {
+    (0, import_vue55.watch)(matchString, () => {
       setHighlightedIndex(0);
     }, { immediate: true });
     function selectOptionAndCleanUp(selectedEntry) {
@@ -2991,12 +2949,12 @@ var _sfc_main22 = /* @__PURE__ */ _defineComponent22({
         setHighlightedIndex(index);
       }
     }
-    onUnmounted3(() => {
+    (0, import_vue55.onUnmounted)(() => {
       const rootElem = props.editor.getRootElement();
       if (rootElem !== null)
         rootElem.removeAttribute("aria-activedescendant");
     });
-    watchEffect7(() => {
+    (0, import_vue55.watchEffect)(() => {
       if (props.options === null)
         setHighlightedIndex(null);
       else if (selectedIndex.value === null)
@@ -3019,10 +2977,10 @@ var _sfc_main22 = /* @__PURE__ */ _defineComponent22({
       }
       target.scrollIntoView({ block: "nearest" });
     }
-    watchEffect7((onInvalidate) => {
+    (0, import_vue55.watchEffect)((onInvalidate) => {
       if (!props.commandPriority)
         return;
-      const fn = mergeRegister12(
+      const fn = (0, import_utils14.mergeRegister)(
         props.editor.registerCommand(
           SCROLL_TYPEAHEAD_OPTION_INTO_VIEW_COMMAND,
           ({ option }) => {
@@ -3037,12 +2995,12 @@ var _sfc_main22 = /* @__PURE__ */ _defineComponent22({
       );
       onInvalidate(fn);
     });
-    watchEffect7((onInvalidate) => {
+    (0, import_vue55.watchEffect)((onInvalidate) => {
       if (!props.commandPriority)
         return;
-      const fn = mergeRegister12(
+      const fn = (0, import_utils14.mergeRegister)(
         props.editor.registerCommand(
-          KEY_ARROW_DOWN_COMMAND2,
+          import_lexical19.KEY_ARROW_DOWN_COMMAND,
           (payload) => {
             const event = payload;
             if (props.options !== null && props.options.length && selectedIndex.value !== null) {
@@ -3066,7 +3024,7 @@ var _sfc_main22 = /* @__PURE__ */ _defineComponent22({
           props.commandPriority
         ),
         props.editor.registerCommand(
-          KEY_ARROW_UP_COMMAND2,
+          import_lexical19.KEY_ARROW_UP_COMMAND,
           (payload) => {
             const event = payload;
             if (props.options !== null && props.options.length && selectedIndex.value !== null) {
@@ -3083,7 +3041,7 @@ var _sfc_main22 = /* @__PURE__ */ _defineComponent22({
           props.commandPriority
         ),
         props.editor.registerCommand(
-          KEY_ESCAPE_COMMAND2,
+          import_lexical19.KEY_ESCAPE_COMMAND,
           (payload) => {
             const event = payload;
             event.preventDefault();
@@ -3094,7 +3052,7 @@ var _sfc_main22 = /* @__PURE__ */ _defineComponent22({
           props.commandPriority
         ),
         props.editor.registerCommand(
-          KEY_TAB_COMMAND2,
+          import_lexical19.KEY_TAB_COMMAND,
           (payload) => {
             const event = payload;
             if (props.options === null || selectedIndex.value === null || props.options[selectedIndex.value] == null)
@@ -3107,7 +3065,7 @@ var _sfc_main22 = /* @__PURE__ */ _defineComponent22({
           props.commandPriority
         ),
         props.editor.registerCommand(
-          KEY_ENTER_COMMAND,
+          import_lexical19.KEY_ENTER_COMMAND,
           (event) => {
             if (props.options === null || selectedIndex.value === null || props.options[selectedIndex.value] == null)
               return false;
@@ -3124,7 +3082,7 @@ var _sfc_main22 = /* @__PURE__ */ _defineComponent22({
       onInvalidate(fn);
     });
     return (_ctx, _cache) => {
-      return _renderSlot5(_ctx.$slots, "default", {
+      return (0, import_vue54.renderSlot)(_ctx.$slots, "default", {
         listItemProps: {
           options: props.options,
           selectOptionAndCleanUp,
@@ -3141,7 +3099,7 @@ var LexicalMenu_default = _sfc_main22;
 
 // src/components/LexicalContextMenuPlugin.vue
 var PRE_PORTAL_DIV_SIZE = 1;
-var _sfc_main23 = /* @__PURE__ */ _defineComponent23({
+var _sfc_main23 = /* @__PURE__ */ (0, import_vue56.defineComponent)({
   __name: "LexicalContextMenuPlugin",
   props: {
     options: {},
@@ -3154,8 +3112,8 @@ var _sfc_main23 = /* @__PURE__ */ _defineComponent23({
     const props = __props;
     const emit = __emit;
     const editor = useLexicalComposer();
-    const resolution = ref13(null);
-    const menuRef = ref13(null);
+    const resolution = (0, import_vue58.ref)(null);
+    const menuRef = (0, import_vue58.ref)(null);
     const anchorElementRef = useMenuAnchorRef(
       resolution,
       setResolution,
@@ -3190,33 +3148,33 @@ var _sfc_main23 = /* @__PURE__ */ _defineComponent23({
       if (resolution.value !== null && menuRef.value != null && event.target != null && !menuRef.value.contains(event.target))
         closeNodeMenu();
     }
-    onMounted6(() => {
+    (0, import_vue58.onMounted)(() => {
       const editorElement = editor.getRootElement();
       if (editorElement) {
         editorElement.addEventListener("contextmenu", handleContextMenu);
-        onUnmounted4(() => {
+        (0, import_vue58.onUnmounted)(() => {
           editorElement.removeEventListener("contextmenu", handleContextMenu);
         });
       }
     });
-    onMounted6(() => {
+    (0, import_vue58.onMounted)(() => {
       document.addEventListener("click", handleClick);
-      onUnmounted4(() => {
+      (0, import_vue58.onUnmounted)(() => {
         document.removeEventListener("click", handleClick);
       });
     });
     return (_ctx, _cache) => {
-      return _openBlock8(), _createBlock2(LexicalMenu_default, {
+      return (0, import_vue57.openBlock)(), (0, import_vue57.createBlock)(LexicalMenu_default, {
         close: closeNodeMenu,
         resolution: resolution.value,
-        editor: _unref5(editor),
-        "anchor-element-ref": _unref5(anchorElementRef),
+        editor: (0, import_vue57.unref)(editor),
+        "anchor-element-ref": (0, import_vue57.unref)(anchorElementRef),
         options: _ctx.options,
         "command-priority": _ctx.commandPriority,
         onSelectOption: _cache[0] || (_cache[0] = ($event) => _ctx.$emit("selectOption", $event))
       }, {
-        default: _withCtx(({ anchorElementRef: anchorRef, listItemProps }) => [
-          _renderSlot6(_ctx.$slots, "default", _normalizeProps(_guardReactiveProps({
+        default: (0, import_vue57.withCtx)(({ anchorElementRef: anchorRef, listItemProps }) => [
+          (0, import_vue57.renderSlot)(_ctx.$slots, "default", (0, import_vue57.normalizeProps)((0, import_vue57.guardReactiveProps)({
             anchorElementRef: anchorRef,
             listItemProps,
             menuProps: {
@@ -3235,13 +3193,11 @@ var _sfc_main23 = /* @__PURE__ */ _defineComponent23({
 var LexicalContextMenuPlugin_default = _sfc_main23;
 
 // src/components/LexicalNodeMenuPlugin.vue
-import { defineComponent as _defineComponent24 } from "vue";
-import { unref as _unref6, normalizeProps as _normalizeProps2, guardReactiveProps as _guardReactiveProps2, renderSlot as _renderSlot7, withCtx as _withCtx2, openBlock as _openBlock9, createBlock as _createBlock3, createCommentVNode as _createCommentVNode4 } from "vue";
-import {
-  $getNodeByKey as $getNodeByKey4
-} from "lexical";
-import { nextTick as nextTick2, ref as ref14, watch as watch2, watchEffect as watchEffect8 } from "vue";
-var _sfc_main24 = /* @__PURE__ */ _defineComponent24({
+var import_vue59 = require("vue");
+var import_vue60 = require("vue");
+var import_lexical20 = require("lexical");
+var import_vue61 = require("vue");
+var _sfc_main24 = /* @__PURE__ */ (0, import_vue59.defineComponent)({
   __name: "LexicalNodeMenuPlugin",
   props: {
     options: {},
@@ -3255,10 +3211,10 @@ var _sfc_main24 = /* @__PURE__ */ _defineComponent24({
     const props = __props;
     const emit = __emit;
     function startTransition(callback) {
-      nextTick2(callback);
+      (0, import_vue61.nextTick)(callback);
     }
     const editor = useLexicalComposer();
-    const resolution = ref14(null);
+    const resolution = (0, import_vue61.ref)(null);
     function setResolution(payload) {
       resolution.value = payload;
     }
@@ -3281,7 +3237,7 @@ var _sfc_main24 = /* @__PURE__ */ _defineComponent24({
     function positionOrCloseMenu() {
       if (props.nodeKey) {
         editor.update(() => {
-          const node = $getNodeByKey4(props.nodeKey);
+          const node = (0, import_lexical20.$getNodeByKey)(props.nodeKey);
           const domElement = editor.getElementByKey(props.nodeKey);
           if (node != null && domElement != null) {
             if (resolution.value == null) {
@@ -3297,8 +3253,8 @@ var _sfc_main24 = /* @__PURE__ */ _defineComponent24({
         closeNodeMenu();
       }
     }
-    watch2(() => props.nodeKey, positionOrCloseMenu, { immediate: true });
-    watchEffect8((onInvalidate) => {
+    (0, import_vue61.watch)(() => props.nodeKey, positionOrCloseMenu, { immediate: true });
+    (0, import_vue61.watchEffect)((onInvalidate) => {
       if (props.nodeKey != null) {
         const fn = editor.registerUpdateListener(({ dirtyElements }) => {
           if (dirtyElements.get(props.nodeKey))
@@ -3308,43 +3264,39 @@ var _sfc_main24 = /* @__PURE__ */ _defineComponent24({
       }
     });
     return (_ctx, _cache) => {
-      return resolution.value !== null && _unref6(editor) !== null ? (_openBlock9(), _createBlock3(LexicalMenu_default, {
+      return resolution.value !== null && (0, import_vue60.unref)(editor) !== null ? ((0, import_vue60.openBlock)(), (0, import_vue60.createBlock)(LexicalMenu_default, {
         key: 0,
         resolution: resolution.value,
-        editor: _unref6(editor),
-        "anchor-element-ref": _unref6(anchorElementRef),
+        editor: (0, import_vue60.unref)(editor),
+        "anchor-element-ref": (0, import_vue60.unref)(anchorElementRef),
         options: _ctx.options,
         "command-priority": _ctx.commandPriority,
         close: closeNodeMenu,
         onSelectOption: _cache[0] || (_cache[0] = ($event) => _ctx.$emit("selectOption", $event))
       }, {
-        default: _withCtx2((slotProps) => [
-          _renderSlot7(_ctx.$slots, "default", _normalizeProps2(_guardReactiveProps2(slotProps)))
+        default: (0, import_vue60.withCtx)((slotProps) => [
+          (0, import_vue60.renderSlot)(_ctx.$slots, "default", (0, import_vue60.normalizeProps)((0, import_vue60.guardReactiveProps)(slotProps)))
         ]),
         _: 3
         /* FORWARDED */
-      }, 8, ["resolution", "editor", "anchor-element-ref", "options", "command-priority"])) : _createCommentVNode4("v-if", true);
+      }, 8, ["resolution", "editor", "anchor-element-ref", "options", "command-priority"])) : (0, import_vue60.createCommentVNode)("v-if", true);
     };
   }
 });
 var LexicalNodeMenuPlugin_default = _sfc_main24;
 
 // src/components/LexicalAutoEmbedPlugin/index.vue
-import { defineComponent as _defineComponent25 } from "vue";
-import { normalizeProps as _normalizeProps3, guardReactiveProps as _guardReactiveProps3, renderSlot as _renderSlot8, withCtx as _withCtx3, openBlock as _openBlock10, createBlock as _createBlock4, createCommentVNode as _createCommentVNode5 } from "vue";
-import { $isLinkNode as $isLinkNode3, AutoLinkNode, LinkNode as LinkNode2 } from "@lexical/link";
-import {
-  $getNodeByKey as $getNodeByKey5,
-  $getSelection as $getSelection14,
-  COMMAND_PRIORITY_EDITOR as COMMAND_PRIORITY_EDITOR5
-} from "lexical";
-import { computed as computed8, ref as ref15, watchEffect as watchEffect9 } from "vue";
-import { mergeRegister as mergeRegister13 } from "@lexical/utils";
+var import_vue62 = require("vue");
+var import_vue63 = require("vue");
+var import_link4 = require("@lexical/link");
+var import_lexical22 = require("lexical");
+var import_vue64 = require("vue");
+var import_utils15 = require("@lexical/utils");
 
 // src/components/LexicalAutoEmbedPlugin/shared.ts
-import { createCommand as createCommand2 } from "lexical";
+var import_lexical21 = require("lexical");
 var URL_MATCHER = /((https?:\/\/(www\.)?)|(www\.))[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&//=]*)/;
-var INSERT_EMBED_COMMAND = createCommand2("INSERT_EMBED_COMMAND");
+var INSERT_EMBED_COMMAND = (0, import_lexical21.createCommand)("INSERT_EMBED_COMMAND");
 var AutoEmbedOption = class extends MenuOption2 {
   title;
   onSelect;
@@ -3356,7 +3308,7 @@ var AutoEmbedOption = class extends MenuOption2 {
 };
 
 // src/components/LexicalAutoEmbedPlugin/index.vue
-var _sfc_main25 = /* @__PURE__ */ _defineComponent25({
+var _sfc_main25 = /* @__PURE__ */ (0, import_vue62.defineComponent)({
   __name: "index",
   props: {
     embedConfigs: {},
@@ -3368,16 +3320,16 @@ var _sfc_main25 = /* @__PURE__ */ _defineComponent25({
     const props = __props;
     const emit = __emit;
     const editor = useLexicalComposer();
-    const nodeKey = ref15(null);
-    const activeEmbedConfig = ref15(null);
+    const nodeKey = (0, import_vue64.ref)(null);
+    const activeEmbedConfig = (0, import_vue64.ref)(null);
     function reset() {
       nodeKey.value = null;
       activeEmbedConfig.value = null;
     }
     function checkIfLinkNodeIsEmbeddable(key) {
       editor.getEditorState().read(async () => {
-        const linkNode = $getNodeByKey5(key);
-        if ($isLinkNode3(linkNode)) {
+        const linkNode = (0, import_lexical22.$getNodeByKey)(key);
+        if ((0, import_link4.$isLinkNode)(linkNode)) {
           for (let i = 0; i < props.embedConfigs.length; i++) {
             const embedConfig = props.embedConfigs[i];
             const urlMatch = await Promise.resolve(
@@ -3399,15 +3351,15 @@ var _sfc_main25 = /* @__PURE__ */ _defineComponent25({
           reset();
       }
     };
-    watchEffect9((onInvalidate) => {
-      const cleanup = mergeRegister13(
-        ...[LinkNode2, AutoLinkNode].map(
+    (0, import_vue64.watchEffect)((onInvalidate) => {
+      const cleanup = (0, import_utils15.mergeRegister)(
+        ...[import_link4.LinkNode, import_link4.AutoLinkNode].map(
           (Klass) => editor.registerMutationListener(Klass, (...args) => listener(...args))
         )
       );
       onInvalidate(cleanup);
     });
-    watchEffect9((onInvalidate) => {
+    (0, import_vue64.watchEffect)((onInvalidate) => {
       const cleanup = editor.registerCommand(
         INSERT_EMBED_COMMAND,
         (embedConfigType) => {
@@ -3420,25 +3372,25 @@ var _sfc_main25 = /* @__PURE__ */ _defineComponent25({
           }
           return false;
         },
-        COMMAND_PRIORITY_EDITOR5
+        import_lexical22.COMMAND_PRIORITY_EDITOR
       );
       onInvalidate(cleanup);
     });
     async function embedLinkViaActiveEmbedConfig() {
       if (activeEmbedConfig.value != null && nodeKey.value != null) {
         const linkNode = editor.getEditorState().read(() => {
-          const node = $getNodeByKey5(nodeKey.value);
-          if ($isLinkNode3(node))
+          const node = (0, import_lexical22.$getNodeByKey)(nodeKey.value);
+          if ((0, import_link4.$isLinkNode)(node))
             return node;
           return null;
         });
-        if ($isLinkNode3(linkNode)) {
+        if ((0, import_link4.$isLinkNode)(linkNode)) {
           const result = await Promise.resolve(
             activeEmbedConfig.value.parseUrl(linkNode.__url)
           );
           if (result != null) {
             editor.update(() => {
-              if (!$getSelection14())
+              if (!(0, import_lexical22.$getSelection)())
                 linkNode.selectEnd();
               activeEmbedConfig.value?.insertNode(editor, result);
               if (linkNode.isAttached())
@@ -3448,7 +3400,7 @@ var _sfc_main25 = /* @__PURE__ */ _defineComponent25({
         }
       }
     }
-    const options = computed8(() => activeEmbedConfig.value != null && nodeKey.value != null ? props.getMenuOptions(activeEmbedConfig.value, embedLinkViaActiveEmbedConfig, reset) : []);
+    const options = (0, import_vue64.computed)(() => activeEmbedConfig.value != null && nodeKey.value != null ? props.getMenuOptions(activeEmbedConfig.value, embedLinkViaActiveEmbedConfig, reset) : []);
     function onSelectOption({
       option: selectedOption,
       closeMenu,
@@ -3460,7 +3412,7 @@ var _sfc_main25 = /* @__PURE__ */ _defineComponent25({
       });
     }
     return (_ctx, _cache) => {
-      return nodeKey.value !== null ? (_openBlock10(), _createBlock4(LexicalNodeMenuPlugin_default, {
+      return nodeKey.value !== null ? ((0, import_vue63.openBlock)(), (0, import_vue63.createBlock)(LexicalNodeMenuPlugin_default, {
         key: 0,
         "node-key": nodeKey.value,
         close: reset,
@@ -3468,37 +3420,26 @@ var _sfc_main25 = /* @__PURE__ */ _defineComponent25({
         "command-priority": _ctx.menuCommandPriority,
         onSelectOption
       }, {
-        default: _withCtx3((slotProps) => [
-          _renderSlot8(_ctx.$slots, "default", _normalizeProps3(_guardReactiveProps3(slotProps)))
+        default: (0, import_vue63.withCtx)((slotProps) => [
+          (0, import_vue63.renderSlot)(_ctx.$slots, "default", (0, import_vue63.normalizeProps)((0, import_vue63.guardReactiveProps)(slotProps)))
         ]),
         _: 3
         /* FORWARDED */
-      }, 8, ["node-key", "options", "command-priority"])) : _createCommentVNode5("v-if", true);
+      }, 8, ["node-key", "options", "command-priority"])) : (0, import_vue63.createCommentVNode)("v-if", true);
     };
   }
 });
 var LexicalAutoEmbedPlugin_default = _sfc_main25;
 
 // src/components/LexicalAutoLinkPlugin/index.vue
-import { defineComponent as _defineComponent26 } from "vue";
+var import_vue66 = require("vue");
 
 // src/components/LexicalAutoLinkPlugin/shared.ts
-import { unref as unref4, watchEffect as watchEffect10 } from "vue";
-import invariant6 from "tiny-invariant";
-import {
-  $createAutoLinkNode,
-  $isAutoLinkNode,
-  $isLinkNode as $isLinkNode4,
-  AutoLinkNode as AutoLinkNode2
-} from "@lexical/link";
-import { mergeRegister as mergeRegister14 } from "@lexical/utils";
-import {
-  $createTextNode,
-  $isElementNode as $isElementNode5,
-  $isLineBreakNode,
-  $isTextNode as $isTextNode4,
-  TextNode
-} from "lexical";
+var import_vue65 = require("vue");
+var import_tiny_invariant6 = __toESM(require("tiny-invariant"), 1);
+var import_link5 = require("@lexical/link");
+var import_utils16 = require("@lexical/utils");
+var import_lexical23 = require("lexical");
 function findFirstMatch(text, matchers) {
   for (let i = 0; i < matchers.length; i++) {
     const match = matchers[i](text);
@@ -3519,15 +3460,15 @@ function startsWithSeparator(textContent) {
 }
 function isPreviousNodeValid(node) {
   let previousNode = node.getPreviousSibling();
-  if ($isElementNode5(previousNode))
+  if ((0, import_lexical23.$isElementNode)(previousNode))
     previousNode = previousNode.getLastDescendant();
-  return previousNode === null || $isLineBreakNode(previousNode) || $isTextNode4(previousNode) && endsWithSeparator(previousNode.getTextContent());
+  return previousNode === null || (0, import_lexical23.$isLineBreakNode)(previousNode) || (0, import_lexical23.$isTextNode)(previousNode) && endsWithSeparator(previousNode.getTextContent());
 }
 function isNextNodeValid(node) {
   let nextNode = node.getNextSibling();
-  if ($isElementNode5(nextNode))
+  if ((0, import_lexical23.$isElementNode)(nextNode))
     nextNode = nextNode.getFirstDescendant();
-  return nextNode === null || $isLineBreakNode(nextNode) || $isTextNode4(nextNode) && startsWithSeparator(nextNode.getTextContent());
+  return nextNode === null || (0, import_lexical23.$isLineBreakNode)(nextNode) || (0, import_lexical23.$isTextNode)(nextNode) && startsWithSeparator(nextNode.getTextContent());
 }
 function isContentAroundIsValid(matchStart, matchEnd, text, node) {
   const contentBeforeIsValid = matchStart > 0 ? isSeparator(text[matchStart - 1]) : isPreviousNodeValid(node);
@@ -3564,8 +3505,8 @@ function handleLinkCreation(node, matchers, onChange) {
           invalidMatchEnd + matchStart + matchLength
         );
       }
-      const linkNode = $createAutoLinkNode(match.url, match.attributes);
-      const textNode = $createTextNode(match.text);
+      const linkNode = (0, import_link5.$createAutoLinkNode)(match.url, match.attributes);
+      const textNode = (0, import_lexical23.$createTextNode)(match.text);
       textNode.setFormat(linkTextNode.getFormat());
       textNode.setDetail(linkTextNode.getDetail());
       linkNode.append(textNode);
@@ -3583,7 +3524,7 @@ function handleLinkEdit(linkNode, matchers, onChange) {
   const childrenLength = children.length;
   for (let i = 0; i < childrenLength; i++) {
     const child = children[i];
-    if (!$isTextNode4(child) || !child.isSimpleText()) {
+    if (!(0, import_lexical23.$isTextNode)(child) || !child.isSimpleText()) {
       replaceWithChildren(linkNode);
       onChange(null, linkNode.getURL());
       return;
@@ -3623,11 +3564,11 @@ function handleBadNeighbors(textNode, onChange) {
   const previousSibling = textNode.getPreviousSibling();
   const nextSibling = textNode.getNextSibling();
   const text = textNode.getTextContent();
-  if ($isAutoLinkNode(previousSibling) && !startsWithSeparator(text)) {
+  if ((0, import_link5.$isAutoLinkNode)(previousSibling) && !startsWithSeparator(text)) {
     replaceWithChildren(previousSibling);
     onChange(null, previousSibling.getURL());
   }
-  if ($isAutoLinkNode(nextSibling) && !endsWithSeparator(text)) {
+  if ((0, import_link5.$isAutoLinkNode)(nextSibling) && !endsWithSeparator(text)) {
     replaceWithChildren(nextSibling);
     onChange(null, nextSibling.getURL());
   }
@@ -3641,26 +3582,26 @@ function replaceWithChildren(node) {
   return children.map((child) => child.getLatest());
 }
 function useAutoLink(editor, matchers, onChange) {
-  watchEffect10((onInvalidate) => {
-    if (!editor.hasNodes([AutoLinkNode2]))
-      invariant6(false, "LexicalAutoLinkPlugin: AutoLinkNode not registered on editor");
+  (0, import_vue65.watchEffect)((onInvalidate) => {
+    if (!editor.hasNodes([import_link5.AutoLinkNode]))
+      (0, import_tiny_invariant6.default)(false, "LexicalAutoLinkPlugin: AutoLinkNode not registered on editor");
     const onChangeWrapped = (url, prevUrl) => {
       if (onChange)
         onChange(url, prevUrl);
     };
-    const fn = mergeRegister14(
-      editor.registerNodeTransform(TextNode, (textNode) => {
+    const fn = (0, import_utils16.mergeRegister)(
+      editor.registerNodeTransform(import_lexical23.TextNode, (textNode) => {
         const parent = textNode.getParentOrThrow();
-        if ($isAutoLinkNode(parent)) {
-          handleLinkEdit(parent, unref4(matchers), onChangeWrapped);
-        } else if (!$isLinkNode4(parent)) {
+        if ((0, import_link5.$isAutoLinkNode)(parent)) {
+          handleLinkEdit(parent, (0, import_vue65.unref)(matchers), onChangeWrapped);
+        } else if (!(0, import_link5.$isLinkNode)(parent)) {
           if (textNode.isSimpleText())
-            handleLinkCreation(textNode, unref4(matchers), onChangeWrapped);
+            handleLinkCreation(textNode, (0, import_vue65.unref)(matchers), onChangeWrapped);
           handleBadNeighbors(textNode, onChangeWrapped);
         }
       }),
-      editor.registerNodeTransform(AutoLinkNode2, (linkNode) => {
-        handleLinkEdit(linkNode, unref4(matchers), onChangeWrapped);
+      editor.registerNodeTransform(import_link5.AutoLinkNode, (linkNode) => {
+        handleLinkEdit(linkNode, (0, import_vue65.unref)(matchers), onChangeWrapped);
       })
     );
     onInvalidate(fn);
@@ -3668,7 +3609,7 @@ function useAutoLink(editor, matchers, onChange) {
 }
 
 // src/components/LexicalAutoLinkPlugin/index.vue
-var _sfc_main26 = /* @__PURE__ */ _defineComponent26({
+var _sfc_main26 = /* @__PURE__ */ (0, import_vue66.defineComponent)({
   __name: "index",
   props: {
     matchers: {}
@@ -3692,17 +3633,17 @@ var _sfc_main26 = /* @__PURE__ */ _defineComponent26({
 var LexicalAutoLinkPlugin_default = _sfc_main26;
 
 // src/components/LexicalTypeaheadMenuPlugin/index.vue
-import { defineComponent as _defineComponent27 } from "vue";
-import { unref as _unref7, normalizeProps as _normalizeProps4, guardReactiveProps as _guardReactiveProps4, renderSlot as _renderSlot9, withCtx as _withCtx4, openBlock as _openBlock11, createBlock as _createBlock5, createCommentVNode as _createCommentVNode6 } from "vue";
-import { $getSelection as $getSelection15, $isRangeSelection as $isRangeSelection10, $isTextNode as $isTextNode5, COMMAND_PRIORITY_LOW as COMMAND_PRIORITY_LOW5 } from "lexical";
-import { ref as ref16, watchEffect as watchEffect11 } from "vue";
-var _sfc_main27 = /* @__PURE__ */ _defineComponent27({
+var import_vue67 = require("vue");
+var import_vue68 = require("vue");
+var import_lexical24 = require("lexical");
+var import_vue69 = require("vue");
+var _sfc_main27 = /* @__PURE__ */ (0, import_vue67.defineComponent)({
   __name: "index",
   props: {
     options: {},
     triggerFn: {},
     anchorClassName: {},
-    commandPriority: { default: COMMAND_PRIORITY_LOW5 },
+    commandPriority: { default: import_lexical24.COMMAND_PRIORITY_LOW },
     parent: {}
   },
   emits: ["close", "open", "queryChange", "selectOption"],
@@ -3710,7 +3651,7 @@ var _sfc_main27 = /* @__PURE__ */ _defineComponent27({
     const props = __props;
     const emit = __emit;
     const editor = useLexicalComposer();
-    const resolution = ref16(null);
+    const resolution = (0, import_vue69.ref)(null);
     function setResolution(payload) {
       resolution.value = payload;
     }
@@ -3760,8 +3701,8 @@ var _sfc_main27 = /* @__PURE__ */ _defineComponent27({
     function getQueryTextForSearch(editor2) {
       let text = null;
       editor2.getEditorState().read(() => {
-        const selection = $getSelection15();
-        if (!$isRangeSelection10(selection))
+        const selection = (0, import_lexical24.$getSelection)();
+        if (!(0, import_lexical24.$isRangeSelection)(selection))
           return;
         text = getTextUpToAnchor(selection);
       });
@@ -3771,24 +3712,24 @@ var _sfc_main27 = /* @__PURE__ */ _defineComponent27({
       if (offset !== 0)
         return false;
       return editor2.getEditorState().read(() => {
-        const selection = $getSelection15();
-        if ($isRangeSelection10(selection)) {
+        const selection = (0, import_lexical24.$getSelection)();
+        if ((0, import_lexical24.$isRangeSelection)(selection)) {
           const anchor = selection.anchor;
           const anchorNode = anchor.getNode();
           const prevSibling = anchorNode.getPreviousSibling();
-          return $isTextNode5(prevSibling) && prevSibling.isTextEntity();
+          return (0, import_lexical24.$isTextNode)(prevSibling) && prevSibling.isTextEntity();
         }
         return false;
       });
     }
-    watchEffect11((onInvalidate) => {
+    (0, import_vue69.watchEffect)((onInvalidate) => {
       const updateListener = () => {
         editor.getEditorState().read(() => {
           const editorWindow = editor._window || window;
           const range = editorWindow.document.createRange();
-          const selection = $getSelection15();
+          const selection = (0, import_lexical24.$getSelection)();
           const text = getQueryTextForSearch(editor);
-          if (!$isRangeSelection10(selection) || !selection.isCollapsed() || text === null || range === null) {
+          if (!(0, import_lexical24.$isRangeSelection)(selection) || !selection.isCollapsed() || text === null || range === null) {
             closeTypeahead();
             return;
           }
@@ -3815,10 +3756,10 @@ var _sfc_main27 = /* @__PURE__ */ _defineComponent27({
       onInvalidate(removeUpdateListener);
     });
     return (_ctx, _cache) => {
-      return resolution.value !== null && _unref7(editor) !== null ? (_openBlock11(), _createBlock5(LexicalMenu_default, {
+      return resolution.value !== null && (0, import_vue68.unref)(editor) !== null ? ((0, import_vue68.openBlock)(), (0, import_vue68.createBlock)(LexicalMenu_default, {
         key: 0,
-        "anchor-element-ref": _unref7(anchorElementRef),
-        editor: _unref7(editor),
+        "anchor-element-ref": (0, import_vue68.unref)(anchorElementRef),
+        editor: (0, import_vue68.unref)(editor),
         resolution: resolution.value,
         options: _ctx.options,
         "should-split-node-with-query": "",
@@ -3826,23 +3767,21 @@ var _sfc_main27 = /* @__PURE__ */ _defineComponent27({
         close: closeTypeahead,
         onSelectOption: _cache[0] || (_cache[0] = ($event) => _ctx.$emit("selectOption", $event))
       }, {
-        default: _withCtx4((slotProps) => [
-          _renderSlot9(_ctx.$slots, "default", _normalizeProps4(_guardReactiveProps4(slotProps)))
+        default: (0, import_vue68.withCtx)((slotProps) => [
+          (0, import_vue68.renderSlot)(_ctx.$slots, "default", (0, import_vue68.normalizeProps)((0, import_vue68.guardReactiveProps)(slotProps)))
         ]),
         _: 3
         /* FORWARDED */
-      }, 8, ["anchor-element-ref", "editor", "resolution", "options", "command-priority"])) : _createCommentVNode6("v-if", true);
+      }, 8, ["anchor-element-ref", "editor", "resolution", "options", "command-priority"])) : (0, import_vue68.createCommentVNode)("v-if", true);
     };
   }
 });
 var LexicalTypeaheadMenuPlugin_default = _sfc_main27;
 
 // src/components/LexicalTypeaheadMenuPlugin/shared.ts
-import {
-  createCommand as createCommand3
-} from "lexical";
+var import_lexical25 = require("lexical");
 var PUNCTUATION = `\\.,\\+\\*\\?\\$\\@\\|#{}\\(\\)\\^\\-\\[\\]\\\\/!%'"~=<>_:;`;
-var SCROLL_TYPEAHEAD_OPTION_INTO_VIEW_COMMAND2 = createCommand3("SCROLL_TYPEAHEAD_OPTION_INTO_VIEW_COMMAND");
+var SCROLL_TYPEAHEAD_OPTION_INTO_VIEW_COMMAND2 = (0, import_lexical25.createCommand)("SCROLL_TYPEAHEAD_OPTION_INTO_VIEW_COMMAND");
 function useBasicTypeaheadTriggerMatch(trigger, { minLength = 1, maxLength = 75 }) {
   return (text) => {
     const validChars = `[^${trigger}${PUNCTUATION}\\s]`;
@@ -3864,40 +3803,41 @@ function useBasicTypeaheadTriggerMatch(trigger, { minLength = 1, maxLength = 75 
     return null;
   };
 }
-export {
+// Annotate the CommonJS export names for ESM import in node:
+0 && (module.exports = {
   $createDecoratorBlockNode,
   $isDecoratorBlockNode,
   AutoEmbedOption,
   DecoratorBlockNode,
   INSERT_EMBED_COMMAND,
-  LexicalAutoEmbedPlugin_default as LexicalAutoEmbedPlugin,
-  LexicalAutoFocusPlugin_default as LexicalAutoFocusPlugin,
-  LexicalAutoLinkPlugin_default as LexicalAutoLinkPlugin,
-  LexicalAutoScrollPlugin_default as LexicalAutoScrollPlugin,
-  LexicalBlockWithAlignableContents_default as LexicalBlockWithAlignableContents,
-  LexicalCharacterLimitPlugin_default as LexicalCharacterLimitPlugin,
-  LexicalCheckListPlugin_default as LexicalCheckListPlugin,
-  LexicalClearEditorPlugin_default as LexicalClearEditorPlugin,
-  LexicalClickableLinkPlugin_default as LexicalClickableLinkPlugin,
-  LexicalCollaborationPlugin_default as LexicalCollaborationPlugin,
-  LexicalComposer_default as LexicalComposer,
-  LexicalContentEditable_default as LexicalContentEditable,
-  LexicalContextMenuPlugin_default as LexicalContextMenuPlugin,
-  LexicalDecoratedTeleports_default as LexicalDecoratedTeleports,
-  LexicalHashtagPlugin_default as LexicalHashtagPlugin,
-  LexicalHistoryPlugin_default as LexicalHistoryPlugin,
-  LexicalLinkPlugin_default as LexicalLinkPlugin,
-  LexicalListPlugin_default as LexicalListPlugin,
-  LexicalMarkdownShortcutPlugin_default as LexicalMarkdownShortcutPlugin,
-  LexicalNodeMenuPlugin_default as LexicalNodeMenuPlugin,
-  LexicalOnChangePlugin_default as LexicalOnChangePlugin,
-  LexicalPlainTextPlugin_default as LexicalPlainTextPlugin,
-  LexicalRichTextPlugin_default as LexicalRichTextPlugin,
-  LexicalTabIndentationPlugin_default as LexicalTabIndentationPlugin,
-  LexicalTablePlugin_default as LexicalTablePlugin,
-  LexicalTreeViewPlugin_default as LexicalTreeViewPlugin,
-  LexicalTypeaheadMenuPlugin_default as LexicalTypeaheadMenuPlugin,
-  MenuOption2 as MenuOption,
+  LexicalAutoEmbedPlugin,
+  LexicalAutoFocusPlugin,
+  LexicalAutoLinkPlugin,
+  LexicalAutoScrollPlugin,
+  LexicalBlockWithAlignableContents,
+  LexicalCharacterLimitPlugin,
+  LexicalCheckListPlugin,
+  LexicalClearEditorPlugin,
+  LexicalClickableLinkPlugin,
+  LexicalCollaborationPlugin,
+  LexicalComposer,
+  LexicalContentEditable,
+  LexicalContextMenuPlugin,
+  LexicalDecoratedTeleports,
+  LexicalHashtagPlugin,
+  LexicalHistoryPlugin,
+  LexicalLinkPlugin,
+  LexicalListPlugin,
+  LexicalMarkdownShortcutPlugin,
+  LexicalNodeMenuPlugin,
+  LexicalOnChangePlugin,
+  LexicalPlainTextPlugin,
+  LexicalRichTextPlugin,
+  LexicalTabIndentationPlugin,
+  LexicalTablePlugin,
+  LexicalTreeViewPlugin,
+  LexicalTypeaheadMenuPlugin,
+  MenuOption,
   URL_MATCHER,
   mergePrevious,
   useBasicTypeaheadTriggerMatch,
@@ -3919,5 +3859,5 @@ export {
   useYjsCollaboration,
   useYjsFocusTracking,
   useYjsHistory
-};
-//# sourceMappingURL=index.js.map
+});
+//# sourceMappingURL=index.cjs.map
