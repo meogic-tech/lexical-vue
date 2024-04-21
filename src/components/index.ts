@@ -27,9 +27,7 @@ export {
 export {
   default as LexicalListPlugin,
 } from './LexicalListPlugin.vue'
-export {
-  default as LexicalAutoLinkPlugin,
-} from './LexicalAutoLinkPlugin.vue'
+
 export {
   default as LexicalLinkPlugin,
 } from './LexicalLinkPlugin.vue'
@@ -64,9 +62,42 @@ export {
 export {
   default as LexicalTabIndentationPlugin,
 } from './LexicalTabIndentationPlugin.vue'
+
 export {
-  default as LexicalPopoverMenu,
-} from './LexicalPopoverMenu.vue'
+  default as LexicalCollaborationPlugin,
+} from './LexicalCollaborationPlugin.vue'
+
 export {
-  default as LexicalTypeaheadMenuPlugin,
-} from './LexicalTypeaheadMenuPlugin.vue'
+  default as LexicalClickableLinkPlugin,
+} from './LexicalClickableLinkPlugin.vue'
+
+export {
+  default as LexicalContextMenuPlugin,
+} from './LexicalContextMenuPlugin.vue'
+
+export {
+  default as LexicalNodeMenuPlugin,
+} from './LexicalNodeMenuPlugin.vue'
+
+// LexicalAutoEmbedPlugin
+export {
+  default as LexicalAutoEmbedPlugin,
+} from './LexicalAutoEmbedPlugin/index.vue'
+export * from './LexicalAutoEmbedPlugin/shared'
+
+// LexicalAutoLinkPlugin
+export {
+  default as LexicalAutoLinkPlugin,
+} from './LexicalAutoLinkPlugin/index.vue'
+
+// LexicalTypeaheadMenuPlugin
+export { default as LexicalTypeaheadMenuPlugin } from './LexicalTypeaheadMenuPlugin/index.vue'
+export {
+  useBasicTypeaheadTriggerMatch,
+} from './LexicalTypeaheadMenuPlugin/shared'
+
+// LexicalMenu
+export {
+  MenuOption,
+  type MenuTextMatch,
+} from './LexicalMenu/shared'

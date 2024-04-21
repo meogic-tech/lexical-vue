@@ -7,9 +7,8 @@ import {
   $isNodeSelection,
   $setSelection,
 } from 'lexical'
-import { readonly, ref, unref, watchPostEffect } from 'vue'
-import type { MaybeRef } from '../types'
-import { useEditor } from './useEditor'
+import { type MaybeRef, readonly, ref, unref, watchEffect } from 'vue'
+import { useLexicalComposer } from './useLexicalComposer'
 
 function isNodeSelected(editor: LexicalEditor, key: NodeKey): boolean {
   return editor.getEditorState().read(() => {
@@ -24,10 +23,10 @@ function isNodeSelected(editor: LexicalEditor, key: NodeKey): boolean {
 export function useLexicalNodeSelection(
   key: MaybeRef<NodeKey>,
 ) {
-  const editor = useEditor()
+  const editor = useLexicalComposer()
   const isSelected = ref(isNodeSelected(editor, unref(key)))
 
-  watchPostEffect((onInvalidate) => {
+  watchEffect((onInvalidate) => {
     const unregisterListener = editor.registerUpdateListener(() => {
       isSelected.value = isNodeSelected(editor, unref(key))
     })
@@ -40,15 +39,17 @@ export function useLexicalNodeSelection(
   const setSelected = (selected: boolean) => {
     editor.update(() => {
       let selection = $getSelection()
-      const realKeyVal = unref(key)
+
       if (!$isNodeSelection(selection)) {
         selection = $createNodeSelection()
         $setSelection(selection)
       }
-      if (selected)
-        (selection).add(realKeyVal)
-      else
-        (selection).delete(realKeyVal)
+      if ($isNodeSelection(selection)) {
+        if (selected)
+          selection.add(unref(key))
+        else
+          selection.delete(unref(key))
+      }
     })
   }
 

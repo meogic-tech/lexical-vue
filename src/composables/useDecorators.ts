@@ -1,10 +1,10 @@
 import type { LexicalEditor } from 'lexical'
 import type { DefineComponent } from 'vue'
-import { Teleport, computed, h, ref, unref } from 'vue'
+import { Teleport, computed, h, shallowRef, unref } from 'vue'
 import { useMounted } from './useMounted'
 
 export function useDecorators(editor: LexicalEditor) {
-  const decorators = ref<Record<string, DefineComponent>>(editor.getDecorators())
+  const decorators = shallowRef<Record<string, DefineComponent>>(editor.getDecorators())
 
   useMounted(() => {
     return editor.registerDecoratorListener((nextDecorators) => {
@@ -22,7 +22,7 @@ export function useDecorators(editor: LexicalEditor) {
       const element = editor.getElementByKey(nodeKey)
       if (element !== null) {
         decoratedTeleports.push(
-          h(Teleport as unknown as DefineComponent, {
+          h(Teleport, {
             to: element,
           }, vueDecorator),
         )

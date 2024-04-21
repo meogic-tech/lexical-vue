@@ -1,19 +1,25 @@
 <script setup lang="ts">
-import type { HTMLTableElementWithWithTableSelectionState, InsertTableCommandPayload, TableSelection } from '@lexical/table'
+import type {
+  HTMLTableElementWithWithTableSelectionState,
+  InsertTableCommandPayload,
+  TableObserver,
+} from '@lexical/table'
 import {
+  $computeTableMap,
   $createTableCellNode,
   $createTableNodeWithDimensions,
+  $getNodeTriplet,
+  $isTableCellNode,
   $isTableNode,
+  $isTableRowNode,
   INSERT_TABLE_COMMAND,
   TableCellNode,
   TableNode,
   TableRowNode,
   applyTableHandlers,
 } from '@lexical/table'
+import { $insertFirst, $insertNodeToNearestRoot } from '@lexical/utils'
 import type {
-  DEPRECATED_GridCellNode,
-  ElementNode,
-  LexicalNode,
   NodeKey,
 } from 'lexical'
 import {
@@ -25,8 +31,9 @@ import {
   DEPRECATED_$getNodeTriplet,
   DEPRECATED_$isGridRowNode,
 } from 'lexical'
+import invariant from 'tiny-invariant'
 import { $insertNodeToNearestRoot } from '@lexical/utils'
-import { useEditor, useEffect, useMounted } from '../composables'
+import { useEffect, useLexicalComposer, useMounted } from '../composables'
 
 const props = withDefaults(defineProps<{
   hasCellMerge?: boolean
@@ -38,7 +45,7 @@ const props = withDefaults(defineProps<{
   hasTabHandler: true,
 })
 
-const editor = useEditor()
+const editor = useLexicalComposer()
 
 // TODO: extract to utils
 function $insertFirst(parent: ElementNode, node: LexicalNode): void {
@@ -78,7 +85,7 @@ useMounted(() => {
 })
 
 useMounted(() => {
-  const tableSelections = new Map<NodeKey, TableSelection>()
+  const tableSelections = new Map<NodeKey, TableObserver>()
 
   const initializeTableNode = (tableNode: TableNode) => {
     const nodeKey = tableNode.getKey()
@@ -147,23 +154,27 @@ useEffect(() => {
     if (node.getColSpan() > 1 || node.getRowSpan() > 1) {
       // When we have rowSpan we have to map the entire Table to understand where the new Cells
       // fit best; let's analyze all Cells at once to save us from further transform iterations
-      const [, , gridNode] = DEPRECATED_$getNodeTriplet(node)
-      const [gridMap] = DEPRECATED_$computeGridMap(gridNode, node, node)
+      const [, , gridNode] = $getNodeTriplet(node)
+      const [gridMap] = $computeTableMap(gridNode, node, node)
       // TODO this function expects Tables to be normalized. Look into this once it exists
       const rowsCount = gridMap.length
       const columnsCount = gridMap[0].length
       let row = gridNode.getFirstChild()
-      if (DEPRECATED_$isGridRowNode(row))
-        throw new Error('Expected TableNode first child to be a RowNode')
+      invariant(
+        $isTableRowNode(row),
+        'Expected TableNode first child to be a RowNode',
+      )
 
       const unmerged = []
       for (let i = 0; i < rowsCount; i++) {
         if (i !== 0) {
-          row = row!.getNextSibling()
-          if (DEPRECATED_$isGridRowNode(row))
-            throw new Error('Expected TableNode first child to be a RowNode')
+          row = row.getNextSibling()
+          invariant(
+            $isTableRowNode(row),
+            'Expected TableNode first child to be a RowNode',
+          )
         }
-        let lastRowCell: null | DEPRECATED_GridCellNode = null
+        let lastRowCell: null | TableCellNode = null
         for (let j = 0; j < columnsCount; j++) {
           const cellMap = gridMap[i][j]
           const cell = cellMap.cell
@@ -172,12 +183,15 @@ useEffect(() => {
             unmerged.push(cell)
           }
           else if (cell.getColSpan() > 1 || cell.getRowSpan() > 1) {
+            invariant(
+              $isTableCellNode(cell),
+              'Expected TableNode cell to be a TableCellNode',
+            )
             const newCell = $createTableCellNode(cell.__headerState)
             if (lastRowCell !== null)
               lastRowCell.insertAfter(newCell)
-
             else
-              $insertFirst(row as ElementNode, newCell)
+              $insertFirst(row, newCell)
           }
         }
       }

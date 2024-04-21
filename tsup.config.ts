@@ -5,13 +5,13 @@ export default defineConfig({
   entry: ['src/index.ts'],
   format: ['cjs', 'esm'],
   splitting: false,
+  sourcemap: true,
   clean: true,
-  external: [/@lexical/],
+  external: [/@lexical/, 'yjs'],
   dts: false,
-  outExtension({ format }) {
-    return {
-      js: format === 'esm' ? '.mjs' : '.js',
-    }
-  },
-  esbuildPlugins: [vuePlugin()],
+  esbuildPlugins: [
+    vuePlugin({
+      isProduction: true,
+    }),
+  ],
 })

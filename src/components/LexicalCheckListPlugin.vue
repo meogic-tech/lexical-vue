@@ -30,10 +30,11 @@ import {
   insertList,
 } from '@lexical/list'
 import { $findMatchingParent, mergeRegister } from '@lexical/utils'
-import { useEditor } from '../composables'
+import { useLexicalComposer } from '../composables'
 import { useMounted } from '../composables/useMounted'
+import { registerClickAndPointerListeners } from '../composables/listenerManager'
 
-const editor = useEditor()
+const editor = useLexicalComposer()
 
 useMounted(() => {
   return mergeRegister(
@@ -61,7 +62,7 @@ useMounted(() => {
     ),
     editor.registerCommand(
       KEY_ESCAPE_COMMAND,
-      (event) => {
+      (_event) => {
         const activeItem = getActiveCheckListItem()
         if (activeItem != null) {
           const rootElement = editor.getRootElement()
@@ -111,9 +112,9 @@ useMounted(() => {
                 const parent = elementNode.getParent()
                 if (
                   $isListNode(parent)
-                    && parent.getListType() === 'check'
-                    && (isElement
-                      || elementNode.getFirstDescendant() === anchorNode)
+                  && parent.getListType() === 'check'
+                  && (isElement
+                  || elementNode.getFirstDescendant() === anchorNode)
                 ) {
                   const domNode = editor.getElementByKey(elementNode.__key)
 
@@ -136,21 +137,16 @@ useMounted(() => {
   )
 })
 
-let listenersCount = 0
 function listenPointerDown() {
-  if (listenersCount++ === 0) {
+  return registerClickAndPointerListeners(() => {
     // @ts-expect-error: speculation ambiguous
     document.addEventListener('click', handleClick)
     document.addEventListener('pointerdown', handlePointerDown)
-  }
-
-  return () => {
-    if (--listenersCount === 0) {
-      // @ts-expect-error: speculation ambiguous
-      document.removeEventListener('click', handleClick)
-      document.removeEventListener('pointerdown', handlePointerDown)
-    }
-  }
+  }, () => {
+    // @ts-expect-error: speculation ambiguous
+    document.removeEventListener('click', handleClick)
+    document.removeEventListener('pointerdown', handlePointerDown)
+  })
 }
 
 function handleCheckItemEvent(event: PointerEvent, callback: () => void) {

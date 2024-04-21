@@ -4,7 +4,11 @@ An extensible Vue 3 web text-editor based on [Lexical](https://github.com/facebo
 
 For documentation and more information about Lexical, be sure to visit the [Lexical website](https://lexical.dev/).
 
-Demo: https://lexical-vue-playground.vercel.app
+Here are some examples of what you can do with Lexical:
+
+- [Lexical Vue Playground](https://lexical-vue-playground.vercel.app)
+- [Rich Text Example](https://stackblitz.com/edit/vitejs-vite-qqdqcl)
+- [Plain Text Example](https://stackblitz.com/edit/vitejs-vite-jxwkxo)
 
 ## Getting started with Vue
 
@@ -21,7 +25,6 @@ Below is an example of a basic plain text editor using `lexical` and `lexical-vu
 ```vue
 <script setup lang="ts">
 import { $getRoot, $getSelection } from 'lexical'
-import { ref } from 'vue'
 
 import {
   LexicalAutoFocusPlugin,
@@ -75,11 +78,11 @@ function onChange(editorState) {
 </template>
 ```
 
-For a more complex example, check the [rich text editor playground](https://github.com/wobsoriano/lexical-vue/tree/master/packages/playground).
+For a more complex example, check the [rich text editor playground](https://github.com/wobsoriano/lexical-vue/tree/master/playground).
 
 ### Creating custom Lexical nodes with Vue
 
-- [Creating custom decorator nodes](https://lexical-vue.vercel.app/docs/custom.html)
+- [Creating custom decorator nodes](https://lexical-vue.vercel.app/docs/plugins/custom.html)
 
 ## Contributing
 

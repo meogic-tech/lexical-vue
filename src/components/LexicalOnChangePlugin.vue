@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted } from 'vue'
 import type { EditorState, LexicalEditor } from 'lexical'
-import { $getRoot } from 'lexical'
-import { useEditor } from '../composables/useEditor'
+import { useLexicalComposer } from '../composables'
+import { useMounted } from '../composables/useMounted'
 
 const props = withDefaults(defineProps<{
   ignoreInitialChange?: boolean
@@ -18,7 +18,7 @@ const emit = defineEmits<{
   (e: 'update:modelValue', payload: string): void
 }>()
 
-const editor = useEditor()
+const editor = useLexicalComposer()
 
 let unregisterListener: () => void
 const getRoot = $getRoot
@@ -27,8 +27,8 @@ onMounted(() => {
   unregisterListener = editor.registerUpdateListener(({ editorState, dirtyElements, dirtyLeaves, prevEditorState, tags }) => {
     if (
       props.ignoreSelectionChange
-        && dirtyElements.size === 0
-        && dirtyLeaves.size === 0
+      && dirtyElements.size === 0
+      && dirtyLeaves.size === 0
     )
       return
 
